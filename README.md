@@ -1,4 +1,4 @@
-# LAF Research Hub
+# LAF STNO Hub
 
 Index of Nhat-Tan Phan's projects at Laboratoire Albert Fert (EP encirclement, STVO arrays, spin-diode RF harvesting, Floquet): samples, measurement log and meetings.
 
