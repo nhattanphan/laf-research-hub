@@ -1,1370 +1,469 @@
 {
-"updated": "2026-11-20",
-"config": {
-"root": "https://sdrive.cnrs.fr/f/631214272",
-"samples": "https://sdrive.cnrs.fr/f/631214277",
-"meas": "https://sdrive.cnrs.fr/f/631214310",
-"ep": "https://sdrive.cnrs.fr/f/631214315",
-"stvo": "https://sdrive.cnrs.fr/f/631214325",
-"sd": "https://sdrive.cnrs.fr/f/631214329",
-"floq": "https://sdrive.cnrs.fr/f/631214341",
-"meet": "https://sdrive.cnrs.fr/f/631214346",
-"papers": "https://sdrive.cnrs.fr/f/631214356",
-"prb": "https://sdrive.cnrs.fr/f/631214366",
-"code": "https://sdrive.cnrs.fr/f/631214374"
-},
-"projects": [
-{
-"order": 3,
-"key": "sd",
-"name": "Spin-diode · RF harvesting",
-"stage": "Device selection",
-"title": "MTJ spin-diode rectification for RF energy harvesting",
-"summary": "Rectified voltage of pMTJs from SPINTEC wafer VB01-23 (FeCoB free-layer and polarizer wedges). Device selection from whole-wafer Veeco R–H data, focusing on canted devices and high TMR.",
-"facts": [
-"RF source changed in Nov 2026 from MiniCircuits SSG-6000RC to Agilent E8257D (20 GHz)",
-"−6 dB attenuator between source and device: power at device = set power − 6 dB",
-"Devices have a field line on top",
-"Ursula is interested in broadband rectification"
-],
-"next": [
-"Spin-diode signal vs RF power: separate the resonant and the magnetic contributions",
-"Quick R–H and H = 0 spectra on the priority devices of dies EN and DM",
-"Consider re-injecting the STNO output into the device to raise V_rect"
-],
-"drive": "https://sdrive.cnrs.fr/f/631214329",
-"samples": [
-"vb-en",
-"vb-dm"
-],
-"_id": "sd"
-},
-{
-"order": 1,
-"key": "ep",
-"name": "EP encirclement",
-"stage": "Writing",
-"title": "Multi-turn EP encirclement in coupled STVOs (PRB)",
-"summary": "Encircling exceptional points in a pair of coupled vortex STNOs: full range of gains, different encirclement loops, and amplitude death at high gain. Mostly experimental; extends Ho et al., Newton 2026 and Wittrock et al., Nat. Commun. 2024 with the same samples and theory.",
-"facts": [
-"EP mapping vs gain recorded on the combined output of both STVOs",
-"Encirclement loops recorded with STVO A and STVO B read out separately (STNO1 = STVO A output, STNO2 = STVO B output; one device pair)",
-"STVO A is the fixed oscillator (biased in C-state)",
-"Gain dependence: four gains in the C-state configuration plus one C-state loop at lower gain; field 435 mT"
-],
-"next": [
-"Measure the C-state EP loops (2CW and CW+CCW around one EP)",
-"Replace mock figures with real data on Overleaf",
-"Send the draft to Vincent and Romain"
-],
-"drive": "https://sdrive.cnrs.fr/f/631214315",
-"paper": "https://sdrive.cnrs.fr/f/631214366",
-"samples": [
-"et12571t-4"
-],
-"_id": "ep"
-},
-{
-"order": 4,
-"key": "floq",
-"name": "Floquet",
-"stage": "Running",
-"title": "Floquet drive on coupled STNOs",
-"summary": "RF drive (SMB100B) on coupled STNOs, proposed by Romain. Goal: observe the same Floquet behaviour in both the crossing and the anticrossing regime.",
-"facts": [
-"Related to the EP encirclement work",
-"Phase-controlled rectangular loop trajectories"
-],
-"next": [
-"Compare crossing and anticrossing regimes under the same drive"
-],
-"drive": "https://sdrive.cnrs.fr/f/631214341",
-"samples": [
-"et12571t-4"
-],
-"_id": "floq"
-},
-{
-"order": 2,
-"key": "stvo",
-"name": "STVO array",
-"stage": "Starting measurements",
-"title": "Dipolar-coupled STVO arrays (Tristan da Câmara, UCLouvain / INL)",
-"summary": "Four array samples received 06/11/2026. Goals: prove genuine locking, measure RF emission, and measure the Py-capped samples.",
-"facts": [
-"S1: no Py, common contact · S2, S3: 10 nm Py cap · S4: no Py, separate contacts",
-"None of S1–S4 has been measured before; Tristan's INL results are on another die",
-"Measurement workbook STVO_array_Tristan_die_map.xlsx is kept in the sDrive “Spin Diode” folder"
-],
-"next": [
-"Start with the close pairs on S1 (per Vincent)",
-"First device: N5 on S1, wire-bonded 16/11/2026",
-"Limit current and protect against ESD: many INL devices died during spin-diode measurements"
-],
-"drive": "https://sdrive.cnrs.fr/f/631214325",
-"samples": [
-"stvo-s1",
-"stvo-s2",
-"stvo-s3",
-"stvo-s4",
-"stvo-inl"
-],
-"_id": "stvo"
-}
-],
-"samples": [
-{
-"order": 8,
-"project": "sd",
-"name": "VB01-23 · die DM",
-"subtitle": "Wafer row D (polarizer wedge) · column M (free-layer wedge, thick side)",
-"info": [
-{
-"k": "Wafer",
-"v": "VB01-23 · pMTJ · SPINTEC"
-},
-{
-"k": "Stack",
-"v": "15 Ta / 5 Pt / [0.5 Co/0.25 Pt]×6 / 0.5 Co / 0.9 Ru / [0.5 Co/0.25 Pt]×2 / 0.5 Co / 0.25 W / 0.8 FeCoB / 1.2 FeCoB wedge / MgO / 1.0 FeCoB / 1.5 FeCoB"
-},
-{
-"k": "Wedges",
-"v": "polarizer FeCoB 11.3–17.3 Å · free layer FeCoB 14–21.5 Å; OOP → in-plane transition at wafer columns I–K"
-},
-{
-"k": "Chip",
-"v": "RAM4: rows A–I, columns 1–6, 4 junctions per cell (J1–J4) · device = row+column_junction (e.g. I4_J3)"
-},
-{
-"k": "Diameters",
-"v": "column 1 = 50 · 2 = 70 · 3 = 90 · 4 = 110 · 5 = 130 · 6 = 90 nm"
-},
-{
-"k": "Series R",
-"v": "R_s = 263 Ω (bottom electrode) · TMR_corr = (Rmax − Rmin)/(Rmin − R_s)"
-},
-{
-"k": "Wafer test",
-"v": "Veeco full-wafer R–H, Sujit Panigrahy (CEA), 08/03/2026: 75 % good, 24 % open (mostly Ø50)"
-},
-{
-"k": "Classes (v2)",
-"v": "135 devices: in-plane 63 · low TMR 36 · soft in-plane 28 · unstable 4 · RL flip 2 · step 1 · short 1"
-},
-{
-"k": "Meets R–H criteria",
-"v": "13 devices"
-},
-{
-"k": "Priority",
-"v": "G5_J1, E3_J3, H4_J4, I5_J3, G5_J4, B3_J2"
-}
-],
-"total": 135,
-"counts": {
-"untested": 134,
-"short": 1
-},
-"drive": "https://sdrive.cnrs.fr/f/631214303",
-"_id": "vb-dm"
-},
-{
-"order": 3,
-"project": "stvo",
-"name": "STVO array · S2",
-"subtitle": "10 nm Py cap · common contact",
-"info": [
-{
-"k": "Layout",
-"v": "15 × 15, columns A–O, rows 1–15, common contact · device = column + row (e.g. H8)"
-},
-{
-"k": "Diameters",
-"v": "A/F/K 100 · B/G/L 200 · C/H/M 300 · D/I/N 400 · E/J/O 500 nm · vortex only at 300–500 nm (100–200 nm are C-state, not measured)"
-},
-{
-"k": "Source",
-"v": "Tristan da Câmara (UCLouvain / INL) · received 06/11/2026"
-},
-{
-"k": "Stack",
-"v": "…MnIr(8)/CoFe(2.2)/Ru(0.65)/CoFeB(2.6)/MgO(0.9)/CoFeB(2)/Ta(0.2)/NiFe(7)/Ta(5)/Ru(5)/TiW(30) · annealed 330 °C, 1 T, 2 h"
-},
-{
-"k": "Resistance",
-"v": "R ≈ 100 to a few hundred Ω (shorted STVOs 30–50 Ω) · TMR 100–115 % · RA 25–35 Ω·µm²"
-},
-{
-"k": "Classification",
-"v": "short if R < 50 Ω · open if R > 2 kΩ"
-},
-{
-"k": "Py",
-"v": "simulations predict ×3 coupling range; not measured yet (Jack Gartside working on it)"
-}
-],
-"total": 135,
-"counts": {
-"untested": 135
-},
-"drive": "https://sdrive.cnrs.fr/f/631214297",
-"_id": "stvo-s2"
-},
-{
-"order": 7,
-"project": "sd",
-"name": "VB01-23 · die EN",
-"subtitle": "Wafer row E (polarizer wedge) · column N (free-layer wedge, thick side: many in-plane)",
-"info": [
-{
-"k": "Wafer",
-"v": "VB01-23 · pMTJ · SPINTEC"
-},
-{
-"k": "Stack",
-"v": "15 Ta / 5 Pt / [0.5 Co/0.25 Pt]×6 / 0.5 Co / 0.9 Ru / [0.5 Co/0.25 Pt]×2 / 0.5 Co / 0.25 W / 0.8 FeCoB / 1.2 FeCoB wedge / MgO / 1.0 FeCoB / 1.5 FeCoB"
-},
-{
-"k": "Wedges",
-"v": "polarizer FeCoB 11.3–17.3 Å · free layer FeCoB 14–21.5 Å; OOP → in-plane transition at wafer columns I–K"
-},
-{
-"k": "Chip",
-"v": "RAM4: rows A–I, columns 1–6, 4 junctions per cell (J1–J4) · device = row+column_junction (e.g. I4_J3)"
-},
-{
-"k": "Diameters",
-"v": "column 1 = 50 · 2 = 70 · 3 = 90 · 4 = 110 · 5 = 130 · 6 = 90 nm"
-},
-{
-"k": "Series R",
-"v": "R_s = 263 Ω (bottom electrode) · TMR_corr = (Rmax − Rmin)/(Rmin − R_s)"
-},
-{
-"k": "Wafer test",
-"v": "Veeco full-wafer R–H, Sujit Panigrahy (CEA), 08/03/2026: 75 % good, 24 % open (mostly Ø50)"
-},
-{
-"k": "Classes (v2)",
-"v": "132 devices: in-plane 61 · low TMR 49 · unstable 9 · soft in-plane 7 · RL flip 3 · short 2 · open 1"
-},
-{
-"k": "Meets R–H criteria",
-"v": "15 devices (S-shape, TMR_corr ≥ 75 %, θ0 50–72°, Hc < 60 Oe, R 0.8–3 kΩ)"
-},
-{
-"k": "Priority",
-"v": "G3_J3, G5_J4, I5_J3, G4_J2, I4_J3, G4_J4"
-}
-],
-"total": 132,
-"counts": {
-"alive": 5,
-"untested": 118,
-"short": 2,
-"open": 1,
-"dead": 5,
-"measdead": 1
-},
-"drive": "https://sdrive.cnrs.fr/f/631214303",
-"_id": "vb-en"
-},
-{
-"order": 1,
-"project": "ep",
-"name": "ET12571T-#4",
-"subtitle": "Chip for the EP experiment (coupled STVOs)",
-"info": [
-{
-"k": "Source",
-"v": "AIST (Japan)"
-},
-{
-"k": "Layout",
-"v": "one series per column: A 300 · B 350 · C 400 · D 500 nm (50 junctions each, 01–50); P, R, S, Q 600 nm (07–41)"
-},
-{
-"k": "Map",
-"v": "MR (%) and Rmin (Ω) printed on the paper map; crossed out = dead. Series B fully crossed out"
-},
-{
-"k": "To check",
-"v": "faint crosses on C40, C47, C49, D04, D10; most of column D suspected damaged, to re-measure"
-}
-],
-"total": 234,
-"counts": {
-"dead": 138,
-"suspect": 41,
-"measdead": 9,
-"untested": 45,
-"alive": 1
-},
-"drive": "https://sdrive.cnrs.fr/f/631214288",
-"_id": "et12571t-4"
-},
-{
-"order": 6,
-"project": "stvo",
-"name": "STVO array · INL die (reference)",
-"subtitle": "Measured by Tristan at INL, 05/2026 — not at LAF",
-"info": [
-{
-"k": "Measured",
-"v": "C5, C6, H5, H6, H10, I6, M5 destroyed · H12, I5 low TMR · H13, H14 possibly alive"
-},
-{
-"k": "Poster results",
-"v": "C6 multistate (triangle) · H5 Arnold tongue · M5 multisite (pair)"
-},
-{
-"k": "Jack",
-"v": "C5 self-oscillates at a single frequency ~300–320 MHz (suspected synchronisation)"
-},
-{
-"k": "Lesson",
-"v": "devices die easily during spin-diode measurement → limit current, protect against ESD"
-}
-],
-"total": 11,
-"counts": {
-"measdead": 7,
-"suspect": 2,
-"untested": 2
-},
-"drive": "https://sdrive.cnrs.fr/f/631214297",
-"_id": "stvo-inl"
-},
-{
-"order": 5,
-"project": "stvo",
-"name": "STVO array · S4",
-"subtitle": "No Py · separate contacts",
-"info": [
-{
-"k": "Layout",
-"v": "7 × 7, columns A–G, rows 8–14, all pillars 400 nm · rows 8–11 pairs, rows 12–14 triangles"
-},
-{
-"k": "Spacing",
-"v": "A–G = 150, 200, 300, 400, 500, 700 nm, 2 µm"
-},
-{
-"k": "Contacts",
-"v": "cap Ta 5 / Ru 5 / TiW 30 nm · top contact Ru 40 / Cr 10 / Au 150 nm · no SEM image yet"
-},
-{
-"k": "Source",
-"v": "Tristan da Câmara (UCLouvain / INL) · received 06/11/2026"
-},
-{
-"k": "Stack",
-"v": "…MnIr(8)/CoFe(2.2)/Ru(0.65)/CoFeB(2.6)/MgO(0.9)/CoFeB(2)/Ta(0.2)/NiFe(7)/Ta(5)/Ru(5)/TiW(30) · annealed 330 °C, 1 T, 2 h"
-},
-{
-"k": "Resistance",
-"v": "R ≈ 100 to a few hundred Ω (shorted STVOs 30–50 Ω) · TMR 100–115 % · RA 25–35 Ω·µm²"
-},
-{
-"k": "Classification",
-"v": "short if R < 50 Ω · open if R > 2 kΩ"
-}
-],
-"total": 49,
-"counts": {
-"untested": 49
-},
-"drive": "https://sdrive.cnrs.fr/f/631214297",
-"_id": "stvo-s4"
-},
-{
-"order": 4,
-"project": "stvo",
-"name": "STVO array · S3",
-"subtitle": "10 nm Py cap · common contact",
-"info": [
-{
-"k": "Layout",
-"v": "15 × 15, columns A–O, rows 1–15, common contact · device = column + row (e.g. H8)"
-},
-{
-"k": "Diameters",
-"v": "A/F/K 100 · B/G/L 200 · C/H/M 300 · D/I/N 400 · E/J/O 500 nm · vortex only at 300–500 nm (100–200 nm are C-state, not measured)"
-},
-{
-"k": "Source",
-"v": "Tristan da Câmara (UCLouvain / INL) · received 06/11/2026"
-},
-{
-"k": "Stack",
-"v": "…MnIr(8)/CoFe(2.2)/Ru(0.65)/CoFeB(2.6)/MgO(0.9)/CoFeB(2)/Ta(0.2)/NiFe(7)/Ta(5)/Ru(5)/TiW(30) · annealed 330 °C, 1 T, 2 h"
-},
-{
-"k": "Resistance",
-"v": "R ≈ 100 to a few hundred Ω (shorted STVOs 30–50 Ω) · TMR 100–115 % · RA 25–35 Ω·µm²"
-},
-{
-"k": "Classification",
-"v": "short if R < 50 Ω · open if R > 2 kΩ"
-},
-{
-"k": "Py",
-"v": "simulations predict ×3 coupling range; not measured yet (Jack Gartside working on it)"
-}
-],
-"total": 135,
-"counts": {
-"untested": 135
-},
-"drive": "https://sdrive.cnrs.fr/f/631214297",
-"_id": "stvo-s3"
-},
-{
-"order": 2,
-"project": "stvo",
-"name": "STVO array · S1",
-"subtitle": "No Py · common contact",
-"info": [
-{
-"k": "Layout",
-"v": "15 × 15, columns A–O, rows 1–15, common contact · device = column + row (e.g. H8)"
-},
-{
-"k": "Diameters",
-"v": "A/F/K 100 · B/G/L 200 · C/H/M 300 · D/I/N 400 · E/J/O 500 nm · vortex only at 300–500 nm (100–200 nm are C-state, not measured)"
-},
-{
-"k": "Source",
-"v": "Tristan da Câmara (UCLouvain / INL) · received 06/11/2026"
-},
-{
-"k": "Stack",
-"v": "…MnIr(8)/CoFe(2.2)/Ru(0.65)/CoFeB(2.6)/MgO(0.9)/CoFeB(2)/Ta(0.2)/NiFe(7)/Ta(5)/Ru(5)/TiW(30) · annealed 330 °C, 1 T, 2 h"
-},
-{
-"k": "Resistance",
-"v": "R ≈ 100 to a few hundred Ω (shorted STVOs 30–50 Ω) · TMR 100–115 % · RA 25–35 Ω·µm²"
-},
-{
-"k": "Classification",
-"v": "short if R < 50 Ω · open if R > 2 kΩ"
-},
-{
-"k": "Status",
-"v": "first device N5 wire-bonded 16/11/2026"
-}
-],
-"total": 135,
-"counts": {
-"alive": 3,
-"dead": 7,
-"untested": 125
-},
-"drive": "https://sdrive.cnrs.fr/f/631214297",
-"_id": "stvo-s1"
-}
-],
-"runs": [
-{
-"date": "2026-07-06",
-"project": "sd",
-"device": "AZ96-13 HM F3 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "4 RF maps",
-"file": "D:\\Tan\\AZ96-13 HM\\F3J1",
-"notes": "15:41–21:03 · 4 files",
-"by": "Tan",
-"_id": "scan-603a86e3dc"
-},
-{
-"date": "2026-09-24",
-"project": "sd",
-"device": "VB01 DM G4 J2",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 280 H pts",
-"result": "1 Energy Carac · 1 RF map",
-"file": "D:\\Tan\\VB01-DM\\G4J2",
-"notes": "14:11–17:52 · 2 files",
-"by": "Tan",
-"_id": "scan-47001268d3"
-},
-{
-"date": "2026-06-30",
-"project": "sd",
-"device": "AZ96-13 HM F3 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.025–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "1 RF map",
-"file": "D:\\Tan\\AZ96-13 HM\\F3J1",
-"notes": "18:21–18:21 · 1 file",
-"by": "Tan",
-"_id": "scan-cae3a24e71"
-},
-{
-"date": "2026-09-28",
-"project": "sd",
-"device": "VB01 EN H3 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "1 Energy Carac · 1 RF map",
-"file": "D:\\Tan\\VB01-EN\\H3J1",
-"notes": "11:32–14:07 · 2 files",
-"by": "Tan",
-"_id": "scan-d156e2bb20"
-},
-{
-"date": "2026-07-01",
-"project": "sd",
-"device": "AZ96-13 HM F3 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 84–96° (7) · f 0.025–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "1 RF map",
-"file": "D:\\Tan\\AZ96-13 HM\\F3J1",
-"notes": "09:16–09:16 · 1 file",
-"by": "Tan",
-"_id": "scan-f358050b8a"
-},
-{
-"date": "2025-02-25",
-"project": "sd",
-"device": "HG F3 J1",
-"setup": "rotator, Keithley 7510, Yokogawa GS200",
-"params": "angle 0–20° (3) · 39 H pts",
-"result": "6 H/angle alignments",
-"file": "D:\\Tan\\HG_F3J1",
-"notes": "17:23–17:34 · 6 files",
-"by": "Tan",
-"_id": "scan-132dded0e9"
-},
-{
-"date": "2026-06-23",
-"project": "sd",
-"device": "AZ96-13 HI E4 J3",
-"setup": "",
-"params": "",
-"result": "1 Energy Carac",
-"file": "D:\\Tan\\AZ96-13 HI\\AZ96-13 HI E4J3",
-"notes": "16:03–16:03 · 1 file",
-"by": "Tan",
-"_id": "scan-d7e6236614"
-},
-{
-"date": "2026-09-22",
-"project": "sd",
-"device": "VB01 DM H2 J3",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "1 Energy Carac · 1 RF map",
-"file": "D:\\Tan\\VB01-DM\\H2J3",
-"notes": "08:03–10:43 · 2 files",
-"by": "Tan",
-"_id": "scan-832e4ab326"
-},
-{
-"date": "2026-06-24",
-"project": "sd",
-"device": "AZ96-13 HI E5 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.025–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "4 R–H · 1 Energy Carac",
-"file": "D:\\Tan\\AZ96-13 HI",
-"notes": "10:05–10:15 · 5 files",
-"by": "Tan",
-"_id": "scan-9af610364f"
-},
-{
-"date": "2026-10-03",
-"project": "sd",
-"device": "VB01 EN H5 J2",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "2 RF maps",
-"file": "D:\\Tan\\VB01-EN\\H5J2",
-"notes": "14:22–20:51 · 2 files",
-"by": "Tan",
-"_id": "scan-54d47ca38a"
-},
-{
-"date": "2026-06-25",
-"project": "sd",
-"device": "AZ96-13 HI H4 J3",
-"setup": "",
-"params": "",
-"result": "1 Energy Carac",
-"file": "D:\\Tan\\AZ96-13 HI\\AZ96-13 HI H4J3 Done",
-"notes": "13:34–13:34 · 1 file",
-"by": "Tan",
-"_id": "scan-62b08b6c86"
-},
-{
-"date": "2026-09-28",
-"project": "sd",
-"device": "VB01 EN G5 J3",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "1 Energy Carac · 1 RF map",
-"file": "D:\\Tan\\VB01-EN\\G5J3",
-"notes": "18:01–18:01 · 2 files",
-"by": "Tan",
-"_id": "scan-6162a11255"
-},
-{
-"date": "2026-06-23",
-"project": "sd",
-"device": "AZ96-13 HI G3 J3",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (100 pts)",
-"result": "3 R–H · 1 Energy Carac · 1 RF map",
-"file": "D:\\Tan\\AZ96-13 HI\\AZ96-13 HI G3J3",
-"notes": "16:06–16:15 · 5 files",
-"by": "Tan",
-"_id": "scan-27f029e705"
-},
-{
-"date": "2026-06-24",
-"project": "sd",
-"device": "AZ96-13 HI E3 J2",
-"setup": "",
-"params": "",
-"result": "1 Energy Carac",
-"file": "D:\\Tan\\AZ96-13 HI\\AZ96-13 E3J2 Done",
-"notes": "02:48–02:48 · 1 file",
-"by": "Tan",
-"_id": "scan-32f93328f7"
-},
-{
-"date": "2026-10-05",
-"project": "sd",
-"device": "VB01 EN H5 J2",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "9 RF maps · 1 Energy Carac",
-"file": "D:\\Tan\\VB01-EN",
-"notes": "01:28–23:51 · 10 files",
-"by": "Tan",
-"_id": "scan-421c506b75"
-},
-{
-"date": "2026-06-22",
-"project": "sd",
-"device": "AZ96-13 HI I5 J4",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "2 RF maps · 1 Energy Carac · 1 R–H",
-"file": "D:\\Tan\\AZ96-13 HI",
-"notes": "10:15–21:48 · 4 files",
-"by": "Tan",
-"_id": "scan-7eb0a36529"
-},
-{
-"date": "2026-10-02",
-"project": "sd",
-"device": "VB01 EN H5 J2",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "1 RF map",
-"file": "D:\\Tan\\VB01-EN\\H5J2",
-"notes": "12:04–12:04 · 1 file",
-"by": "Tan",
-"_id": "scan-c45b195d63"
-},
-{
-"date": "2026-06-30",
-"project": "sd",
-"device": "AZ96-13 DI I5 J4",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 80–100° (5) · f 0.025–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "1 Energy Carac · 1 RF map",
-"file": "D:\\Tan\\AZ96-13 DI\\I5J4",
-"notes": "01:06–11:53 · 2 files",
-"by": "Tan",
-"_id": "scan-863f1bce27"
-},
-{
-"date": "2026-09-25",
-"project": "sd",
-"device": "VB01 DM A2 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "1 RF map",
-"file": "D:\\Tan\\VB01-EN\\A2J1",
-"notes": "14:41–14:41 · 1 file",
-"by": "Tan",
-"_id": "scan-812964e57b"
-},
-{
-"date": "2025-03-11",
-"project": "sd",
-"device": "Energy test · TEST2",
-"setup": "",
-"params": "",
-"result": "1 Energy Carac",
-"file": "D:\\Tan\\Energy_Experiments_test\\TEST2",
-"notes": "13:59–13:59 · 1 file",
-"by": "Tan",
-"_id": "scan-d2684b38b2"
-},
-{
-"date": "2026-06-23",
-"project": "sd",
-"device": "AZ96-13 HI I5 J4",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.025–5 GHz (100 pts) · 200 H pts",
-"result": "1 R–H · 1 Energy Carac · 1 RF map",
-"file": "D:\\Tan\\AZ96-13 HI",
-"notes": "11:58–16:03 · 3 files",
-"by": "Tan",
-"_id": "scan-f5b062c99a"
-},
-{
-"date": "2026-06-19",
-"project": "sd",
-"device": "AZ96-13 HI G4 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (100 pts) · 100 H pts",
-"result": "13 RF maps · 1 Energy Carac · 1 R–H",
-"file": "D:\\Tan\\AZ96-13 HI\\AZ96-13 HI G4J1",
-"notes": "11:09–17:41 · 15 files",
-"by": "Tan",
-"_id": "scan-4c6a2a4621"
-},
-{
-"date": "2025-03-06",
-"project": "sd",
-"device": "Energy test · TEST2",
-"setup": "magnet 1B240, SMF100A, Keithley 7510, Yokogawa GS200",
-"params": "f 0.1–0.8 GHz (100 pts) · 199 H pts",
-"result": "30 Energy Carac",
-"file": "D:\\Tan\\Energy_Experiments_test\\TEST2",
-"notes": "00:58–16:04 · 30 files",
-"by": "Tan",
-"_id": "scan-b1f6e61524"
-},
-{
-"date": "2025-04-07",
-"project": "sd",
-"device": "HG D2 J2",
-"setup": "rotator, Keithley 7510, Yokogawa GS200",
-"params": "199 H pts",
-"result": "2 H/angle alignments",
-"file": "D:\\Tan\\HG_D2J2",
-"notes": "15:02–15:02 · 2 files",
-"by": "Tan",
-"_id": "scan-3a9a160f39"
-},
-{
-"date": "2025-02-27",
-"project": "sd",
-"device": "HG E2 J1",
-"setup": "rotator, Keithley 7510, Yokogawa GS200",
-"params": "99 H pts",
-"result": "14 H/angle alignments",
-"file": "D:\\Tan\\HG_E2J1",
-"notes": "14:15–14:53 · 14 files",
-"by": "Tan",
-"_id": "scan-8d67f213f4"
-},
-{
-"date": "2026-06-24",
-"project": "sd",
-"device": "AZ96-13 HI H4 J3",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–0.5 GHz (100 pts) · P 0.001–0.1 mW (3) · 4 H pts",
-"result": "6 RF maps",
-"file": "D:\\Tan\\AZ96-13 HI\\AZ96-13 HI H4J3 Done",
-"notes": "10:22–23:17 · 6 files",
-"by": "Tan",
-"_id": "scan-ac07d4345f"
-},
-{
-"date": "2026-09-25",
-"project": "sd",
-"device": "VB01 EN A2 J1",
-"setup": "",
-"params": "",
-"result": "1 Energy Carac",
-"file": "D:\\Tan\\VB01-EN\\A2J1",
-"notes": "17:26–17:26 · 1 file",
-"by": "Tan",
-"_id": "scan-89fe07b48f"
-},
-{
-"date": "2026-06-27",
-"project": "sd",
-"device": "AZ96-13 DI F4 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 80–100° (5) · f 0.025–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "1 RF map",
-"file": "D:\\Tan\\AZ96-13 DI\\F4J1",
-"notes": "14:11–14:11 · 1 file",
-"by": "Tan",
-"_id": "scan-b00ba80646"
-},
-{
-"date": "2026-09-25",
-"project": "sd",
-"device": "VB01 DM G5 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "2 R–H",
-"file": "D:\\Tan\\VB01-EN\\A2J1",
-"notes": "14:34–14:38 · 2 files",
-"by": "Tan",
-"_id": "scan-8992ae1879"
-},
-{
-"date": "2026-09-23",
-"project": "sd",
-"device": "VB01 DM E3 J2",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "2 R–H · 1 RF map",
-"file": "D:\\Tan\\VB01-DM\\E3J2",
-"notes": "16:36–16:53 · 3 files",
-"by": "Tan",
-"_id": "scan-feacac06d5"
-},
-{
-"date": "2026-06-18",
-"project": "sd",
-"device": "AZ96-13 HI G4 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (200 pts) · P 0.001005–0.1005 mW (3) · 200 H pts",
-"result": "18 RF maps",
-"file": "D:\\Tan\\AZ96-13 HI\\AZ96-13 HI G4J1",
-"notes": "10:13–17:44 · 18 files",
-"by": "Tan",
-"_id": "scan-357758a268"
-},
-{
-"date": "2026-06-29",
-"project": "sd",
-"device": "AZ96-13 DI F4 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "1 Energy Carac · 1 RF map",
-"file": "D:\\Tan\\AZ96-13 DI\\F4J1",
-"notes": "11:15–12:44 · 2 files",
-"by": "Tan",
-"_id": "scan-e52ac6d18d"
-},
-{
-"date": "2026-07-03",
-"project": "sd",
-"device": "AZ96-13 HM F3 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "3 R–H · 2 RF maps",
-"file": "D:\\Tan\\AZ96-13 HM\\F3J1",
-"notes": "12:01–14:40 · 5 files",
-"by": "Tan",
-"_id": "scan-5ebb42bedc"
-},
-{
-"date": "2026-07-08",
-"project": "sd",
-"device": "AZ96-13 HM E4 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 86–94° (3) · f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "1 Energy Carac · 1 RF map",
-"file": "D:\\Tan\\AZ96-13 HM\\E4J1",
-"notes": "10:36–12:50 · 2 files",
-"by": "Tan",
-"_id": "scan-a0806ea51f"
-},
-{
-"date": "2025-03-11",
-"project": "sd",
-"device": "Energy test · TEST",
-"setup": "magnet 1B240, SMF100A, Keithley 7510, Yokogawa GS200",
-"params": "f 0.1–0.8 GHz (5 pts) · P 0.0001–0.01 mW (3) · 9 H pts",
-"result": "28 Energy Carac",
-"file": "D:\\Tan\\Energy_Experiments_test\\TEST",
-"notes": "14:06–15:34 · 28 files",
-"by": "Tan",
-"_id": "scan-417cbbb643"
-},
-{
-"date": "2026-11-12",
-"project": "sd",
-"device": "VB01-23 whole wafer (20 910 Veeco R–H loops)",
-"setup": "Lab PC (RF energy setup) · Veeco data from Sujit Panigrahy",
-"params": "veeco_rh v2 (fixed width, squareness in the FL window, θ0 with R_s = 263 Ω subtracted per branch, new classes)",
-"result": "OOP 5067 · soft OOP 2373 · in-plane 2613 · soft in-plane 1432 · RL flip 2236 · step 1148 · 'easy cone' 191 · bad 5674. OOP → in-plane transition at wafer columns I–K (rows C–J), ~18.4 Å; rows A–B and K–M stay OOP. No true easy-cone: the 191 are the tail of a continuous hysteresis peak at column I. θ0 = arccos(H_off/μ0M_eff) fits with r = 0.84 on 3452 S-shaped devices. 774 devices with θ0 60–80° (columns K–O); 384 meet the R–H criteria, 28 of them on EN/DM.",
-"file": "D:/veeco_out/features.csv, die_summary.csv; D:/veeco_figs",
-"notes": "Analysis of Veeco data, not an RF measurement. Lists: VB01-23_RH_selected.csv, VB01-23_theta60-80_devices.csv.",
-"by": "Tan",
-"_id": "chat-20261112-veeco-fullwafer"
-},
-{
-"date": "2025-03-06",
-"project": "sd",
-"device": "HG D2 J2",
-"setup": "rotator, Keithley 7510, Yokogawa GS200",
-"params": "99 H pts",
-"result": "6 H/angle alignments",
-"file": "D:\\Tan\\HG_D2J2",
-"notes": "11:30–12:09 · 6 files",
-"by": "Tan",
-"_id": "scan-34b45ad623"
-},
-{
-"date": "2026-10-04",
-"project": "sd",
-"device": "VB01 EN H5 J2",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "6 RF maps",
-"file": "D:\\Tan\\VB01-EN\\H5J2",
-"notes": "03:21–23:52 · 6 files",
-"by": "Tan",
-"_id": "scan-2527f5608a"
-},
-{
-"date": "2025-02-10",
-"project": "sd",
-"device": "Energy_Experiments",
-"setup": "magnet 1B240, SMF100A, Keithley 7510, Yokogawa GS200",
-"params": "f 0.1–0.8 GHz (10 pts) · P 0.01–0.1 mW (2) · 5 H pts",
-"result": "4 Energy Carac",
-"file": "D:\\Tan\\Energy_Experiments",
-"notes": "17:53–18:02 · 4 files",
-"by": "Tan",
-"_id": "scan-ec38b17621"
-},
-{
-"date": "2025-02-28",
-"project": "sd",
-"device": "HG D1 J1",
-"setup": "rotator, Keithley 7510, Yokogawa GS200",
-"params": "99 H pts",
-"result": "24 H/angle alignments",
-"file": "D:\\Tan\\HG_D1J1",
-"notes": "13:33–14:13 · 24 files",
-"by": "Tan",
-"_id": "scan-f509c8395b"
-},
-{
-"date": "2025-02-28",
-"project": "sd",
-"device": "HG D2 J2",
-"setup": "rotator, Keithley 7510, Yokogawa GS200",
-"params": "99 H pts",
-"result": "2 H/angle alignments",
-"file": "D:\\Tan\\HG_D2J2",
-"notes": "14:17–14:17 · 2 files",
-"by": "Tan",
-"_id": "scan-6d4f6cf018"
-},
-{
-"date": "2026-06-29",
-"project": "sd",
-"device": "AZ96-13 DI I5 J4",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (100 pts) · 100 H pts",
-"result": "5 R–H · 2 RF maps",
-"file": "D:\\Tan\\AZ96-13 DI\\I5J4",
-"notes": "14:53–15:45 · 7 files",
-"by": "Tan",
-"_id": "scan-80511073eb"
-},
-{
-"date": "2026-11-10",
-"project": "sd",
-"device": "VB01 EN I4 J3",
-"setup": "E8257D (GPIB 19), atten −6 dB, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–20 GHz (399 pts, step 50 MHz) · source P +1 dBm (−5 dBm at device) · H ±500 mT step 10 mT, loop · wait 10 ms",
-"result": "R 1493–2544 Ω, TMR 70 % (θ = 0). In-plane free layer: smooth R(H), no hysteresis with in-plane field. H = 0: −2.0 mV at 0.75 GHz (↑) / −1.5 mV (↓), ℜI_abs ≈ 29–33 mA/W. Resonance max −3.8 to −5.3 mV at 0.35–1.9 GHz, |H| ≤ 40 mT, all four angles. No signal above 10 GHz (≤ 0.02 mV). Background +0.4 mV below 2 GHz.",
-"file": "D:\\Tan\\VB01-EN\\G3J4\\VB01_G3_J4_RF_2026-11-10_11-49-08.nc",
-"notes": "11:49 → ~17:30 (5.7 h). The device is I4 J3 (110 nm); file and folder are named G3J4 by a GUI typo. Compared with A5 J2 (both in-plane). H = 0 signal differs between ↑/↓ branches at equal R.",
-"by": "Tan",
-"_id": "chat-20261110-EN-G3J4"
-},
-{
-"date": "2026-09-21",
-"project": "sd",
-"device": "VB01 DM H2 J3",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "2 RF maps · 1 R–H",
-"file": "D:\\Tan\\VB01-DM\\H2J3",
-"notes": "18:08–23:09 · 3 files",
-"by": "Tan",
-"_id": "scan-aa77654c61"
-},
-{
-"date": "2025-02-26",
-"project": "sd",
-"device": "HG F3 J1",
-"setup": "rotator, Keithley 7510, Yokogawa GS200",
-"params": "39 H pts",
-"result": "29 H/angle alignments",
-"file": "D:\\Tan\\HG_F3J1",
-"notes": "17:14–18:10 · 29 files",
-"by": "Tan",
-"_id": "scan-efe86a1607"
-},
-{
-"date": "2025-03-21",
-"project": "sd",
-"device": "HG D2 J2",
-"setup": "rotator, Keithley 7510, Yokogawa GS200",
-"params": "19 H pts",
-"result": "2 H/angle alignments",
-"file": "D:\\Tan\\HG_D2J2",
-"notes": "18:10–18:10 · 2 files",
-"by": "Tan",
-"_id": "scan-d58f941e5d"
-},
-{
-"date": "2026-06-26",
-"project": "sd",
-"device": "AZ96-13 HI G3 J4",
-"setup": "",
-"params": "",
-"result": "1 Energy Carac",
-"file": "D:\\Tan\\AZ96-13 HI\\G3J4 Done",
-"notes": "04:14–04:14 · 1 file",
-"by": "Tan",
-"_id": "scan-92b834ab38"
-},
-{
-"date": "2026-06-25",
-"project": "sd",
-"device": "AZ96-13 HI G3 J4",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.025–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "2 RF maps · 2 R–H",
-"file": "D:\\Tan\\AZ96-13 HI\\G3J4 Done",
-"notes": "14:40–23:10 · 4 files",
-"by": "Tan",
-"_id": "scan-a02226dc9b"
-},
-{
-"date": "2026-06-19",
-"project": "sd",
-"device": "AZ96-13 HI I5 J4",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (100 pts) · 200 H pts",
-"result": "19 R–H · 3 RF maps",
-"file": "D:\\Tan\\AZ96-13 HI\\AZ96-13 HI I5J4 Done",
-"notes": "16:56–23:51 · 22 files",
-"by": "Tan",
-"_id": "scan-58964286db"
-},
-{
-"date": "2026-06-23",
-"project": "sd",
-"device": "AZ96-13 HI E3 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (100 pts) · 98 H pts",
-"result": "3 R–H · 1 Energy Carac",
-"file": "D:\\Tan\\AZ96-13 HI\\AZ96-13 E3J1",
-"notes": "16:30–16:37 · 4 files",
-"by": "Tan",
-"_id": "scan-990c8d7acf"
-},
-{
-"date": "2026-06-23",
-"project": "sd",
-"device": "AZ96-13 HI H4 J3",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (100 pts) · 98 H pts",
-"result": "4 R–H · 1 Energy Carac",
-"file": "D:\\Tan\\AZ96-13 HI\\AZ96-13 H4J3",
-"notes": "16:48–17:03 · 5 files",
-"by": "Tan",
-"_id": "scan-898a17a24c"
-},
-{
-"date": "2025-03-10",
-"project": "sd",
-"device": "Energy test · TEST2",
-"setup": "magnet 1B240, SMF100A, Keithley 7510, Yokogawa GS200",
-"params": "",
-"result": "96 Energy Carac",
-"file": "D:\\Tan\\Energy_Experiments_test\\TEST2",
-"notes": "10:32–17:59 · 96 files",
-"by": "Tan",
-"_id": "scan-c1f2350c08"
-},
-{
-"date": "2026-09-29",
-"project": "sd",
-"device": "VB01 EN H5 J2",
-"setup": "Keithley 7510, Lakeshore 455, magnet 1B240, SSG-6000RC",
-"params": "f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "3 RF maps",
-"file": "D:\\Tan\\VB01-EN\\H5J2",
-"notes": "14:25–18:04 · 3 files",
-"by": "Tan",
-"_id": "scan-890a1b7cef"
-},
-{
-"date": "2025-03-05",
-"project": "sd",
-"device": "Energy test · TEST2",
-"setup": "magnet 1B240, SMF100A, Keithley 7510, Yokogawa GS200",
-"params": "f 0.3–0.5 GHz (50 pts) · P 0.0001–0.01 mW (3) · 99 H pts",
-"result": "125 Energy Carac",
-"file": "D:\\Tan\\Energy_Experiments_test\\TEST2",
-"notes": "11:47–22:25 · 125 files",
-"by": "Tan",
-"_id": "scan-847343d636"
-},
-{
-"date": "2025-03-17",
-"project": "sd",
-"device": "HG D2 J2",
-"setup": "rotator, Keithley 7510, Yokogawa GS200",
-"params": "19 H pts",
-"result": "4 H/angle alignments",
-"file": "D:\\Tan\\HG_D2J2",
-"notes": "17:02–17:04 · 4 files",
-"by": "Tan",
-"_id": "scan-35830c7d60"
-},
-{
-"date": "2026-06-23",
-"project": "sd",
-"device": "AZ96-13 HI E3 J3",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "3 RF maps · 1 R–H",
-"file": "D:\\Tan\\AZ96-13 HI\\AZ96-13 E3J2 Done",
-"notes": "17:04–17:13 · 4 files",
-"by": "Tan",
-"_id": "scan-fd5b422a64"
-},
-{
-"date": "2026-09-24",
-"project": "sd",
-"device": "VB01 DM E3 J2",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 280 H pts",
-"result": "1 Energy Carac · 1 RF map · 1 R–H",
-"file": "D:\\Tan\\VB01-DM\\E3J2",
-"notes": "00:20–11:56 · 3 files",
-"by": "Tan",
-"_id": "scan-6c8f297a8b"
-},
-{
-"date": "2025-02-27",
-"project": "sd",
-"device": "HG F3 J1",
-"setup": "rotator, Keithley 7510, Yokogawa GS200",
-"params": "99 H pts",
-"result": "36 H/angle alignments",
-"file": "D:\\Tan\\HG_F3J1",
-"notes": "11:31–14:11 · 36 files",
-"by": "Tan",
-"_id": "scan-437440f01b"
-},
-{
-"date": "2026-06-26",
-"project": "sd",
-"device": "AZ96-13 DI F4 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (100 pts) · 200 H pts",
-"result": "11 R–H · 3 RF maps",
-"file": "D:\\Tan\\AZ96-13 DI\\F4J1",
-"notes": "11:22–14:16 · 14 files",
-"by": "Tan",
-"_id": "scan-d8523c1928"
-},
-{
-"date": "2025-03-04",
-"project": "sd",
-"device": "Energy test · TEST2",
-"setup": "magnet 1B240, SMF100A, Keithley 7510, Yokogawa GS200",
-"params": "f 0.1–0.8 GHz (50 pts) · 99 H pts",
-"result": "22 Energy Carac",
-"file": "D:\\Tan\\Energy_Experiments_test\\TEST2",
-"notes": "11:14–19:05 · 22 files",
-"by": "Tan",
-"_id": "scan-754f47054b"
-},
-{
-"date": "2026-06-23",
-"project": "sd",
-"device": "AZ96-13 HI I4 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (100 pts) · 98 H pts",
-"result": "1 Energy Carac · 1 R–H",
-"file": "D:\\Tan\\AZ96-13 HI\\AZ96-13 I4J1",
-"notes": "16:27–16:28 · 2 files",
-"by": "Tan",
-"_id": "scan-16718bf9b3"
-},
-{
-"date": "2026-11-10",
-"project": "sd",
-"device": "VB01 EN A5 J2",
-"setup": "E8257D (GPIB 19), atten −6 dB, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–10 GHz (199 pts, step 50 MHz) · source P +1 dBm (−5 dBm at device) · H ±500 mT step 10 mT, loop · wait 10 ms",
-"result": "R 2000–3511 Ω, TMR 76 % (θ = 0). In-plane free layer, but with in-plane field (θ = 90°) a hysteretic ~−5 % R dip for |H| < 30 mT (possibly slightly out of plane at remanence). H = 0: +1.6 mV at 2.55 GHz (↑) / +1.1 mV at 1.0 GHz (↓), ℜI_abs ≈ 21–27 mA/W. Resonance max +5.6 mV at 1.75 GHz, +70 mT, only at θ = 0; θ = 30–90°: 1.4–2.4 mV. Background −0.8 mV below 1 GHz.",
-"file": "D:\\Tan\\VB01-EN\\A5J2\\VB01_A5_J2_RF_2026-11-10_17-49-15.nc",
-"notes": "17:49 → ~21:17 (3.5 h). Compared with I4 J3. Sign of V_dc and background opposite to I4 J3.",
-"by": "Tan",
-"_id": "chat-20261110-EN-A5J2"
-},
-{
-"date": "2026-07-02",
-"project": "sd",
-"device": "AZ96-13 HM F3 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 98–110° (7) · f 0.025–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "2 RF maps",
-"file": "D:\\Tan\\AZ96-13 HM\\F3J1",
-"notes": "01:01–21:58 · 2 files",
-"by": "Tan",
-"_id": "scan-3b2727cd77"
-},
-{
-"date": "2026-07-07",
-"project": "sd",
-"device": "AZ96-13 HM E4 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "4 R–H · 2 RF maps",
-"file": "D:\\Tan\\AZ96-13 HM\\E4J1",
-"notes": "16:26–21:37 · 6 files",
-"by": "Tan",
-"_id": "scan-568201ff13"
-},
-{
-"date": "2026-07-07",
-"project": "sd",
-"device": "AZ96-13 HM F3 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "7 R–H · 3 RF maps · 1 Energy Carac",
-"file": "D:\\Tan\\AZ96-13 HM\\F3J1",
-"notes": "00:43–15:05 · 11 files",
-"by": "Tan",
-"_id": "scan-6be5b2b1d2"
-},
-{
-"date": "2025-03-07",
-"project": "sd",
-"device": "Energy test · TEST2",
-"setup": "magnet 1B240, SMF100A, Keithley 7510, Yokogawa GS200",
-"params": "",
-"result": "3 Energy Carac",
-"file": "D:\\Tan\\Energy_Experiments_test\\TEST2",
-"notes": "11:04–11:05 · 3 files",
-"by": "Tan",
-"_id": "scan-5544c76656"
-},
-{
-"date": "2025-02-28",
-"project": "sd",
-"device": "Energy test · TEST2",
-"setup": "magnet 1B240, SMF100A, Keithley 7510, Yokogawa GS200",
-"params": "f 0.1–0.8 GHz (10 pts) · 19 H pts",
-"result": "6 Energy Carac",
-"file": "D:\\Tan\\Energy_Experiments_test\\TEST2",
-"notes": "14:29–17:17 · 6 files",
-"by": "Tan",
-"_id": "scan-2be733a098"
-},
-{
-"date": "2026-07-08",
-"project": "sd",
-"device": "AZ96-13 HM E5 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "3 R–H · 1 Energy Carac · 1 RF map",
-"file": "D:\\Tan\\AZ96-13 HM\\E5J1",
-"notes": "13:27–16:24 · 5 files",
-"by": "Tan",
-"_id": "scan-5f994ce3e8"
-},
-{
-"date": "2026-10-06",
-"project": "sd",
-"device": "VB01 EN H5 J2",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "2 RF maps · 1 Energy Carac",
-"file": "D:\\Tan\\VB01-EN\\H5J2\\-200 to 200",
-"notes": "02:03–06:05 · 3 files",
-"by": "Tan",
-"_id": "scan-117de2fb78"
-},
-{
-"date": "2026-06-30",
-"project": "sd",
-"device": "AZ96-13 DI G3 J2",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.025–5 GHz (100 pts) · P 0.001–0.1 mW (3) · 200 H pts",
-"result": "10 R–H · 1 Energy Carac · 1 RF map",
-"file": "D:\\Tan\\AZ96-13 DI\\G3J2",
-"notes": "12:00–16:11 · 12 files",
-"by": "Tan",
-"_id": "scan-c93de8f59f"
-},
-{
-"date": "2025-02-28",
-"project": "sd",
-"device": "HG E2 J1",
-"setup": "rotator, Keithley 7510, Yokogawa GS200",
-"params": "99 H pts",
-"result": "52 H/angle alignments",
-"file": "D:\\Tan\\HG_E2J1",
-"notes": "10:17–13:29 · 52 files",
-"by": "Tan",
-"_id": "scan-26da5aef3c"
-},
-{
-"date": "2025-02-20",
-"project": "sd",
-"device": "Energy test · original",
-"setup": "magnet 1B240, SMF100A, Keithley 7510, Yokogawa GS200",
-"params": "f 0.1–0.8 GHz (10 pts) · P 0.01–0.1 mW (2) · 9 H pts",
-"result": "6 Energy Carac",
-"file": "D:\\Tan\\Energy_Experiments_test",
-"notes": "16:55–18:27 · 6 files",
-"by": "Tan",
-"_id": "scan-4d5bfaaa60"
-},
-{
-"date": "2026-09-29",
-"project": "sd",
-"device": "VB01 EN I4 J2",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 200 H pts",
-"result": "1 Energy Carac · 1 RF map · 1 R–H",
-"file": "D:\\Tan\\VB01-EN\\I4J2",
-"notes": "10:43–13:41 · 3 files",
-"by": "Tan",
-"_id": "scan-7c6aadd0c1"
-},
-{
-"date": "2026-09-24",
-"project": "sd",
-"device": "VB01 DM G5 J1",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "angle 0–90° (4) · f 0.1–5 GHz (100 pts) · 280 H pts",
-"result": "1 Energy Carac · 1 RF map",
-"file": "D:\\Tan\\VB01-DM\\G5J1",
-"notes": "17:58–21:33 · 2 files",
-"by": "Tan",
-"_id": "scan-2f084a9a16"
-},
-{
-"date": "2026-06-30",
-"project": "sd",
-"device": "AZ96-13 HM E3 J2",
-"setup": "SSG-6000RC, Keithley 7510, Lakeshore 455, magnet 1B240",
-"params": "f 0.025–5 GHz (100 pts) · 40 H pts",
-"result": "3 R–H · 1 Energy Carac · 1 RF map",
-"file": "D:\\Tan\\AZ96-13 HM\\E3J2",
-"notes": "17:22–17:37 · 5 files",
-"by": "Tan",
-"_id": "scan-46877f5806"
-}
-],
-"meetings": []
+ "updated": "2026-11-20",
+ "config": {
+  "root": "https://sdrive.cnrs.fr/f/631214272",
+  "samples": "https://sdrive.cnrs.fr/f/631214277",
+  "meas": "https://sdrive.cnrs.fr/f/631214310",
+  "ep": "https://sdrive.cnrs.fr/f/631214315",
+  "stvo": "https://sdrive.cnrs.fr/f/631214325",
+  "sd": "https://sdrive.cnrs.fr/f/631214329",
+  "floq": "https://sdrive.cnrs.fr/f/631214341",
+  "meet": "https://sdrive.cnrs.fr/f/631214346",
+  "papers": "https://sdrive.cnrs.fr/f/631214356",
+  "prb": "https://sdrive.cnrs.fr/f/631214366",
+  "code": "https://sdrive.cnrs.fr/f/631214374"
+ },
+ "projects": [
+  {
+   "order": 3,
+   "key": "sd",
+   "name": "Spin-diode · RF harvesting",
+   "stage": "Device selection",
+   "title": "MTJ spin-diode rectification for RF energy harvesting",
+   "summary": "Rectified voltage of pMTJs from SPINTEC wafer VB01-23 (FeCoB free-layer and polarizer wedges). Device selection from whole-wafer Veeco R–H data, focusing on canted devices and high TMR.",
+   "facts": [
+    "RF source changed in Nov 2026 from MiniCircuits SSG-6000RC to Agilent E8257D (20 GHz)",
+    "−6 dB attenuator between source and device: power at device = set power − 6 dB",
+    "Devices have a field line on top",
+    "Ursula is interested in broadband rectification"
+   ],
+   "next": [
+    "Spin-diode signal vs RF power: separate the resonant and the magnetic contributions",
+    "Quick R–H and H = 0 spectra on the priority devices of dies EN and DM",
+    "Consider re-injecting the STNO output into the device to raise V_rect"
+   ],
+   "drive": "https://sdrive.cnrs.fr/f/631214329",
+   "samples": [
+    "vb-en",
+    "vb-dm"
+   ],
+   "_id": "sd"
+  },
+  {
+   "order": 1,
+   "key": "ep",
+   "name": "EP encirclement",
+   "stage": "Writing",
+   "title": "Multi-turn EP encirclement in coupled STVOs (PRB)",
+   "summary": "Encircling exceptional points in a pair of coupled vortex STNOs: full range of gains, different encirclement loops, and amplitude death at high gain. Mostly experimental; extends Ho et al., Newton 2026 and Wittrock et al., Nat. Commun. 2024 with the same samples and theory.",
+   "facts": [
+    "EP mapping vs gain recorded on the combined output of both STVOs",
+    "Encirclement loops recorded with STVO A and STVO B read out separately (STNO1 = STVO A output, STNO2 = STVO B output; one device pair)",
+    "STVO A is the fixed oscillator (biased in C-state)",
+    "Gain dependence: four gains in the C-state configuration plus one C-state loop at lower gain; field 435 mT"
+   ],
+   "next": [
+    "Measure the C-state EP loops (2CW and CW+CCW around one EP)",
+    "Replace mock figures with real data on Overleaf",
+    "Send the draft to Vincent and Romain"
+   ],
+   "drive": "https://sdrive.cnrs.fr/f/631214315",
+   "paper": "https://sdrive.cnrs.fr/f/631214366",
+   "samples": [
+    "et12571t-4"
+   ],
+   "_id": "ep"
+  },
+  {
+   "order": 4,
+   "key": "floq",
+   "name": "Floquet",
+   "stage": "Running",
+   "title": "Floquet drive on coupled STNOs",
+   "summary": "RF drive (SMB100B) on coupled STNOs, proposed by Romain. Goal: observe the same Floquet behaviour in both the crossing and the anticrossing regime.",
+   "facts": [
+    "Related to the EP encirclement work",
+    "Phase-controlled rectangular loop trajectories"
+   ],
+   "next": [
+    "Compare crossing and anticrossing regimes under the same drive"
+   ],
+   "drive": "https://sdrive.cnrs.fr/f/631214341",
+   "samples": [
+    "et12571t-4"
+   ],
+   "_id": "floq"
+  },
+  {
+   "order": 2,
+   "key": "stvo",
+   "name": "STVO array",
+   "stage": "Starting measurements",
+   "title": "Dipolar-coupled STVO arrays (Tristan da Câmara, UCLouvain / INL)",
+   "summary": "Four array samples received 06/11/2026. Goals: prove genuine locking, measure RF emission, and measure the Py-capped samples.",
+   "facts": [
+    "S1: no Py, common contact · S2, S3: 10 nm Py cap · S4: no Py, separate contacts",
+    "None of S1–S4 has been measured before; Tristan's INL results are on another die",
+    "Measurement workbook STVO_array_Tristan_die_map.xlsx is kept in the sDrive “Spin Diode” folder"
+   ],
+   "next": [
+    "Start with the close pairs on S1 (per Vincent)",
+    "First device: N5 on S1, wire-bonded 16/11/2026",
+    "Limit current and protect against ESD: many INL devices died during spin-diode measurements"
+   ],
+   "drive": "https://sdrive.cnrs.fr/f/631214325",
+   "samples": [
+    "stvo-s1",
+    "stvo-s2",
+    "stvo-s3",
+    "stvo-s4",
+    "stvo-inl"
+   ],
+   "_id": "stvo"
+  }
+ ],
+ "samples": [
+  {
+   "order": 8,
+   "project": "sd",
+   "name": "VB01-23 · die DM",
+   "subtitle": "Wafer row D (polarizer wedge) · column M (free-layer wedge, thick side)",
+   "info": [
+    {
+     "k": "Wafer",
+     "v": "VB01-23 · pMTJ · SPINTEC"
+    },
+    {
+     "k": "Stack",
+     "v": "15 Ta / 5 Pt / [0.5 Co/0.25 Pt]×6 / 0.5 Co / 0.9 Ru / [0.5 Co/0.25 Pt]×2 / 0.5 Co / 0.25 W / 0.8 FeCoB / 1.2 FeCoB wedge / MgO / 1.0 FeCoB / 1.5 FeCoB"
+    },
+    {
+     "k": "Wedges",
+     "v": "polarizer FeCoB 11.3–17.3 Å · free layer FeCoB 14–21.5 Å; OOP → in-plane transition at wafer columns I–K"
+    },
+    {
+     "k": "Chip",
+     "v": "RAM4: rows A–I, columns 1–6, 4 junctions per cell (J1–J4) · device = row+column_junction (e.g. I4_J3)"
+    },
+    {
+     "k": "Diameters",
+     "v": "column 1 = 50 · 2 = 70 · 3 = 90 · 4 = 110 · 5 = 130 · 6 = 90 nm"
+    },
+    {
+     "k": "Series R",
+     "v": "R_s = 263 Ω (bottom electrode) · TMR_corr = (Rmax − Rmin)/(Rmin − R_s)"
+    },
+    {
+     "k": "Wafer test",
+     "v": "Veeco full-wafer R–H, Sujit Panigrahy (CEA), 08/03/2026: 75 % good, 24 % open (mostly Ø50)"
+    },
+    {
+     "k": "Classes (v2)",
+     "v": "135 devices: in-plane 63 · low TMR 36 · soft in-plane 28 · unstable 4 · RL flip 2 · step 1 · short 1"
+    },
+    {
+     "k": "Meets R–H criteria",
+     "v": "13 devices"
+    },
+    {
+     "k": "Priority",
+     "v": "G5_J1, E3_J3, H4_J4, I5_J3, G5_J4, B3_J2"
+    }
+   ],
+   "total": 135,
+   "counts": {
+    "untested": 134,
+    "short": 1
+   },
+   "drive": "https://sdrive.cnrs.fr/f/631214303",
+   "_id": "vb-dm"
+  },
+  {
+   "order": 3,
+   "project": "stvo",
+   "name": "STVO array · S2",
+   "subtitle": "10 nm Py cap · common contact",
+   "info": [
+    {
+     "k": "Layout",
+     "v": "15 × 15, columns A–O, rows 1–15, common contact · device = column + row (e.g. H8)"
+    },
+    {
+     "k": "Diameters",
+     "v": "A/F/K 100 · B/G/L 200 · C/H/M 300 · D/I/N 400 · E/J/O 500 nm · vortex only at 300–500 nm (100–200 nm are C-state, not measured)"
+    },
+    {
+     "k": "Source",
+     "v": "Tristan da Câmara (UCLouvain / INL) · received 06/11/2026"
+    },
+    {
+     "k": "Stack",
+     "v": "…MnIr(8)/CoFe(2.2)/Ru(0.65)/CoFeB(2.6)/MgO(0.9)/CoFeB(2)/Ta(0.2)/NiFe(7)/Ta(5)/Ru(5)/TiW(30) · annealed 330 °C, 1 T, 2 h"
+    },
+    {
+     "k": "Resistance",
+     "v": "R ≈ 100 to a few hundred Ω (shorted STVOs 30–50 Ω) · TMR 100–115 % · RA 25–35 Ω·µm²"
+    },
+    {
+     "k": "Classification",
+     "v": "short if R < 50 Ω · open if R > 2 kΩ"
+    },
+    {
+     "k": "Py",
+     "v": "simulations predict ×3 coupling range; not measured yet (Jack Gartside working on it)"
+    }
+   ],
+   "total": 135,
+   "counts": {
+    "untested": 135
+   },
+   "drive": "https://sdrive.cnrs.fr/f/631214297",
+   "_id": "stvo-s2"
+  },
+  {
+   "order": 7,
+   "project": "sd",
+   "name": "VB01-23 · die EN",
+   "subtitle": "Wafer row E (polarizer wedge) · column N (free-layer wedge, thick side: many in-plane)",
+   "info": [
+    {
+     "k": "Wafer",
+     "v": "VB01-23 · pMTJ · SPINTEC"
+    },
+    {
+     "k": "Stack",
+     "v": "15 Ta / 5 Pt / [0.5 Co/0.25 Pt]×6 / 0.5 Co / 0.9 Ru / [0.5 Co/0.25 Pt]×2 / 0.5 Co / 0.25 W / 0.8 FeCoB / 1.2 FeCoB wedge / MgO / 1.0 FeCoB / 1.5 FeCoB"
+    },
+    {
+     "k": "Wedges",
+     "v": "polarizer FeCoB 11.3–17.3 Å · free layer FeCoB 14–21.5 Å; OOP → in-plane transition at wafer columns I–K"
+    },
+    {
+     "k": "Chip",
+     "v": "RAM4: rows A–I, columns 1–6, 4 junctions per cell (J1–J4) · device = row+column_junction (e.g. I4_J3)"
+    },
+    {
+     "k": "Diameters",
+     "v": "column 1 = 50 · 2 = 70 · 3 = 90 · 4 = 110 · 5 = 130 · 6 = 90 nm"
+    },
+    {
+     "k": "Series R",
+     "v": "R_s = 263 Ω (bottom electrode) · TMR_corr = (Rmax − Rmin)/(Rmin − R_s)"
+    },
+    {
+     "k": "Wafer test",
+     "v": "Veeco full-wafer R–H, Sujit Panigrahy (CEA), 08/03/2026: 75 % good, 24 % open (mostly Ø50)"
+    },
+    {
+     "k": "Classes (v2)",
+     "v": "132 devices: in-plane 61 · low TMR 49 · unstable 9 · soft in-plane 7 · RL flip 3 · short 2 · open 1"
+    },
+    {
+     "k": "Meets R–H criteria",
+     "v": "15 devices (S-shape, TMR_corr ≥ 75 %, θ0 50–72°, Hc < 60 Oe, R 0.8–3 kΩ)"
+    },
+    {
+     "k": "Priority",
+     "v": "G3_J3, G5_J4, I5_J3, G4_J2, I4_J3, G4_J4"
+    }
+   ],
+   "total": 132,
+   "counts": {
+    "alive": 5,
+    "untested": 118,
+    "short": 2,
+    "open": 1,
+    "dead": 5,
+    "measdead": 1
+   },
+   "drive": "https://sdrive.cnrs.fr/f/631214303",
+   "_id": "vb-en"
+  },
+  {
+   "order": 1,
+   "project": "ep",
+   "name": "ET12571T-#4",
+   "subtitle": "Chip for the EP experiment (coupled STVOs)",
+   "info": [
+    {
+     "k": "Source",
+     "v": "AIST (Japan)"
+    },
+    {
+     "k": "Layout",
+     "v": "one series per column: A 300 · B 350 · C 400 · D 500 nm (50 junctions each, 01–50); P, R, S, Q 600 nm (07–41)"
+    },
+    {
+     "k": "Map",
+     "v": "MR (%) and Rmin (Ω) printed on the paper map; crossed out = dead. Series B fully crossed out"
+    },
+    {
+     "k": "To check",
+     "v": "faint crosses on C40, C47, C49, D04, D10; most of column D suspected damaged, to re-measure"
+    }
+   ],
+   "total": 234,
+   "counts": {
+    "dead": 138,
+    "suspect": 41,
+    "measdead": 9,
+    "untested": 45,
+    "alive": 1
+   },
+   "drive": "https://sdrive.cnrs.fr/f/631214288",
+   "_id": "et12571t-4"
+  },
+  {
+   "order": 6,
+   "project": "stvo",
+   "name": "STVO array · INL die (reference)",
+   "subtitle": "Measured by Tristan at INL, 05/2026 — not at LAF",
+   "info": [
+    {
+     "k": "Measured",
+     "v": "C5, C6, H5, H6, H10, I6, M5 destroyed · H12, I5 low TMR · H13, H14 possibly alive"
+    },
+    {
+     "k": "Poster results",
+     "v": "C6 multistate (triangle) · H5 Arnold tongue · M5 multisite (pair)"
+    },
+    {
+     "k": "Jack",
+     "v": "C5 self-oscillates at a single frequency ~300–320 MHz (suspected synchronisation)"
+    },
+    {
+     "k": "Lesson",
+     "v": "devices die easily during spin-diode measurement → limit current, protect against ESD"
+    }
+   ],
+   "total": 11,
+   "counts": {
+    "measdead": 7,
+    "suspect": 2,
+    "untested": 2
+   },
+   "drive": "https://sdrive.cnrs.fr/f/631214297",
+   "_id": "stvo-inl"
+  },
+  {
+   "order": 5,
+   "project": "stvo",
+   "name": "STVO array · S4",
+   "subtitle": "No Py · separate contacts",
+   "info": [
+    {
+     "k": "Layout",
+     "v": "7 × 7, columns A–G, rows 8–14, all pillars 400 nm · rows 8–11 pairs, rows 12–14 triangles"
+    },
+    {
+     "k": "Spacing",
+     "v": "A–G = 150, 200, 300, 400, 500, 700 nm, 2 µm"
+    },
+    {
+     "k": "Contacts",
+     "v": "cap Ta 5 / Ru 5 / TiW 30 nm · top contact Ru 40 / Cr 10 / Au 150 nm · no SEM image yet"
+    },
+    {
+     "k": "Source",
+     "v": "Tristan da Câmara (UCLouvain / INL) · received 06/11/2026"
+    },
+    {
+     "k": "Stack",
+     "v": "…MnIr(8)/CoFe(2.2)/Ru(0.65)/CoFeB(2.6)/MgO(0.9)/CoFeB(2)/Ta(0.2)/NiFe(7)/Ta(5)/Ru(5)/TiW(30) · annealed 330 °C, 1 T, 2 h"
+    },
+    {
+     "k": "Resistance",
+     "v": "R ≈ 100 to a few hundred Ω (shorted STVOs 30–50 Ω) · TMR 100–115 % · RA 25–35 Ω·µm²"
+    },
+    {
+     "k": "Classification",
+     "v": "short if R < 50 Ω · open if R > 2 kΩ"
+    }
+   ],
+   "total": 49,
+   "counts": {
+    "untested": 49
+   },
+   "drive": "https://sdrive.cnrs.fr/f/631214297",
+   "_id": "stvo-s4"
+  },
+  {
+   "order": 4,
+   "project": "stvo",
+   "name": "STVO array · S3",
+   "subtitle": "10 nm Py cap · common contact",
+   "info": [
+    {
+     "k": "Layout",
+     "v": "15 × 15, columns A–O, rows 1–15, common contact · device = column + row (e.g. H8)"
+    },
+    {
+     "k": "Diameters",
+     "v": "A/F/K 100 · B/G/L 200 · C/H/M 300 · D/I/N 400 · E/J/O 500 nm · vortex only at 300–500 nm (100–200 nm are C-state, not measured)"
+    },
+    {
+     "k": "Source",
+     "v": "Tristan da Câmara (UCLouvain / INL) · received 06/11/2026"
+    },
+    {
+     "k": "Stack",
+     "v": "…MnIr(8)/CoFe(2.2)/Ru(0.65)/CoFeB(2.6)/MgO(0.9)/CoFeB(2)/Ta(0.2)/NiFe(7)/Ta(5)/Ru(5)/TiW(30) · annealed 330 °C, 1 T, 2 h"
+    },
+    {
+     "k": "Resistance",
+     "v": "R ≈ 100 to a few hundred Ω (shorted STVOs 30–50 Ω) · TMR 100–115 % · RA 25–35 Ω·µm²"
+    },
+    {
+     "k": "Classification",
+     "v": "short if R < 50 Ω · open if R > 2 kΩ"
+    },
+    {
+     "k": "Py",
+     "v": "simulations predict ×3 coupling range; not measured yet (Jack Gartside working on it)"
+    }
+   ],
+   "total": 135,
+   "counts": {
+    "untested": 135
+   },
+   "drive": "https://sdrive.cnrs.fr/f/631214297",
+   "_id": "stvo-s3"
+  },
+  {
+   "order": 2,
+   "project": "stvo",
+   "name": "STVO array · S1",
+   "subtitle": "No Py · common contact",
+   "info": [
+    {
+     "k": "Layout",
+     "v": "15 × 15, columns A–O, rows 1–15, common contact · device = column + row (e.g. H8)"
+    },
+    {
+     "k": "Diameters",
+     "v": "A/F/K 100 · B/G/L 200 · C/H/M 300 · D/I/N 400 · E/J/O 500 nm · vortex only at 300–500 nm (100–200 nm are C-state, not measured)"
+    },
+    {
+     "k": "Source",
+     "v": "Tristan da Câmara (UCLouvain / INL) · received 06/11/2026"
+    },
+    {
+     "k": "Stack",
+     "v": "…MnIr(8)/CoFe(2.2)/Ru(0.65)/CoFeB(2.6)/MgO(0.9)/CoFeB(2)/Ta(0.2)/NiFe(7)/Ta(5)/Ru(5)/TiW(30) · annealed 330 °C, 1 T, 2 h"
+    },
+    {
+     "k": "Resistance",
+     "v": "R ≈ 100 to a few hundred Ω (shorted STVOs 30–50 Ω) · TMR 100–115 % · RA 25–35 Ω·µm²"
+    },
+    {
+     "k": "Classification",
+     "v": "short if R < 50 Ω · open if R > 2 kΩ"
+    },
+    {
+     "k": "Status",
+     "v": "first device N5 wire-bonded 16/11/2026"
+    }
+   ],
+   "total": 135,
+   "counts": {
+    "alive": 3,
+    "dead": 7,
+    "untested": 125
+   },
+   "drive": "https://sdrive.cnrs.fr/f/631214297",
+   "_id": "stvo-s1"
+  }
+ ],
+ "runs": [],
+ "meetings": []
 }
