@@ -54,14 +54,6 @@ dl.info{display:grid;grid-template-columns:minmax(80px,auto) 1fr;gap:4px 12px;ma
 dl.info dt{color:var(--muted);font-weight:600}
 dl.info dd{margin:0;min-width:0;overflow-wrap:anywhere}
 details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:14px}
-.card,details.dvd{min-width:0;max-width:100%}.dvt{margin-top:8px;min-width:0}.dvt .row{gap:8px;margin-bottom:6px}
-.dvt select{font:inherit;font-size:13px;padding:4px 6px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink)}
-.tw{max-height:380px;overflow:auto;border:1px solid var(--line);border-radius:8px;-webkit-overflow-scrolling:touch}
-.tw table{border-collapse:collapse;width:100%;font-size:12.5px;min-width:520px}
-.tw th{position:sticky;top:0;background:var(--surface);text-align:left;color:var(--muted);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
-.tw td:nth-last-child(2){min-width:200px}.tw td{padding:5px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-.tw td.n{font-variant-numeric:tabular-nums;white-space:nowrap}.tw td.dv{font-weight:600;white-space:nowrap}
-.sd{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:middle}
 .filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 12px;font:500 13px var(--body);cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
@@ -160,7 +152,6 @@ function vSamples(){
   ${L.length?`<div class="grid">${L.map(s=>`<article class="card"><div class="row"><span class="pj">${esc(PJ[s.project]||s.project)}</span><span class="note">${s.total} devices</span></div>
   <h3>${esc(s.name)}</h3><div class="sub">${esc(s.subtitle)}</div>${bar(s.counts||{},s.total||1)}
   <details><summary>Details</summary><dl class="info">${(s.info||[]).map(i=>`<dt>${esc(i.k)}</dt><dd>${esc(i.v)}</dd>`).join("")}</dl></details>
-  ${s.devices&&s.devices.length?`<details class="dvd" data-sid="${esc(s._id)}"><summary>Devices · ${s.devices.filter(d=>d.status!=="untested").length} with a status, ${s.devices.length} in total</summary><div class="dvt"></div></details>`:""}
   <div class="row">${link(s.drive,"Sample folder on sDrive ↗")}</div></article>`).join("")}</div>`:`<div class="empty">No samples for this project.</div>`}</section>`}
 function chips(key){const cur=S[key];return [["all","All"]].concat(Object.entries(PJ)).map(([k,n])=>`<button type="button" class="chip" data-${key}="${k}" aria-pressed="${cur===k}">${esc(n)}</button>`).join("")}
 function runRow(r){return `<div class="entry"><div class="d">${esc(r.date)}</div><div class="main"><div class="row"><span class="dev">${esc(r.device)}</span><span class="pj">${esc(PJ[r.project]||r.project)}</span></div>
@@ -202,14 +193,7 @@ function vFiles(){
   return `${OL.length?`<section><h2>Paper writing</h2><div class="files">${OL.map(p=>`<a href="${esc(p.overleaf)}" target="_blank" rel="noopener"><b>Overleaf · ${esc(p.name)} ↗</b><span>${esc(p.title)}</span></a>`).join("")}</div></section>`:""}<section><h2>sDrive (CNRS login)</h2><div class="files">${F.filter(([k])=>drive(k)).map(([k,n,d])=>`<a href="${esc(drive(k))}" target="_blank" rel="noopener"><b>${esc(n)} ↗</b><span>${esc(d)}</span></a>`).join("")}</div>
   <p class="note">Naming: measurement folders as <span class="mono">YYYY-MM-DD_sample_device_type</span> (e.g. <span class="mono">2026-11-20_S1_N5_RF</span>), each with the raw .nc file, a config.json of instrument settings and a quick-look .png.</p></section>`}
 
-function dvTable(s,mode){const L=s.devices.filter(d=>mode==="all"||d.status!=="untested"||d.note||d.pri);
-  const has=k=>L.some(d=>d[k]!=null&&d[k]!=="");const C=[["d","Ø nm"],["cfg","Layout"],["sp","Gap nm"],["rmin","Rmin Ω"],["tmr","TMR %"],["cls","R–H class"],["th","θ0 °"]].filter(([k])=>has(k));
-  const lab=Object.fromEntries(STC.map(([k,n,v])=>[k,[n,v]]));
-  return `<div class="row"><select data-dvm="${esc(s._id)}"><option value="tested"${mode!=="all"?" selected":""}>Devices with a status or note</option><option value="all"${mode==="all"?" selected":""}>All devices</option></select><span class="note">${L.length} shown</span></div>
-  ${L.length?`<div class="tw"><table><thead><tr><th>Device</th><th>Status</th>${C.map(c=>`<th>${c[1]}</th>`).join("")}<th>Note</th><th>Updated</th></tr></thead><tbody>${L.map(d=>{const st=lab[d.status]||[d.status,"--idle"];
-  return `<tr><td class="dv">${esc(d.dev)}${d.pri?" ★":""}</td><td class="n"><span class="sd" style="background:var(${st[1]})"></span>${esc(st[0])}</td>${C.map(([k])=>`<td class="n">${d[k]==null?"":esc(String(d[k]))}</td>`).join("")}<td>${esc(d.note||"")}</td><td class="n">${esc(d.upd||"")}</td></tr>`}).join("")}</tbody></table></div>`:`<div class="empty">No device has a status yet. Choose "All devices".</div>`}`}
 function bind(v){
-  document.querySelectorAll("details.dvd").forEach(dt=>dt.ontoggle=()=>{if(!dt.open)return;const s=S.samples.find(x=>x._id===dt.dataset.sid);const box=dt.querySelector(".dvt");const draw=m=>{box.innerHTML=dvTable(s,m);box.querySelector("select").onchange=e=>draw(e.target.value)};if(!box.innerHTML)draw("tested")});
   document.querySelectorAll("[data-pf]").forEach(b=>b.onclick=()=>{S.pf=b.dataset.pf;render()});
   document.querySelectorAll("[data-sf]").forEach(b=>b.onclick=()=>{S.sf=b.dataset.sf;render()});
   document.querySelectorAll("a[data-rf]").forEach(a=>a.onclick=()=>{S.pf=a.dataset.rf});
