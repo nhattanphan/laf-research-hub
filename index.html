@@ -66,6 +66,19 @@ details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:14px}
 input,textarea,select{font:14px var(--body);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:100%;min-width:0}
 textarea{min-height:70px;resize:vertical}
 .search{max-width:260px}
+.mhead{display:grid;gap:12px}
+.mstats{display:flex;flex-wrap:wrap;gap:10px}
+.mstats div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px;display:grid;min-width:92px}
+.mstats b{font:700 20px var(--body);color:var(--ink)}.mstats span{font-size:12px;color:var(--muted)}
+.cn{font:500 12px var(--mono);opacity:.7}
+.mlist{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr))}
+.mt{display:grid;grid-template-columns:56px 1fr auto;gap:14px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+.md{display:grid;place-items:center;border-radius:10px;background:var(--accent-soft);color:var(--accent);padding:6px 0;line-height:1.1}
+.md b{font:700 22px var(--body)}.md span{font:600 12px var(--body);text-transform:uppercase;letter-spacing:.04em}
+.mb{min-width:0;display:grid;gap:6px}.mtt{font-weight:600;font-size:15.5px}
+.mtag{font:600 11.5px var(--body);padding:2px 9px;border-radius:999px;color:var(--c);border:1px solid currentColor}
+.mslides{align-self:center;white-space:nowrap}
+@media (max-width:560px){.mstats div{padding:8px 12px}.mstats b{font-size:17px}.mt{grid-template-columns:48px 1fr}.mslides{grid-column:2;justify-self:start}}
 .log{background:var(--surface);border:1px solid var(--line);border-radius:10px}
 .entry{display:grid;grid-template-columns:110px 1fr;gap:4px 16px;padding:14px 16px;border-top:1px solid var(--line)}
 .entry:first-child{border-top:0}
@@ -150,7 +163,7 @@ function vOverview(){
   const mt=[...S.meetings].sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,3);
   return `<section><h2>Projects</h2>${P.length?`<div class="grid pgrid">${P.map(stageCard).join("")}</div>`:`<div class="empty">No projects yet.</div>`}</section>
   <section><h2>Latest measurements</h2><div class="log">${last.length?last.map(runRow).join(""):`<div class="empty">No measurements logged yet.</div>`}</div></section>
-  <section><h2>Recent meetings</h2><div class="log">${mt.length?mt.map(meetRow).join(""):`<div class="empty">No meetings logged yet.</div>`}</div></section>`}
+  <section><h2>Recent meetings</h2>${mt.length?`<div class="mlist">${mt.map(meetCard).join("")}</div>`:`<div class="log"><div class="empty">No meetings logged yet.</div></div>`}</section>`}
 function bar(c,t){const parts=STC.map(([k,,v])=>[k,c[k]||0,v]).filter(x=>x[1]);
   return `<div class="bar" role="img" aria-label="${parts.map(([k,n])=>n+" "+k).join(", ")}">${parts.map(([k,n,v])=>`<i style="width:${n/t*100}%;background:var(${v})"></i>`).join("")}</div>
   <div class="legend">${parts.map(([k,n,v])=>`<span><b style="background:var(${v})"></b>${n} ${esc(STC.find(x=>x[0]===k)[1].toLowerCase())}</span>`).join("")}</div>`}
@@ -183,10 +196,30 @@ function meetRow(m){return `<div class="entry"><div class="d">${esc(m.date)}</di
   ${m.who?`<div class="meta">${esc(m.who)}</div>`:""}${m.decisions?`<div class="res"><span class="lbl">Decisions</span><br>${esc(m.decisions)}</div>`:""}
   ${m.actions?`<div class="res"><span class="lbl">Actions</span><br>${esc(m.actions)}</div>`:""}<div class="row">${link(m.slides,"Slides ↗")}</div>
   ${S.canAdmin&&m._id?`<button type="button" class="del" data-delmeet="${esc(m._id)}">Delete</button>`:""}</div></div>`}
+const MT={group:["Group meeting","--navy"],spincom:["SPINCOM","--accent"],collab:["Collaborators","--vio"],other:["Other","--muted"]};
+function mType(m){if(m.type)return m.type;const s=(m._id||"")+" "+(m.title||"");return /spincom/i.test(s)?"spincom":/group/i.test(s)?"group":/claudio|collab|meeting with/i.test(s)?"collab":"other"}
+const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function meetCard(m){const [y,mo,d]=String(m.date).split("-");const t=MT[mType(m)]||MT.other;const more=m.decisions||m.actions;
+  return `<article class="mt"><div class="md"><b>${esc(String(+d||""))}</b><span>${esc(MON[(+mo||1)-1])}</span></div>
+  <div class="mb"><div class="row"><span class="mtag" style="--c:var(${t[1]})">${esc(t[0])}</span>${m.who?`<span class="note">${esc(m.who)}</span>`:""}</div>
+  <div class="mtt">${esc(m.title)}</div>
+  ${more?`<details><summary>Decisions & actions</summary>${m.decisions?`<div class="res"><span class="lbl">Decisions</span><br>${esc(m.decisions)}</div>`:""}${m.actions?`<div class="res"><span class="lbl">Actions</span><br>${esc(m.actions)}</div>`:""}</details>`:""}
+  ${S.canAdmin&&m._id?`<button type="button" class="del" data-delmeet="${esc(m._id)}">Delete</button>`:""}</div>
+  ${m.slides?`<a class="btn mslides" href="${esc(m.slides)}" target="_blank" rel="noopener">Slides ↗</a>`:""}</article>`}
 function vMeetings(){
-  const L=[...S.meetings].sort((a,b)=>String(b.date).localeCompare(String(a.date)));
-  return `<section><div class="log">${L.length?L.map(meetRow).join(""):`<div class="empty">No meetings logged yet. Slides go in sDrive › 03_Meetings, one folder per meeting.</div>`}</div>
-  <p class="note">Slides live in ${link(drive("meet"),"sDrive › 03_Meetings ↗")||"the Meetings folder on sDrive"}; one subfolder per meeting, named by date.</p></section>
+  const all=[...S.meetings].sort((a,b)=>String(b.date).localeCompare(String(a.date)));
+  const mf=S.mf||"all",my=S.my||"all",q=(S.mq||"").toLowerCase();
+  const cnt=k=>all.filter(m=>mType(m)===k).length;
+  const years=[...new Set(all.map(m=>String(m.date).slice(0,4)))];
+  const L=all.filter(m=>(mf==="all"||mType(m)===mf)&&(my==="all"||String(m.date).startsWith(my))&&(!q||JSON.stringify(m).toLowerCase().includes(q)));
+  const by={};L.forEach(m=>{const y=String(m.date).slice(0,4);(by[y]=by[y]||[]).push(m)});
+  const chip=(key,val,label,n)=>`<button type="button" class="chip" data-${key}="${esc(val)}" aria-pressed="${(S[key]||"all")===val}">${esc(label)}${n!=null?` <span class="cn">${n}</span>`:""}</button>`;
+  return `<section class="mhead">
+   <div class="mstats"><div><b>${all.length}</b><span>meetings</span></div>${all[0]?`<div><b>${(()=>{const [y,m,d]=String(all[0].date).split("-");return esc(+d+" "+MON[+m-1]+" "+y)})()}</b><span>latest</span></div>`:""}</div>
+   <div class="filters">${chip("mf","all","All",all.length)}${Object.keys(MT).filter(k=>cnt(k)).map(k=>chip("mf",k,MT[k][0],cnt(k))).join("")}</div>
+   <div class="filters">${chip("my","all","All years")}${years.map(y=>chip("my",y,y)).join("")}<input class="search" id="mq" type="search" placeholder="Search title, people, decisions…" value="${esc(S.mq||"")}"></div></section>
+  ${L.length?Object.keys(by).sort().reverse().map(y=>`<section><h2>${y} <span class="cn">${by[y].length}</span></h2><div class="mlist">${by[y].map(meetCard).join("")}</div></section>`).join(""):`<div class="empty">${all.length?"No meeting matches.":"No meetings logged yet. Slides go in sDrive › 03_Meetings, one folder per meeting."}</div>`}
+  <p class="note">Slides live in ${link(drive("meet"),"sDrive › 03_Meetings ↗")||"the Meetings folder on sDrive"}; one subfolder per meeting, named YYYY-MM-DD_type.</p>
   ${S.canWrite?`<section><h2>Add a meeting</h2><form class="add" id="fMeet">
    <label>Date<input id="mDate" type="date" required></label>
    <label class="wide">Title<input id="mTitle" required placeholder="e.g. Weekly meeting · EP loops and STVO S1"></label>
@@ -204,6 +237,9 @@ function vFiles(){
 function bind(v){
   document.querySelectorAll("[data-pf]").forEach(b=>b.onclick=()=>{S.pf=b.dataset.pf;render()});
   document.querySelectorAll("[data-sf]").forEach(b=>b.onclick=()=>{S.sf=b.dataset.sf;render()});
+  document.querySelectorAll("[data-mf]").forEach(b=>b.onclick=()=>{S.mf=b.dataset.mf;render()});
+  document.querySelectorAll("[data-my]").forEach(b=>b.onclick=()=>{S.my=b.dataset.my;render()});
+  {const q=$("#mq");if(q)q.oninput=()=>{S.mq=q.value;const p=q.selectionStart;render();const n=$("#mq");n.focus();try{n.setSelectionRange(p,p)}catch(e){}}}
   document.querySelectorAll("a[data-rf]").forEach(a=>a.onclick=()=>{S.pf=a.dataset.rf});
   document.querySelectorAll("a[data-pf]").forEach(a=>{if(a.tagName==="A")a.onclick=()=>{S.sf=a.dataset.pf}});
   const q=$("#q");if(q)q.oninput=()=>{S.q=q.value;const p=q.selectionStart;render();const n=$("#q");n.focus();try{n.setSelectionRange(p,p)}catch(e){}};
