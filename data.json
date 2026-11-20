@@ -466,5 +466,66 @@
   }
  ],
  "runs": [],
- "meetings": []
+ "meetings": [
+  {
+   "_id": "2026-07-21_Claudio",
+   "date": "2026-07-21",
+   "title": "Meeting with Claudio",
+   "slides": "https://sdrive.cnrs.fr/f/631296694"
+  },
+  {
+   "_id": "2025-12-01_SPINCOM",
+   "date": "2025-12-01",
+   "title": "SPINCOM meeting · Tan's talk (EPs)",
+   "slides": "https://sdrive.cnrs.fr/f/631296668"
+  },
+  {
+   "_id": "2025-11-03_SPINCOM",
+   "date": "2025-11-03",
+   "title": "SPINCOM meeting · Tan's talk (TEMsl)",
+   "slides": "https://sdrive.cnrs.fr/f/631296647"
+  },
+  {
+   "_id": "2025-06-26_Group",
+   "date": "2025-06-26",
+   "title": "Group meeting",
+   "slides": "https://sdrive.cnrs.fr/f/631296633"
+  },
+  {
+   "_id": "2025-05-21_Group",
+   "date": "2025-05-21",
+   "title": "Group meeting",
+   "slides": "https://sdrive.cnrs.fr/f/631296613"
+  },
+  {
+   "_id": "2025-05-14_Meeting",
+   "date": "2025-05-14",
+   "title": "Meeting · with field-distribution slides",
+   "slides": "https://sdrive.cnrs.fr/f/631296592"
+  },
+  {
+   "_id": "2025-05-07_Group",
+   "date": "2025-05-07",
+   "title": "Group meeting",
+   "slides": "https://sdrive.cnrs.fr/f/631296578"
+  },
+  {
+   "_id": "2025-04-24_Group",
+   "date": "2025-04-24",
+   "title": "Group meeting",
+   "slides": "https://sdrive.cnrs.fr/f/631296557"
+  },
+  {
+   "_id": "2025-04-10_Group",
+   "date": "2025-04-10",
+   "title": "Group meeting",
+   "slides": "https://sdrive.cnrs.fr/f/631296544"
+  },
+  {
+   "_id": "2025-03-27_Group",
+   "date": "2025-03-27",
+   "title": "Group meeting",
+   "slides": "https://sdrive.cnrs.fr/f/631296534"
+  }
+ ]
 }
