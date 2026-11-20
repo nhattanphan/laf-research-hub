@@ -38,7 +38,7 @@ nav.tabs::-webkit-scrollbar{display:none}
 .tab[aria-current="page"]{background:var(--accent);color:#fff;box-shadow:0 2px 8px rgba(194,24,91,.35)}
 .tabbar .tab .n{color:inherit;opacity:.75}
 .tab .sm{display:none}
-@media (max-width:560px){.tab .lg{display:none}.tab .sm{display:inline}nav.tabs{gap:0;margin:0 -10px}.tab{font-size:12.5px;padding:8px 7px}.tabbar .tab .n{display:none}}
+@media (max-width:560px){.tab .lg{display:none}.tab .sm{display:inline}nav.tabs{gap:0;margin:0 -10px}.tab{font-size:13px;padding:8px 9px}.tabbar .tab .n{display:none}}
 .tab .n{font:500 12px var(--mono);color:var(--muted);margin-left:4px}
 main .wrap{padding-block:24px 48px;display:grid;gap:28px}
 h2{font:700 13px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
@@ -68,16 +68,6 @@ details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:14px}
 input,textarea,select{font:14px var(--body);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:100%;min-width:0}
 textarea{min-height:70px;resize:vertical}
 .search{max-width:260px}
-.pweek{display:grid;gap:12px}
-.pgoals{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
-.pdays{display:grid;gap:10px;grid-template-columns:repeat(5,minmax(0,1fr))}
-.pday{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;min-width:0}
-.pdh{font:700 13px var(--body);text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:8px}
-.pday ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.pi{display:grid;grid-template-columns:12px 1fr;gap:6px;font-size:14px}.pi .sd{margin-top:6px}.pi .row{gap:6px;margin-top:3px}
-.pdone>div>div:first-child{text-decoration:line-through;color:var(--muted)}
-@media (max-width:900px){.pdays{grid-template-columns:1fr}}
-.sd{display:inline-block;width:8px;height:8px;border-radius:50%}
 .mhead{display:grid;gap:12px}
 .mstats{display:flex;flex-wrap:wrap;gap:10px}
 .mstats div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px;display:grid;min-width:92px}
@@ -130,7 +120,6 @@ form.add label{display:grid;gap:4px;font:600 12px var(--body);color:var(--muted)
 <div class="tabbar"><div class="wrap">
   <nav class="tabs" aria-label="Sections">
       <a class="tab" href="#overview" data-v="overview">Projects</a>
-      <a class="tab" href="#plan" data-v="plan">Plan</a>
       <a class="tab" href="#samples" data-v="samples">Samples<span class="n" id="nS"></span></a>
       <a class="tab" href="#measurements" data-v="measurements"><span class="lg">Measurements</span><span class="sm">Data</span><span class="n" id="nR"></span></a>
       <a class="tab" href="#meetings" data-v="meetings">Meetings<span class="n" id="nM"></span></a>
@@ -144,13 +133,13 @@ form.add label{display:grid;gap:4px;font:600 12px var(--body);color:var(--muted)
 <script>
 const PJ={ep:"EP encirclement",stvo:"STVO array",sd:"Spin-diode",floq:"Floquet"};
 const STC=[["alive","Alive","--ok"],["untested","Untested","--idle"],["suspect","Suspect","--warn"],["dead","Dead","--bad"],["measdead","Died in measurement","--bad2"],["short","Short","--vio"],["open","Open","--vio"]];
-const S={projects:[],samples:[],runs:[],meetings:[],talks:[],plans:[],config:{},ready:{},canWrite:false,canAdmin:false,pf:"all",q:"",sf:"all"};
+const S={projects:[],samples:[],runs:[],meetings:[],talks:[],config:{},ready:{},canWrite:false,canAdmin:false,pf:"all",q:"",sf:"all"};
 let db=null;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const link=(u,t)=>u&&/^https?:\/\//.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`:"";
 function toast(t){const e=document.createElement("div");e.className="toast";e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),2200)}
-function view(){const v=(location.hash||"#overview").slice(1);return ["overview","plan","samples","measurements","meetings","talks","files"].includes(v)?v:"overview"}
+function view(){const v=(location.hash||"#overview").slice(1);return ["overview","samples","measurements","meetings","talks","files"].includes(v)?v:"overview"}
 function drive(k){return (S.config&&S.config[k])||""}
 
 function render(){
@@ -159,7 +148,7 @@ function render(){
   const up=document.getElementById("upd");if(up&&S.updated)up.textContent=" Last updated "+S.updated+".";const ch=$("#chatLink");if(ch&&drive("chat"))ch.href=drive("chat");const r=$("#driveRoot");if(drive("root")){r.href=drive("root");r.hidden=false}else r.hidden=true;
   const el=$("#view");
   if(!db){el.innerHTML=`<div class="empty">Loading…</div>`;return}
-  el.innerHTML=({overview:vOverview,samples:vSamples,measurements:vRuns,meetings:vMeetings,talks:vTalks,plan:vPlan,files:vFiles})[v]();
+  el.innerHTML=({overview:vOverview,samples:vSamples,measurements:vRuns,meetings:vMeetings,talks:vTalks,files:vFiles})[v]();
   bind(v);
 }
 function stageCard(p){
@@ -259,19 +248,6 @@ function vTalks(){
    <div class="filters">${chip("all","All",all.length)}${Object.keys(TK).filter(k=>cnt(k)).map(k=>chip(k,TK[k][0],cnt(k))).join("")}</div></section>
   ${L.length?Object.keys(by).sort().reverse().map(y=>`<section><h2>${y} <span class="cn">${by[y].length}</span></h2><div class="mlist">${by[y].map(talkCard).join("")}</div></section>`).join(""):`<div class="empty">No talks or posters yet.</div>`}
   <p class="note">Slides and posters live in ${link(drive("conf"),"sDrive › 06_Conferences ↗")||"sDrive › 06_Conferences"}; one folder per conference, named YYYY-MM_Conference_City.</p>`}
-const DAYS=["Mon","Tue","Wed","Thu","Fri"];const PST={todo:["To do","--idle"],doing:["In progress","--warn"],done:["Done","--ok"],wait:["Waiting","--vio"]};
-function fmtD(s){const [y,m,d]=String(s).split("-");return +d+" "+MON[+m-1]}
-function planItem(it){const st=PST[it.status||"todo"]||PST.todo;return `<li class="pi${it.status==="done"?" pdone":""}"><span class="sd" style="background:var(${st[1]})" title="${esc(st[0])}"></span><div><div>${esc(it.text)}</div><div class="row">${it.project?`<span class="pj">${esc(PJ[it.project]||it.project)}</span>`:""}${it.status&&it.status!=="todo"?`<span class="note">${esc(st[0])}</span>`:""}</div></div></li>`}
-function planWeek(w,open){const end=new Date(w.week+"T12:00:00");end.setDate(end.getDate()+4);const e=end.toISOString().slice(0,10);
-  const items=w.items||[];const done=items.filter(i=>i.status==="done").length;
-  return `<section class="pweek"><div class="row" style="justify-content:space-between"><h2 style="margin:0">Week of ${esc(fmtD(w.week))} – ${esc(fmtD(e))} ${w.week.slice(0,4)}</h2><span class="note">${done}/${items.length} done</span></div>
-  ${w.goals&&w.goals.length?`<div class="pgoals"><div class="lbl">Goals this week</div><ul class="next">${w.goals.map(g=>`<li>${esc(g)}</li>`).join("")}</ul></div>`:""}
-  <div class="pdays">${DAYS.map(d=>{const L=items.filter(i=>i.day===d);return `<div class="pday"><div class="pdh">${d}</div>${L.length?`<ul>${L.map(planItem).join("")}</ul>`:`<div class="note">—</div>`}</div>`}).join("")}</div>
-  ${items.some(i=>!i.day)?`<div class="pday"><div class="pdh">Any day</div><ul>${items.filter(i=>!i.day).map(planItem).join("")}</ul></div>`:""}
-  ${w.note?`<p class="note">${esc(w.note)}</p>`:""}</section>`}
-function vPlan(){const W=[...S.plans].sort((a,b)=>String(b.week).localeCompare(String(a.week)));
-  if(!W.length)return `<div class="empty">No weekly plan yet.</div>`;
-  return planWeek(W[0],true)+(W.length>1?`<section><h2>Previous weeks</h2>${W.slice(1).map(w=>`<details class="card"><summary>Week of ${esc(fmtD(w.week))} ${w.week.slice(0,4)}</summary>${planWeek(w)}</details>`).join("")}</section>`:"")}
 function vFiles(){
   const F=[["root","LAF_Research_Hub","Everything below"],["samples","01 · Samples","SEM images, die maps, wafer data"],["meas","02 · Measurements","Raw .nc files and quick-look plots, one folder per project"],["ep","EP encirclement","Gain maps, encirclement loops"],["stvo","STVO array","S1–S4 measurements"],["sd","Spin-diode","VB01-23 RF maps, R–H, power sweeps"],["floq","Floquet","Drive sweeps"],["meet","03 · Meetings","Slides and minutes, by date"],["papers","04 · Papers","Drafts and figures"],["prb","PRB · Multi-turn EP","Figures and draft"],["code","05 · Code","Pointer to the Git repositories"],["conf","06 · Conferences","Talk slides and posters, one folder per conference"]];
   const OL=S.projects.filter(p=>p.overleaf);
@@ -302,7 +278,7 @@ function armDel(b,c,id){if(b.dataset.armed){db.collection(c).doc(id).delete().th
 
 window.addEventListener("hashchange",render);
 render();
-fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{db=true;Object.assign(S,{projects:d.projects,samples:d.samples,runs:d.runs,meetings:d.meetings,talks:d.talks||[],plans:d.plans||[],config:d.config,updated:d.updated});render()}).catch(e=>{$("#view").innerHTML='<div class="empty">Could not load data.json.</div>'});
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{db=true;Object.assign(S,{projects:d.projects,samples:d.samples,runs:d.runs,meetings:d.meetings,talks:d.talks||[],config:d.config,updated:d.updated});render()}).catch(e=>{$("#view").innerHTML='<div class="empty">Could not load data.json.</div>'});
 </script>
 <footer class="wrap" style="padding-block:0 32px;color:var(--muted);font-size:13px">Data files live on CNRS sDrive (links need a CNRS login with access to the shared folder). This page is an index, updated by Tan.<span id="upd"></span></footer>
 </body></html>
