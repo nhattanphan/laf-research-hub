@@ -168,7 +168,8 @@
     "short": 1
    },
    "drive": "https://sdrive.cnrs.fr/f/631214303",
-   "_id": "vb-dm"
+   "_id": "vb-dm",
+   "layout": "https://sdrive.cnrs.fr/f/631439368"
   },
   {
    "order": 3,
@@ -271,7 +272,8 @@
    },
    "drive": "https://sdrive.cnrs.fr/f/631214303",
    "_id": "vb-en",
-   "data": "https://sdrive.cnrs.fr/f/631358735"
+   "data": "https://sdrive.cnrs.fr/f/631358735",
+   "layout": "https://sdrive.cnrs.fr/f/631439368"
   },
   {
    "order": 1,
@@ -586,7 +588,8 @@
     "suspect": 6,
     "short": 3
    },
-   "total": 30
+   "total": 30,
+   "layout": "https://sdrive.cnrs.fr/f/631439174"
   },
   {
    "_id": "spintec-az96-13-hi",
