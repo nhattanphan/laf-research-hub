@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light">
 <title>LAF Research Hub</title>
 <meta name="robots" content="noindex,nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -7,18 +8,17 @@
 <style>
 /* Layout: lab-notebook index — a narrow header band, tabbed views, cards only for projects and samples; logs as ruled rows. */
 :root{
-  --bg:#f5f6fa; --surface:#ffffff; --ink:#151a33; --muted:#5b6283; --line:#dde0ec;
+  --bg:#e8ecf6; --surface:#f5f7fc; --ink:#151a33; --muted:#535b7e; --line:#d2d8ea; color-scheme:light;
   --navy:#1d2a6b; --accent:#c2185b; --accent-soft:#fbe4ee;
   --ok:#2e7d4f; --warn:#b7791f; --bad:#c0392b; --bad2:#7b1d1d; --vio:#6b4bb3; --idle:#b6bccf;
   --display:"Archivo","IBM Plex Sans",system-ui,sans-serif; --body:"IBM Plex Sans",system-ui,-apple-system,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0f1224;--surface:#171b33;--ink:#e8eaf6;--muted:#9aa1c4;--line:#2a3052;--navy:#9fb0ff;--accent:#ff6fa6;--accent-soft:#3a1a2b;--ok:#5ccf8a;--warn:#e7b04d;--bad:#ff7a6b;--bad2:#d65a5a;--vio:#b39cff;--idle:#4a5172;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#0f1224;--surface:#171b33;--ink:#e8eaf6;--muted:#9aa1c4;--line:#2a3052;--navy:#9fb0ff;--accent:#ff6fa6;--accent-soft:#3a1a2b;--ok:#5ccf8a;--warn:#e7b04d;--bad:#ff7a6b;--bad2:#d65a5a;--vio:#b39cff;--idle:#4a5172;color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);margin:0}
 a{color:var(--navy)}
 .wrap{max-width:1680px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-header{background:var(--surface);border-bottom:1px solid var(--line)}
+header{background:linear-gradient(180deg,#f3f5fb,#e9edf8);border-bottom:1px solid var(--line)}
 header .wrap{padding-block:22px 18px;display:grid;gap:14px}
 .top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
 h1{font:800 clamp(26px,5vw,36px)/1.05 var(--display);letter-spacing:-.01em;margin:0;color:var(--ink);text-wrap:balance}
