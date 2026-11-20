@@ -68,6 +68,15 @@ details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:14px}
 input,textarea,select{font:14px var(--body);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:100%;min-width:0}
 textarea{min-height:70px;resize:vertical}
 .search{max-width:260px}
+body.editing [data-ed]{outline:1px dashed var(--accent);outline-offset:2px;border-radius:3px;cursor:text;min-width:1ch;display:inline-block}
+body.editing [data-ed]:focus{outline:2px solid var(--accent);background:var(--accent-soft)}
+body.editing{padding-bottom:70px}
+#editbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;padding:10px 16px;background:#1d2a6b;color:#fff;box-shadow:0 -4px 14px rgba(15,18,36,.25);font-size:14px}
+#editbar[hidden]{display:none}
+#editbar .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.modal{position:fixed;inset:0;z-index:40;background:rgba(15,18,36,.45);display:grid;place-items:center;padding:16px}
+.mbox{background:var(--surface);border-radius:14px;padding:18px;max-width:520px;width:100%;display:grid;gap:8px}
+.mbox h3{margin:0}.mbox ol{margin:0;padding-left:18px;display:grid;gap:4px}
 .mhead{display:grid;gap:12px}
 .mstats{display:flex;flex-wrap:wrap;gap:10px}
 .mstats div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px;display:grid;min-width:92px}
@@ -153,10 +162,10 @@ function render(){
 }
 function stageCard(p){
   const n=S.runs.filter(r=>r.project===p.key).length,sm=S.samples.filter(s=>s.project===p.key).length;
-  return `<article class="card"><div class="row"><span class="pill">${esc(p.stage)}</span><span class="note">${n} measurement${n===1?"":"s"} · ${sm} sample${sm===1?"":"s"}</span></div>
-  <h3>${esc(p.name)}</h3><div class="sub">${esc(p.title)}</div><p style="margin:0">${esc(p.summary)}</p>
-  ${p.next&&p.next.length?`<div><div class="lbl">Next</div><ul class="next">${p.next.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:""}
-  ${p.facts&&p.facts.length?`<details><summary>Setup notes</summary><ul class="facts">${p.facts.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></details>`:""}
+  return `<article class="card"><div class="row"><span class="pill">${ed("projects",p,"stage")}</span><span class="note">${n} measurement${n===1?"":"s"} · ${sm} sample${sm===1?"":"s"}</span></div>
+  <h3>${ed("projects",p,"name")}</h3><div class="sub">${ed("projects",p,"title")}</div><p style="margin:0">${ed("projects",p,"summary")}</p>
+  ${p.next&&p.next.length?`<div><div class="lbl">Next</div><ul class="next">${p.next.map((x,i)=>`<li>${ed("projects",p,"next."+i)}</li>`).join("")}</ul></div>`:""}
+  ${p.facts&&p.facts.length?`<details><summary>Setup notes</summary><ul class="facts">${p.facts.map((x,i)=>`<li>${ed("projects",p,"facts."+i)}</li>`).join("")}</ul></details>`:""}
   ${p.overleaf?`<a class="btn primary" style="justify-self:start" href="${esc(p.overleaf)}" target="_blank" rel="noopener">✍️ Paper draft on Overleaf ↗</a>`:""}
   ${S.canAdmin&&(p.paper||p.overleaf)?`<details${p.overleaf?"":" open"}><summary>${p.overleaf?"Change Overleaf link":"Add the Overleaf link"}</summary><form class="row olf" data-pid="${esc(p._id)}" style="margin-top:8px"><input type="url" id="ol-${esc(p._id)}" placeholder="https://www.overleaf.com/project/…" value="${esc(p.overleaf||"")}" style="flex:1 1 200px"><button class="btn" type="submit">Save</button></form></details>`:""}
   <div class="row">${link(p.drive,"sDrive data ↗")}${p.paper?" · "+link(p.paper,"Paper folder ↗"):""} · <a href="#samples" data-pf="${esc(p.key)}">Samples</a> · <a href="#measurements" data-rf="${esc(p.key)}">Measurements</a></div></article>`}
@@ -174,8 +183,8 @@ function vSamples(){
   const L=[...S.samples].filter(s=>S.sf==="all"||s.project===S.sf).sort((a,b)=>(a.order||9)-(b.order||9));
   return `<section><div class="filters" style="margin-bottom:14px">${chips("sf")}</div>
   ${L.length?`<div class="grid">${L.map(s=>`<article class="card"><div class="row"><span class="pj">${esc(PJ[s.project]||s.project)}</span><span class="note">${s.total?s.total+" devices":"no device map yet"}</span></div>
-  <h3>${esc(s.name)}</h3><div class="sub">${esc(s.subtitle)}</div>${bar(s.counts||{},s.total||1)}
-  <details><summary>Details</summary><dl class="info">${(s.info||[]).map(i=>`<dt>${esc(i.k)}</dt><dd>${esc(i.v)}</dd>`).join("")}</dl></details>
+  <h3>${ed("samples",s,"name")}</h3><div class="sub">${ed("samples",s,"subtitle")}</div>${bar(s.counts||{},s.total||1)}
+  <details><summary>Details</summary><dl class="info">${(s.info||[]).map((i,j)=>`<dt>${ed("samples",s,"info."+j+".k")}</dt><dd>${ed("samples",s,"info."+j+".v")}</dd>`).join("")}</dl></details>
   <div class="row">${s.layout?link(s.layout,"Layout ↗")+" · ":""}${link(s.drive,"Sample info ↗")}${s.data?" · "+link(s.data,"Measurement data ↗"):""}</div></article>`).join("")}</div>`:`<div class="empty">No samples for this project.</div>`}</section>`}
 function chips(key){const cur=S[key];return [["all","All"]].concat(Object.entries(PJ)).map(([k,n])=>`<button type="button" class="chip" data-${key}="${k}" aria-pressed="${cur===k}">${esc(n)}</button>`).join("")}
 function runRow(r){return `<div class="entry"><div class="d">${esc(r.date)}</div><div class="main"><div class="row"><span class="dev">${esc(r.device)}</span><span class="pj">${esc(PJ[r.project]||r.project)}</span></div>
@@ -204,9 +213,9 @@ function mType(m){if(m.type)return m.type;const s=(m._id||"")+" "+(m.title||"");
 const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 function meetCard(m){const [y,mo,d]=String(m.date).split("-");const t=MT[mType(m)]||MT.other;const more=m.decisions||m.actions;
   return `<article class="mt"><div class="md"><b>${esc(String(+d||""))}</b><span>${esc(MON[(+mo||1)-1])}</span></div>
-  <div class="mb"><div class="row"><span class="mtag" style="--c:var(${t[1]})">${esc(t[0])}</span>${m.who?`<span class="note">${esc(m.who)}</span>`:""}</div>
-  <div class="mtt">${esc(m.title)}</div>
-  ${more?`<details><summary>Decisions & actions</summary>${m.decisions?`<div class="res"><span class="lbl">Decisions</span><br>${esc(m.decisions)}</div>`:""}${m.actions?`<div class="res"><span class="lbl">Actions</span><br>${esc(m.actions)}</div>`:""}</details>`:""}
+  <div class="mb"><div class="row"><span class="mtag" style="--c:var(${t[1]})">${esc(t[0])}</span>${m.who?`<span class="note">${ed("meetings",m,"who")}</span>`:""}</div>
+  <div class="mtt">${ed("meetings",m,"title")}</div>
+  ${more?`<details><summary>Decisions & actions</summary>${m.decisions?`<div class="res"><span class="lbl">Decisions</span><br>${ed("meetings",m,"decisions")}</div>`:""}${m.actions?`<div class="res"><span class="lbl">Actions</span><br>${ed("meetings",m,"actions")}</div>`:""}</details>`:""}
   ${S.canAdmin&&m._id?`<button type="button" class="del" data-delmeet="${esc(m._id)}">Delete</button>`:""}</div>
   ${m.slides?`<a class="btn mslides" href="${esc(m.slides)}" target="_blank" rel="noopener">Slides ↗</a>`:""}</article>`}
 function vMeetings(){
@@ -235,8 +244,8 @@ const TK={oral:["Oral talk","--navy"],invited:["Invited talk","--accent"],poster
 function talkCard(t){const [y,mo]=String(t.date).split("-");const k=TK[t.kind]||[t.kind,"--muted"];
   return `<article class="mt"><div class="md"><b>${esc(MON[(+mo||1)-1])}</b><span>${esc(y)}</span></div>
   <div class="mb"><div class="row"><span class="mtag" style="--c:var(${k[1]})">${esc(k[0])}</span>${t.project?`<span class="pj">${esc(PJ[t.project]||t.project)}</span>`:""}</div>
-  <div class="mtt">${esc(t.title)}</div><div class="note">${esc(t.conf)}${t.place?" · "+esc(t.place):""}${t.dates?" · "+esc(t.dates):""}</div>
-  ${t.note?`<div class="meta">${esc(t.note)}</div>`:""}
+  <div class="mtt">${ed("talks",t,"title")}</div><div class="note">${ed("talks",t,"conf")}${t.place?" · "+esc(t.place):""}${t.dates?" · "+esc(t.dates):""}</div>
+  ${t.note?`<div class="meta">${ed("talks",t,"note")}</div>`:""}
   <div class="row">${t.url?link(t.url,"Conference site ↗"):""}</div></div>
   ${t.files?`<a class="btn mslides" href="${esc(t.files)}" target="_blank" rel="noopener">${t.kind==="poster"?"Poster":"Slides"} ↗</a>`:""}</article>`}
 function vTalks(){
@@ -254,6 +263,38 @@ function vFiles(){
   return `${OL.length?`<section><h2>Paper writing</h2><div class="files">${OL.map(p=>`<a href="${esc(p.overleaf)}" target="_blank" rel="noopener"><b>Overleaf · ${esc(p.name)} ↗</b><span>${esc(p.title)}</span></a>`).join("")}</div></section>`:""}<section><h2>sDrive (CNRS login)</h2><div class="files">${F.filter(([k])=>drive(k)).map(([k,n,d])=>`<a href="${esc(drive(k))}" target="_blank" rel="noopener"><b>${esc(n)} ↗</b><span>${esc(d)}</span></a>`).join("")}</div>
   <p class="note">Naming: measurement folders as <span class="mono">YYYY-MM-DD_sample_device_type</span> (e.g. <span class="mono">2026-11-20_S1_N5_RF</span>), each with the raw .nc file, a config.json of instrument settings and a quick-look .png.</p></section>`}
 
+function gp(o,path){return path.split(".").reduce((a,k)=>a==null?a:a[k],o)}
+function sp(o,path,v){const ks=path.split(".");const last=ks.pop();const t=ks.reduce((a,k)=>a[k],o);t[last]=v}
+function ed(coll,obj,path){const v=gp(obj,path);return `<span data-ed="${esc(coll)}|${esc(obj._id||obj.key||"")}|${esc(path)}"${S.editing?' contenteditable="true" spellcheck="true"':""}>${esc(v==null?"":v)}</span>`}
+const GH={repo:"nhattanphan/laf-research-hub",file:"data.json",key:"lafhub_gh_token"};
+function tokGet(){try{return localStorage.getItem(GH.key)||""}catch(e){return ""}}
+function tokSet(v){try{v?localStorage.setItem(GH.key,v):localStorage.removeItem(GH.key)}catch(e){}}
+function editBar(){let b=$("#editbar");if(!b){b=document.createElement("div");b.id="editbar";document.body.appendChild(b)}
+  if(!S.editing){b.hidden=true;return}b.hidden=false;
+  b.innerHTML=`<span>✎ Editing: tap any text to change it${S.dirty?" · <b>unsaved changes</b>":""}</span><span class="row"><button class="btn primary" id="edSave" type="button">Save</button><button class="btn" id="edCancel" type="button">Cancel</button></span>`;
+  $("#edSave").onclick=saveEdits;$("#edCancel").onclick=()=>{S.dirty=false;location.reload()}}
+function confirmBar(){return true}
+function tokenDialog(){const m=document.createElement("div");m.className="modal";m.innerHTML=`<div class="mbox"><h3>Connect GitHub to edit</h3>
+  <p class="note">Edits are saved to <span class="mono">data.json</span> in the repository, so this needs a GitHub token. It stays in this browser only.</p>
+  <ol class="note"><li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub › Fine-grained tokens › Generate new token</a>.</li><li>Repository access: <b>Only select repositories</b> › <span class="mono">laf-research-hub</span>.</li><li>Permissions › Repository › <b>Contents: Read and write</b>. Generate, then paste it here.</li></ol>
+  <input id="tokIn" type="password" placeholder="github_pat_…" autocomplete="off" style="width:100%">
+  <div class="row" style="margin-top:10px"><button class="btn primary" id="tokOk" type="button">Start editing</button><button class="btn" id="tokNo" type="button">Cancel</button></div></div>`;
+  document.body.appendChild(m);$("#tokNo").onclick=()=>m.remove();$("#tokOk").onclick=()=>{const v=$("#tokIn").value.trim();if(!v)return;tokSet(v);m.remove();startEdit()}}
+function startEdit(){if(!tokGet()){tokenDialog();return}S.editing=true;S.dirty=false;document.body.classList.add("editing");render();editBar()}
+async function saveEdits(){const b=$("#edSave");b.disabled=true;b.textContent="Saving…";
+  try{const tok=tokGet();const H={Authorization:"Bearer "+tok,Accept:"application/vnd.github+json"};
+    const cur=await fetch(`https://api.github.com/repos/${GH.repo}/contents/${GH.file}?ref=main`,{headers:H,cache:"no-store"});
+    if(cur.status===401||cur.status===403||cur.status===404){tokSet("");throw new Error("GitHub refused the token ("+cur.status+"). Click Edit again and paste a new token.")}
+    const j=await cur.json();const D=S.raw;D.updated=new Date().toISOString().slice(0,10);
+    const body=JSON.stringify(D,null,1);const b64=btoa(unescape(encodeURIComponent(body)));
+    const r=await fetch(`https://api.github.com/repos/${GH.repo}/contents/${GH.file}`,{method:"PUT",headers:{...H,"Content-Type":"application/json"},body:JSON.stringify({message:"Edit text on the hub",content:b64,sha:j.sha,branch:"main"})});
+    if(!r.ok)throw new Error("Save failed ("+r.status+")");
+    S.dirty=false;S.editing=false;document.body.classList.remove("editing");render();editBar();toast("Saved. The public page updates in about a minute.")}
+  catch(e){toast(e.message||String(e));b.disabled=false;b.textContent="Save"}}
+document.addEventListener("input",e=>{const t=e.target.closest&&e.target.closest("[data-ed]");if(!t||!S.editing)return;const [coll,id,path]=t.dataset.ed.split("|");const o=(S[coll]||[]).find(x=>(x._id||x.key)===id);if(!o)return;sp(o,path,t.textContent);if(!S.dirty){S.dirty=true;editBar()}});
+document.addEventListener("keydown",e=>{if(S.editing&&e.key==="Enter"&&e.target.closest&&e.target.closest("[data-ed]")){e.preventDefault();e.target.blur()}});
+document.addEventListener("click",e=>{if(S.editing&&e.target.closest&&e.target.closest("[data-ed]")&&e.target.closest("a,summary,button"))e.preventDefault()},true);
+window.addEventListener("beforeunload",e=>{if(S.dirty){e.preventDefault();e.returnValue=""}});
 function bind(v){
   document.querySelectorAll("[data-pf]").forEach(b=>b.onclick=()=>{S.pf=b.dataset.pf;render()});
   document.querySelectorAll("[data-sf]").forEach(b=>b.onclick=()=>{S.sf=b.dataset.sf;render()});
@@ -277,8 +318,9 @@ function bind(v){
 function armDel(b,c,id){if(b.dataset.armed){db.collection(c).doc(id).delete().then(()=>toast("Deleted")).catch(e=>toast("Could not delete: "+(e&&e.message||e)));return}b.dataset.armed=1;b.textContent="Tap again to delete";setTimeout(()=>{if(b.isConnected){delete b.dataset.armed;b.textContent="Delete"}},3000)}
 
 window.addEventListener("hashchange",render);
+document.addEventListener("click",e=>{if(e.target.closest&&e.target.closest("#editBtn"))startEdit()});
 render();
-fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{db=true;Object.assign(S,{projects:d.projects,samples:d.samples,runs:d.runs,meetings:d.meetings,talks:d.talks||[],config:d.config,updated:d.updated});render()}).catch(e=>{$("#view").innerHTML='<div class="empty">Could not load data.json.</div>'});
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{db=true;Object.assign(S,{projects:d.projects,samples:d.samples,runs:d.runs,meetings:d.meetings,talks:d.talks||[],config:d.config,raw:d,updated:d.updated});render()}).catch(e=>{$("#view").innerHTML='<div class="empty">Could not load data.json.</div>'});
 </script>
-<footer class="wrap" style="padding-block:0 32px;color:var(--muted);font-size:13px">Data files live on CNRS sDrive (links need a CNRS login with access to the shared folder). This page is an index, updated by Tan.<span id="upd"></span></footer>
+<footer class="wrap" style="padding-block:0 32px;color:var(--muted);font-size:13px"><button type="button" class="btn" id="editBtn" style="margin-bottom:10px">✎ Edit text</button><br>Data files live on CNRS sDrive (links need a CNRS login with access to the shared folder). This page is an index, updated by Tan.<span id="upd"></span></footer>
 </body></html>
