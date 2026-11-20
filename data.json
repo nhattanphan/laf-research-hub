@@ -269,7 +269,8 @@
     "measdead": 1
    },
    "drive": "https://sdrive.cnrs.fr/f/631214303",
-   "_id": "vb-en"
+   "_id": "vb-en",
+   "data": "https://sdrive.cnrs.fr/f/631358735"
   },
   {
    "order": 1,
@@ -464,6 +465,318 @@
    },
    "drive": "https://sdrive.cnrs.fr/f/631214297",
    "_id": "stvo-s1"
+  },
+  {
+   "_id": "spintec-rfl655-hg",
+   "name": "SPINTEC RFL655 · die HG",
+   "subtitle": "2 contacts · Ø 250–350 nm · NiFe free layer",
+   "drive": "https://sdrive.cnrs.fr/f/631382923",
+   "data": "https://sdrive.cnrs.fr/f/631358052",
+   "order": 20,
+   "info": [
+    {
+     "k": "Source",
+     "v": "SPINTEC"
+    },
+    {
+     "k": "Layout",
+     "v": "2 contacts; rows A–I, columns 1–4 (Ø 250 · 280 · 300 · 350 nm); 2 junctions per cell in rows A–D, 4 in rows E–I"
+    },
+    {
+     "k": "Stack",
+     "v": "3 Ta / 30 CuN / 5 Ta / 5 Ru / 6 IrMn / 2.6 CoFe30 / 0.85 Ru / 1.8 CoFe40B20 / MgO [3.0 Ω·µm²] / 2.0 CoFe40B20 / 0.21 Ta / 7 NiFe / 3 Ta / 4 Ru"
+    },
+    {
+     "k": "Measured (data on sDrive)",
+     "v": "A2J1, A4J2, C1J1, C2J2, D1J1, D2J2, E1J2, E2J1, E5J1, E5J2 (to re-test), F3J1, H1J2, H3J3 · plus rectification maps and field-alignment tests"
+    },
+    {
+     "k": "Status source",
+     "v": "colour map in Summary_Characterization_of_devices (Tan)"
+    }
+   ],
+   "project": "sd",
+   "counts": {
+    "alive": 25,
+    "untested": 103,
+    "dead": 18,
+    "suspect": 14,
+    "short": 8
+   },
+   "total": 168
+  },
+  {
+   "_id": "spintec-rfl693-d65",
+   "name": "SPINTEC RFL693 · die 65",
+   "subtitle": "5 contacts with field line · Ø 250–450 nm",
+   "drive": "https://sdrive.cnrs.fr/f/631382928",
+   "data": "https://sdrive.cnrs.fr/f/631358289",
+   "order": 21,
+   "info": [
+    {
+     "k": "Source",
+     "v": "SPINTEC"
+    },
+    {
+     "k": "Layout",
+     "v": "5 contacts with field line; columns A–E, rows 1–6"
+    },
+    {
+     "k": "Stack",
+     "v": "3 Ta / 30 CuN / 5 Ta / 5 Ru / 6 IrMn / 2.6 CoFe30 / 0.85 Ru / 1.8 CoFe40B20 / MgO [8.0 Ω·µm²] / 2 CoFe40B20 / 0.21 Ta / 7 NiFe / 3 Ta / 4 Ru"
+    },
+    {
+     "k": "Best result",
+     "v": "48 mV/mW on E4 (P = 0.01, angle 80°)"
+    },
+    {
+     "k": "Measured (data on sDrive)",
+     "v": "A1, A2, A3, A4, B1, B2, B3, C3, D1, D2, D3, E2, E3, E4"
+    }
+   ],
+   "project": "sd",
+   "counts": {
+    "short": 1,
+    "untested": 18,
+    "open": 4,
+    "alive": 4,
+    "dead": 3
+   },
+   "total": 30
+  },
+  {
+   "_id": "spintec-rfhr1111-d41",
+   "name": "SPINTEC RFHR1111 · die 41",
+   "subtitle": "5 contacts with field line · Ø 250–450 nm",
+   "drive": "https://sdrive.cnrs.fr/f/631382916",
+   "data": "https://sdrive.cnrs.fr/f/631357778",
+   "order": 22,
+   "info": [
+    {
+     "k": "Source",
+     "v": "SPINTEC"
+    },
+    {
+     "k": "Layout",
+     "v": "5 contacts with field line; columns A–E, rows 1–6"
+    },
+    {
+     "k": "Stack",
+     "v": "3 Ta / 30 CuN / 5 Ta / 5 Ru / 6 IrMn / 2.6 CoFe30 / 0.7 Ru / 1.8 CoFe40B20 / MgO [3.0 Ω·µm²] / 2 CoFe40B20 / 0.21 Ta / 7 NiFe / 3 Ta / 4 Ru"
+    },
+    {
+     "k": "Note",
+     "v": "R–H curves not understood; D4 to test again"
+    },
+    {
+     "k": "Measured (data on sDrive)",
+     "v": "A1–A6, B1, C1–C4, D1, D3, D4, E1, E6"
+    }
+   ],
+   "project": "sd",
+   "counts": {
+    "dead": 6,
+    "untested": 15,
+    "suspect": 6,
+    "short": 3
+   },
+   "total": 30
+  },
+  {
+   "_id": "spintec-az96-13-hi",
+   "name": "SPINTEC AZ96-13 · die HI",
+   "subtitle": "RAM-type layout · Ø 50–130 nm",
+   "drive": "https://sdrive.cnrs.fr/f/631382945",
+   "data": "https://sdrive.cnrs.fr/f/631358604",
+   "order": 23,
+   "info": [
+    {
+     "k": "Source",
+     "v": "SPINTEC"
+    },
+    {
+     "k": "Layout",
+     "v": "rows A–I, columns 1–6 (Ø 50 · 70 · 90 · 110 · 130 · 90 nm); 2 junctions per cell in rows A–D, 4 in rows E–I"
+    },
+    {
+     "k": "Measured (data on sDrive)",
+     "v": "E4J1, E4J2, F4J1, G4J1, G4J2, G5J1, G5J2 · RF and R–H sweeps; I5J4 RF report (23/06/2026)"
+    },
+    {
+     "k": "Status",
+     "v": "not filled in the summary file yet"
+    }
+   ],
+   "project": "sd",
+   "counts": {
+    "untested": 168
+   },
+   "total": 168
+  },
+  {
+   "_id": "spintec-az96-13-di",
+   "name": "SPINTEC AZ96-13 · die DI",
+   "subtitle": "RAM-type layout · Ø 50–130 nm",
+   "drive": "https://sdrive.cnrs.fr/f/631382935",
+   "data": "https://sdrive.cnrs.fr/f/631358518",
+   "order": 24,
+   "info": [
+    {
+     "k": "Source",
+     "v": "SPINTEC"
+    },
+    {
+     "k": "Layout",
+     "v": "same as die HI"
+    },
+    {
+     "k": "Measured (data on sDrive)",
+     "v": "I4J4, I5J4 · RF and R–H sweeps"
+    },
+    {
+     "k": "Status",
+     "v": "not filled in the summary file yet"
+    }
+   ],
+   "project": "sd",
+   "counts": {
+    "untested": 168
+   },
+   "total": 168
+  },
+  {
+   "_id": "inl-vpw32-tj7917",
+   "name": "INL VPW32-TJ7917 · Mask D",
+   "subtitle": "4-point MTJs, in-plane free layer, CoFeSi wedge · Ø 300–1000 nm",
+   "drive": "https://sdrive.cnrs.fr/f/631382885",
+   "data": "https://sdrive.cnrs.fr/f/631356014",
+   "order": 25,
+   "info": [
+    {
+     "k": "Source",
+     "v": "INL"
+    },
+    {
+     "k": "Layout",
+     "v": "Mask D: 4-point contact MTJs with in-plane free layer; pillars P1–P5, rows 1–17"
+    },
+    {
+     "k": "Stack",
+     "v": "Ta/Ru / CoFeSi (6–13 wedge) / Ta 0.21 / CoFeB 2 / MgO 1 / CoFeB 2.6 / Ru 0.825 / CoFe 2 / IrMn 6"
+    },
+    {
+     "k": "Measured (data on sDrive)",
+     "v": "P1-1 (dead), P1-2, P1-3, P1-6, P1-16, P1-17, P2-1, P2-2, P2-5, P2-6, P2-15, P2-17, P3-2, P3-15, P4-2, P4-17, P5-1, P5-2, P5-5, P5-17 · TEM-cell runs"
+    },
+    {
+     "k": "Other masks on this wafer",
+     "v": "A (4-point / 2-point with field line / broadband rectifier), B (series and orthogonal field lines)"
+    }
+   ],
+   "project": "sd",
+   "counts": {
+    "dead": 1,
+    "short": 1,
+    "untested": 79,
+    "suspect": 4
+   },
+   "total": 85
+  },
+  {
+   "_id": "inl-vpw41-tj8929",
+   "name": "INL VPW41-TJ8929 · column C",
+   "subtitle": "2-contact broadband rectifiers · Ø 100–1000 nm",
+   "drive": "https://sdrive.cnrs.fr/f/631382889",
+   "data": "https://sdrive.cnrs.fr/f/631357054",
+   "order": 26,
+   "info": [
+    {
+     "k": "Source",
+     "v": "INL"
+    },
+    {
+     "k": "Layout",
+     "v": "2 contacts (broadband); P1–P10, rows 1–35; 130 positions have no device"
+    },
+    {
+     "k": "Stack",
+     "v": "6 IrMn / 2 CoFe30 / 0.825 Ru / 2.6 CoFe40B20 / MgO [8 Ω·µm²] / 2.0 CoFe40B20 / 0.21 Ta / 2.5 CoFeSiB"
+    },
+    {
+     "k": "Measured (data on sDrive)",
+     "v": "P1-2, P1-3, P1-4, P1-7, P1-8, P1-9 (died), P1-11, P2-1 (dead), P2-2…P2-11, P3-1…P3-8, P4-1, P4-3, P5-1, P5-2, P5-4, P5-8, P5-10, P6-1, P6-9, P9-8, P9-10, P9-11, P10-10, P10-12 · TEM-cell and rectification maps"
+    }
+   ],
+   "project": "sd",
+   "counts": {
+    "untested": 209,
+    "alive": 3,
+    "dead": 3,
+    "short": 5
+   },
+   "total": 220
+  },
+  {
+   "_id": "inl-vpw43",
+   "name": "INL VPW43 · d2",
+   "subtitle": "Mask A / B / D",
+   "drive": "https://sdrive.cnrs.fr/f/631382898",
+   "data": "https://sdrive.cnrs.fr/f/631355784",
+   "order": 27,
+   "info": [
+    {
+     "k": "Source",
+     "v": "INL"
+    },
+    {
+     "k": "Layout",
+     "v": "Mask A: 4-point and 2-point MTJs; Mask B: 4-contact with perpendicular field line; Mask D"
+    },
+    {
+     "k": "Measured (data on sDrive)",
+     "v": "P2-26, P3-26"
+    },
+    {
+     "k": "Status",
+     "v": "no device map in the summary file"
+    }
+   ],
+   "project": "sd",
+   "counts": {},
+   "total": 0
+  },
+  {
+   "_id": "inl-smweh08-tj7377",
+   "name": "INL SMWEH08-TJ7377",
+   "subtitle": "V4 and Mask D · no etch · RA 400 Ω·µm²",
+   "drive": "https://sdrive.cnrs.fr/f/631382908",
+   "data": "https://sdrive.cnrs.fr/f/631355825",
+   "order": 28,
+   "info": [
+    {
+     "k": "Source",
+     "v": "INL"
+    },
+    {
+     "k": "Layout",
+     "v": "V4: 4-point MTJs, 2-point with field line, broadband rectifier; Mask D"
+    },
+    {
+     "k": "Stack",
+     "v": "5 Ta / 50 CuN / 5 Ta / 50 CuN / 5 Ta / 5 Ru / 6 IrMn / 2 CoFe30 / 0.7 Ru / 2.6 CoFe40B20 / MgO [400 Ω·µm²] / 2.0 CoFe40B20 / 0.65 Ta / 2 NiFe / 0.21 Ta / [2 NiFeN / 0.21 Ta]×3 / [2 NiFe / 0.5 Ta / 2 NiFeN / 0.5 Ta]×3 / 10 Ta / 7 Ru"
+    },
+    {
+     "k": "Measured (data on sDrive)",
+     "v": "P1-25, P10-25 · TEM-cell runs"
+    },
+    {
+     "k": "Status",
+     "v": "no device map in the summary file"
+    }
+   ],
+   "project": "sd",
+   "counts": {},
+   "total": 0
   }
  ],
  "runs": [],

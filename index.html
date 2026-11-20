@@ -172,10 +172,10 @@ function bar(c,t){const parts=STC.map(([k,,v])=>[k,c[k]||0,v]).filter(x=>x[1]);
 function vSamples(){
   const L=[...S.samples].filter(s=>S.sf==="all"||s.project===S.sf).sort((a,b)=>(a.order||9)-(b.order||9));
   return `<section><div class="filters" style="margin-bottom:14px">${chips("sf")}</div>
-  ${L.length?`<div class="grid">${L.map(s=>`<article class="card"><div class="row"><span class="pj">${esc(PJ[s.project]||s.project)}</span><span class="note">${s.total} devices</span></div>
+  ${L.length?`<div class="grid">${L.map(s=>`<article class="card"><div class="row"><span class="pj">${esc(PJ[s.project]||s.project)}</span><span class="note">${s.total?s.total+" devices":"no device map yet"}</span></div>
   <h3>${esc(s.name)}</h3><div class="sub">${esc(s.subtitle)}</div>${bar(s.counts||{},s.total||1)}
   <details><summary>Details</summary><dl class="info">${(s.info||[]).map(i=>`<dt>${esc(i.k)}</dt><dd>${esc(i.v)}</dd>`).join("")}</dl></details>
-  <div class="row">${link(s.drive,"Sample folder on sDrive ↗")}</div></article>`).join("")}</div>`:`<div class="empty">No samples for this project.</div>`}</section>`}
+  <div class="row">${link(s.drive,"Sample info ↗")}${s.data?" · "+link(s.data,"Measurement data ↗"):""}</div></article>`).join("")}</div>`:`<div class="empty">No samples for this project.</div>`}</section>`}
 function chips(key){const cur=S[key];return [["all","All"]].concat(Object.entries(PJ)).map(([k,n])=>`<button type="button" class="chip" data-${key}="${k}" aria-pressed="${cur===k}">${esc(n)}</button>`).join("")}
 function runRow(r){return `<div class="entry"><div class="d">${esc(r.date)}</div><div class="main"><div class="row"><span class="dev">${esc(r.device)}</span><span class="pj">${esc(PJ[r.project]||r.project)}</span></div>
   ${r.result?`<div class="res">${esc(r.result)}</div>`:""}${r.params?`<div class="meta">${esc(r.params)}</div>`:""}${r.setup?`<div class="meta">Setup: ${esc(r.setup)}</div>`:""}
