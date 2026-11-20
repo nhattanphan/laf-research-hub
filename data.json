@@ -166,7 +166,1064 @@
     "short": 1
    },
    "drive": "https://sdrive.cnrs.fr/f/631214303",
-   "_id": "vb-dm"
+   "_id": "vb-dm",
+   "devices": [
+    {
+     "dev": "A1_J1",
+     "status": "untested",
+     "rmin": 809,
+     "tmr": 12,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "A2_J1",
+     "status": "untested",
+     "rmin": 4627,
+     "tmr": 51.4,
+     "cls": "in-plane",
+     "th": 87.1
+    },
+    {
+     "dev": "A2_J2",
+     "status": "untested",
+     "rmin": 535,
+     "tmr": 6,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "A3_J1",
+     "status": "untested",
+     "rmin": 2743,
+     "tmr": 70,
+     "cls": "unstable"
+    },
+    {
+     "dev": "A3_J2",
+     "status": "untested",
+     "rmin": 2587,
+     "tmr": 51.9,
+     "cls": "in-plane",
+     "th": 80.2
+    },
+    {
+     "dev": "A4_J1",
+     "status": "untested",
+     "rmin": 1189,
+     "tmr": 78.7,
+     "cls": "unstable"
+    },
+    {
+     "dev": "A4_J2",
+     "status": "untested",
+     "rmin": 953,
+     "tmr": 34.2,
+     "cls": "in-plane",
+     "th": 38.8
+    },
+    {
+     "dev": "A5_J1",
+     "status": "untested",
+     "rmin": 1133,
+     "tmr": 79.2,
+     "cls": "in-plane",
+     "th": 44.7
+    },
+    {
+     "dev": "A5_J2",
+     "status": "untested",
+     "rmin": 814,
+     "tmr": 19.6,
+     "cls": "in-plane",
+     "th": 70.9
+    },
+    {
+     "dev": "A6_J1",
+     "status": "untested",
+     "rmin": 841,
+     "tmr": 8.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "A6_J2",
+     "status": "untested",
+     "rmin": 2243,
+     "tmr": 60,
+     "cls": "in-plane",
+     "th": 81.5
+    },
+    {
+     "dev": "B1_J2",
+     "status": "untested",
+     "rmin": 2094,
+     "tmr": 1.4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "B2_J1",
+     "status": "untested",
+     "rmin": 6745,
+     "tmr": 71,
+     "cls": "in-plane",
+     "th": 50.9
+    },
+    {
+     "dev": "B2_J2",
+     "status": "untested",
+     "rmin": 4611,
+     "tmr": 76.2,
+     "cls": "in-plane",
+     "th": 69.5
+    },
+    {
+     "dev": "B3_J1",
+     "status": "untested",
+     "rmin": 2997,
+     "tmr": 70.2,
+     "cls": "in-plane",
+     "th": 81.3
+    },
+    {
+     "dev": "B3_J2",
+     "status": "untested",
+     "rmin": 2348,
+     "tmr": 80.3,
+     "cls": "in-plane",
+     "th": 52.7,
+     "pri": 1
+    },
+    {
+     "dev": "B4_J1",
+     "status": "untested",
+     "rmin": 1396,
+     "tmr": 75.5,
+     "cls": "in-plane",
+     "th": 51.7
+    },
+    {
+     "dev": "B4_J2",
+     "status": "untested",
+     "rmin": 815,
+     "tmr": 19.3,
+     "cls": "in-plane",
+     "th": 52.5
+    },
+    {
+     "dev": "B5_J1",
+     "status": "untested",
+     "rmin": 1226,
+     "tmr": 74.2,
+     "cls": "in-plane",
+     "th": 42.9
+    },
+    {
+     "dev": "B5_J2",
+     "status": "untested",
+     "rmin": 954,
+     "tmr": 35.3,
+     "cls": "in-plane",
+     "th": 63.3
+    },
+    {
+     "dev": "B6_J1",
+     "status": "untested",
+     "rmin": 2440,
+     "tmr": 62.5,
+     "cls": "in-plane",
+     "th": 79
+    },
+    {
+     "dev": "B6_J2",
+     "status": "untested",
+     "rmin": 2244,
+     "tmr": 84.4,
+     "cls": "in-plane",
+     "th": 46.4
+    },
+    {
+     "dev": "C1_J1",
+     "status": "untested",
+     "rmin": 38194,
+     "tmr": 71,
+     "cls": "in-plane",
+     "th": 54.5
+    },
+    {
+     "dev": "C2_J1",
+     "status": "untested",
+     "rmin": 4293,
+     "tmr": 82.4,
+     "cls": "in-plane",
+     "th": 65
+    },
+    {
+     "dev": "C2_J2",
+     "status": "untested",
+     "rmin": 2598,
+     "tmr": 82.7,
+     "cls": "in-plane",
+     "th": 38.4
+    },
+    {
+     "dev": "C3_J1",
+     "status": "untested",
+     "rmin": 3880,
+     "tmr": 28.8,
+     "cls": "unstable"
+    },
+    {
+     "dev": "C3_J2",
+     "status": "untested",
+     "rmin": 622,
+     "tmr": 3.9,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "C4_J1",
+     "status": "untested",
+     "rmin": 1683,
+     "tmr": 66.4,
+     "cls": "in-plane",
+     "th": 77.7
+    },
+    {
+     "dev": "C4_J2",
+     "status": "untested",
+     "rmin": 815,
+     "tmr": 25.7,
+     "cls": "in-plane",
+     "th": 64
+    },
+    {
+     "dev": "C5_J1",
+     "status": "untested",
+     "rmin": 1438,
+     "tmr": 78.5,
+     "cls": "in-plane",
+     "th": 65.6,
+     "pri": 1
+    },
+    {
+     "dev": "C5_J2",
+     "status": "untested",
+     "rmin": 1341,
+     "tmr": 77.9,
+     "cls": "in-plane",
+     "th": 61.3,
+     "pri": 1
+    },
+    {
+     "dev": "C6_J1",
+     "status": "untested",
+     "rmin": 3244,
+     "tmr": 73.7,
+     "cls": "in-plane",
+     "th": 80.9
+    },
+    {
+     "dev": "D2_J1",
+     "status": "untested",
+     "rmin": 2577,
+     "tmr": 84.6,
+     "cls": "in-plane",
+     "th": 39.1
+    },
+    {
+     "dev": "D2_J2",
+     "status": "untested",
+     "rmin": 4721,
+     "tmr": 74.8,
+     "cls": "in-plane",
+     "th": 82.7
+    },
+    {
+     "dev": "D3_J1",
+     "status": "untested",
+     "rmin": 3090,
+     "tmr": 65.9,
+     "cls": "in-plane",
+     "th": 71.2
+    },
+    {
+     "dev": "D3_J2",
+     "status": "untested",
+     "rmin": 531,
+     "tmr": 5,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "D4_J1",
+     "status": "untested",
+     "rmin": 845,
+     "tmr": 9.9,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "D4_J2",
+     "status": "untested",
+     "rmin": 1615,
+     "tmr": 73,
+     "cls": "in-plane",
+     "th": 72.1
+    },
+    {
+     "dev": "D5_J1",
+     "status": "untested",
+     "rmin": 1343,
+     "tmr": 75.2,
+     "cls": "in-plane",
+     "th": 62,
+     "pri": 1
+    },
+    {
+     "dev": "D5_J2",
+     "status": "untested",
+     "rmin": 952,
+     "tmr": 38.9,
+     "cls": "in-plane",
+     "th": 69.8
+    },
+    {
+     "dev": "D6_J1",
+     "status": "untested",
+     "rmin": 1535,
+     "tmr": 25.1,
+     "cls": "in-plane",
+     "th": 37.7
+    },
+    {
+     "dev": "D6_J2",
+     "status": "untested",
+     "rmin": 2421,
+     "tmr": 30.7,
+     "cls": "unstable"
+    },
+    {
+     "dev": "E1_J1",
+     "status": "untested",
+     "rmin": 6957,
+     "tmr": 0.9,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E2_J1",
+     "status": "untested",
+     "rmin": 975,
+     "tmr": 9.6,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E2_J2",
+     "status": "untested",
+     "rmin": 5801,
+     "tmr": 79.6,
+     "cls": "step"
+    },
+    {
+     "dev": "E2_J3",
+     "status": "untested",
+     "rmin": 3547,
+     "tmr": 92.2,
+     "cls": "in-plane",
+     "th": 36.5,
+     "pri": 1,
+     "note": "RF: 10-30 (lab R–H: canted, θ0 ≈ 31°)"
+    },
+    {
+     "dev": "E2_J4",
+     "status": "untested",
+     "rmin": 3530,
+     "tmr": 61.3,
+     "cls": "in-plane",
+     "th": 77.8
+    },
+    {
+     "dev": "E3_J1",
+     "status": "untested",
+     "rmin": 2542,
+     "tmr": 37,
+     "cls": "unstable"
+    },
+    {
+     "dev": "E3_J2",
+     "status": "untested",
+     "rmin": 2285,
+     "tmr": 75.3,
+     "cls": "in-plane",
+     "th": 49.5,
+     "pri": 1
+    },
+    {
+     "dev": "E3_J3",
+     "status": "untested",
+     "rmin": 1925,
+     "tmr": 81.6,
+     "cls": "in-plane",
+     "th": 56,
+     "pri": 1
+    },
+    {
+     "dev": "E3_J4",
+     "status": "untested",
+     "rmin": 982,
+     "tmr": 10.2,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E4_J1",
+     "status": "untested",
+     "rmin": 760,
+     "tmr": 13.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E4_J2",
+     "status": "untested",
+     "rmin": 379,
+     "tmr": 0.9,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E4_J3",
+     "status": "untested",
+     "rmin": 1403,
+     "tmr": 74,
+     "cls": "in-plane",
+     "th": 56.5
+    },
+    {
+     "dev": "E4_J4",
+     "status": "untested",
+     "rmin": 1387,
+     "tmr": 76.1,
+     "cls": "in-plane",
+     "th": 46.6
+    },
+    {
+     "dev": "E5_J1",
+     "status": "untested",
+     "rmin": 702,
+     "tmr": 15.2,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E5_J2",
+     "status": "untested",
+     "rmin": 418,
+     "tmr": 4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E5_J3",
+     "status": "untested",
+     "rmin": 507,
+     "tmr": 8.5,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E5_J4",
+     "status": "untested",
+     "rmin": 382,
+     "tmr": 0.9,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E6_J1",
+     "status": "untested",
+     "rmin": 326,
+     "tmr": 2.7,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E6_J2",
+     "status": "untested",
+     "rmin": 301,
+     "tmr": 0.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E6_J3",
+     "status": "short",
+     "rmin": 296,
+     "tmr": 2.7,
+     "cls": "short",
+     "note": "Veeco wafer test: short",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "E6_J4",
+     "status": "untested",
+     "rmin": 316,
+     "tmr": 0.2,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F1_J3",
+     "status": "untested",
+     "rmin": 13514,
+     "tmr": 2,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F2_J1",
+     "status": "untested",
+     "rmin": 4144,
+     "tmr": 67.1,
+     "cls": "in-plane",
+     "th": 80.2
+    },
+    {
+     "dev": "F2_J2",
+     "status": "untested",
+     "rmin": 2065,
+     "tmr": 13.7,
+     "cls": "in-plane",
+     "th": 74.9
+    },
+    {
+     "dev": "F2_J3",
+     "status": "untested",
+     "rmin": 4184,
+     "tmr": 66.9,
+     "cls": "in-plane",
+     "th": 70.9
+    },
+    {
+     "dev": "F2_J4",
+     "status": "untested",
+     "rmin": 5343,
+     "tmr": 70.7,
+     "cls": "in-plane",
+     "th": 61.6
+    },
+    {
+     "dev": "F3_J1",
+     "status": "untested",
+     "rmin": 655,
+     "tmr": 3.9,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F3_J2",
+     "status": "untested",
+     "rmin": 1374,
+     "tmr": 19.4,
+     "cls": "in-plane",
+     "th": 77.1
+    },
+    {
+     "dev": "F3_J3",
+     "status": "untested",
+     "rmin": 2405,
+     "tmr": 64.8,
+     "cls": "in-plane",
+     "th": 76
+    },
+    {
+     "dev": "F3_J4",
+     "status": "untested",
+     "rmin": 722,
+     "tmr": 5.8,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F4_J1",
+     "status": "untested",
+     "rmin": 585,
+     "tmr": 9.1,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F4_J2",
+     "status": "untested",
+     "rmin": 466,
+     "tmr": 4.9,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F4_J3",
+     "status": "untested",
+     "rmin": 1061,
+     "tmr": 38.3,
+     "cls": "in-plane",
+     "th": 68.6
+    },
+    {
+     "dev": "F4_J4",
+     "status": "untested",
+     "rmin": 717,
+     "tmr": 18,
+     "cls": "in-plane",
+     "th": 61.8
+    },
+    {
+     "dev": "F5_J1",
+     "status": "untested",
+     "rmin": 363,
+     "tmr": 0.7,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F5_J2",
+     "status": "untested",
+     "rmin": 349,
+     "tmr": 0.5,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F5_J3",
+     "status": "untested",
+     "rmin": 396,
+     "tmr": 4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F5_J4",
+     "status": "untested",
+     "rmin": 588,
+     "tmr": 10.9,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F6_J1",
+     "status": "untested",
+     "rmin": 313,
+     "tmr": 2.7,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F6_J2",
+     "status": "untested",
+     "rmin": 320,
+     "tmr": 2.7,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F6_J3",
+     "status": "untested",
+     "rmin": 308,
+     "tmr": 0.4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F6_J4",
+     "status": "untested",
+     "rmin": 439,
+     "tmr": 7.8,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "G2_J1",
+     "status": "untested",
+     "rmin": 3787,
+     "tmr": 63.3,
+     "cls": "in-plane",
+     "th": 79.5
+    },
+    {
+     "dev": "G2_J3",
+     "status": "untested",
+     "rmin": 5535,
+     "tmr": 78,
+     "cls": "in-plane",
+     "th": 69.1
+    },
+    {
+     "dev": "G3_J1",
+     "status": "untested",
+     "rmin": 2146,
+     "tmr": 60.5,
+     "cls": "in-plane",
+     "th": 79.6
+    },
+    {
+     "dev": "G3_J2",
+     "status": "untested",
+     "rmin": 2468,
+     "tmr": 77.5,
+     "cls": "in-plane",
+     "th": 59,
+     "pri": 1
+    },
+    {
+     "dev": "G3_J3",
+     "status": "untested",
+     "rmin": 2450,
+     "tmr": 80.1,
+     "cls": "in-plane",
+     "th": 36.3
+    },
+    {
+     "dev": "G3_J4",
+     "status": "untested",
+     "rmin": 3607,
+     "tmr": 65.8,
+     "cls": "in-plane",
+     "th": 78.5
+    },
+    {
+     "dev": "G4_J1",
+     "status": "untested",
+     "rmin": 477,
+     "tmr": 8.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "G4_J2",
+     "status": "untested",
+     "rmin": 1261,
+     "tmr": 82.8,
+     "cls": "in-plane",
+     "th": 44.1,
+     "pri": 1
+    },
+    {
+     "dev": "G4_J3",
+     "status": "untested",
+     "rmin": 1475,
+     "tmr": 77.7,
+     "cls": "in-plane",
+     "th": 48.4
+    },
+    {
+     "dev": "G4_J4",
+     "status": "untested",
+     "rmin": 1457,
+     "tmr": 41.5,
+     "cls": "unstable"
+    },
+    {
+     "dev": "G5_J1",
+     "status": "untested",
+     "rmin": 1213,
+     "tmr": 83.5,
+     "cls": "in-plane",
+     "th": 51.9,
+     "pri": 1
+    },
+    {
+     "dev": "G5_J2",
+     "status": "untested",
+     "rmin": 1254,
+     "tmr": 77.3,
+     "cls": "in-plane",
+     "th": 43.2
+    },
+    {
+     "dev": "G5_J3",
+     "status": "untested",
+     "rmin": 991,
+     "tmr": 35.1,
+     "cls": "in-plane",
+     "th": 43.9
+    },
+    {
+     "dev": "G5_J4",
+     "status": "untested",
+     "rmin": 1095,
+     "tmr": 78.8,
+     "cls": "in-plane",
+     "th": 56.4,
+     "pri": 1
+    },
+    {
+     "dev": "G6_J1",
+     "status": "untested",
+     "rmin": 3377,
+     "tmr": 76.1,
+     "cls": "in-plane",
+     "th": 67.6
+    },
+    {
+     "dev": "G6_J2",
+     "status": "untested",
+     "rmin": 2053,
+     "tmr": 83.5,
+     "cls": "in-plane",
+     "th": 39.7
+    },
+    {
+     "dev": "G6_J3",
+     "status": "untested",
+     "rmin": 3003,
+     "tmr": 85.4,
+     "cls": "in-plane",
+     "th": 34.8
+    },
+    {
+     "dev": "G6_J4",
+     "status": "untested",
+     "rmin": 2581,
+     "tmr": 58.6,
+     "cls": "in-plane",
+     "th": 85.2
+    },
+    {
+     "dev": "H2_J3",
+     "status": "untested",
+     "rmin": 4543,
+     "tmr": 82.9,
+     "cls": "in-plane",
+     "th": 35.4
+    },
+    {
+     "dev": "H3_J1",
+     "status": "untested",
+     "rmin": 2215,
+     "tmr": 85.7,
+     "cls": "in-plane",
+     "th": 40.6
+    },
+    {
+     "dev": "H3_J2",
+     "status": "untested",
+     "rmin": 2866,
+     "tmr": 75.2,
+     "cls": "in-plane",
+     "th": 39.1
+    },
+    {
+     "dev": "H3_J3",
+     "status": "untested",
+     "rmin": 2512,
+     "tmr": 85.3,
+     "cls": "in-plane",
+     "th": 37.6
+    },
+    {
+     "dev": "H3_J4",
+     "status": "untested",
+     "rmin": 1883,
+     "tmr": 79.4,
+     "cls": "in-plane",
+     "th": 53.5
+    },
+    {
+     "dev": "H4_J1",
+     "status": "untested",
+     "rmin": 457,
+     "tmr": 3.7,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "H4_J2",
+     "status": "untested",
+     "rmin": 931,
+     "tmr": 29.3,
+     "cls": "in-plane",
+     "th": 53.3
+    },
+    {
+     "dev": "H4_J3",
+     "status": "untested",
+     "rmin": 818,
+     "tmr": 24.7,
+     "cls": "in-plane",
+     "th": 50.7
+    },
+    {
+     "dev": "H4_J4",
+     "status": "untested",
+     "rmin": 1383,
+     "tmr": 77.3,
+     "cls": "in-plane",
+     "th": 53.4,
+     "pri": 1
+    },
+    {
+     "dev": "H5_J1",
+     "status": "untested",
+     "rmin": 1170,
+     "tmr": 82.7,
+     "cls": "in-plane",
+     "th": 56.2,
+     "pri": 1
+    },
+    {
+     "dev": "H5_J2",
+     "status": "untested",
+     "rmin": 1407,
+     "tmr": 83.7,
+     "cls": "in-plane",
+     "th": 43.3
+    },
+    {
+     "dev": "H5_J3",
+     "status": "untested",
+     "rmin": 1316,
+     "tmr": 80.7,
+     "cls": "in-plane",
+     "th": 47.5
+    },
+    {
+     "dev": "H5_J4",
+     "status": "untested",
+     "rmin": 1232,
+     "tmr": 84.6,
+     "cls": "in-plane",
+     "th": 50.7
+    },
+    {
+     "dev": "H6_J1",
+     "status": "untested",
+     "rmin": 1927,
+     "tmr": 80.1,
+     "cls": "in-plane",
+     "th": 60.8,
+     "pri": 1
+    },
+    {
+     "dev": "H6_J2",
+     "status": "untested",
+     "rmin": 482,
+     "tmr": 2.1,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "H6_J3",
+     "status": "untested",
+     "rmin": 2872,
+     "tmr": 74.8,
+     "cls": "in-plane",
+     "th": 65.4
+    },
+    {
+     "dev": "H6_J4",
+     "status": "untested",
+     "rmin": 2301,
+     "tmr": 84.1,
+     "cls": "in-plane",
+     "th": 42
+    },
+    {
+     "dev": "I3_J1",
+     "status": "untested",
+     "rmin": 2525,
+     "tmr": 81.2,
+     "cls": "in-plane",
+     "th": 46.7
+    },
+    {
+     "dev": "I3_J2",
+     "status": "untested",
+     "rmin": 485,
+     "tmr": 2.9,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "I3_J3",
+     "status": "untested",
+     "rmin": 2587,
+     "tmr": 73.9,
+     "cls": "in-plane",
+     "th": 49.3
+    },
+    {
+     "dev": "I3_J4",
+     "status": "untested",
+     "rmin": 2226,
+     "tmr": 82.6,
+     "cls": "in-plane",
+     "th": 48.5
+    },
+    {
+     "dev": "I4_J1",
+     "status": "untested",
+     "rmin": 1290,
+     "tmr": 79.7,
+     "cls": "in-plane",
+     "th": 63,
+     "pri": 1
+    },
+    {
+     "dev": "I4_J2",
+     "status": "untested",
+     "rmin": 850,
+     "tmr": 26.2,
+     "cls": "in-plane",
+     "th": 49.2
+    },
+    {
+     "dev": "I4_J3",
+     "status": "untested",
+     "rmin": 1387,
+     "tmr": 84.5,
+     "cls": "in-plane",
+     "th": 52
+    },
+    {
+     "dev": "I4_J4",
+     "status": "untested",
+     "rmin": 1462,
+     "tmr": 80.1,
+     "cls": "in-plane",
+     "th": 49.8
+    },
+    {
+     "dev": "I5_J1",
+     "status": "untested",
+     "rmin": 920,
+     "tmr": 34,
+     "cls": "in-plane",
+     "th": 62.9
+    },
+    {
+     "dev": "I5_J2",
+     "status": "untested",
+     "rmin": 1005,
+     "tmr": 36.8,
+     "cls": "in-plane",
+     "th": 69.2
+    },
+    {
+     "dev": "I5_J3",
+     "status": "untested",
+     "rmin": 1247,
+     "tmr": 82.4,
+     "cls": "in-plane",
+     "th": 54.1,
+     "pri": 1
+    },
+    {
+     "dev": "I5_J4",
+     "status": "untested",
+     "rmin": 1304,
+     "tmr": 82.2,
+     "cls": "in-plane",
+     "th": 43.3
+    },
+    {
+     "dev": "I6_J1",
+     "status": "untested",
+     "rmin": 1949,
+     "tmr": 71.1,
+     "cls": "in-plane",
+     "th": 51.2
+    },
+    {
+     "dev": "I6_J2",
+     "status": "untested",
+     "rmin": 2425,
+     "tmr": 70.4,
+     "cls": "in-plane",
+     "th": 80.9
+    },
+    {
+     "dev": "I6_J3",
+     "status": "untested",
+     "rmin": 2195,
+     "tmr": 85.9,
+     "cls": "in-plane",
+     "th": 49.4
+    },
+    {
+     "dev": "I6_J4",
+     "status": "untested",
+     "rmin": 2560,
+     "tmr": 82.1,
+     "cls": "in-plane",
+     "th": 39.1
+    }
+   ]
   },
   {
    "order": 3,
@@ -208,7 +1265,819 @@
     "untested": 135
    },
    "drive": "https://sdrive.cnrs.fr/f/631214297",
-   "_id": "stvo-s2"
+   "_id": "stvo-s2",
+   "devices": [
+    {
+     "dev": "C1",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "C2",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "C3",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, far"
+    },
+    {
+     "dev": "C4",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, far"
+    },
+    {
+     "dev": "C5",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "C6",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "C7",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "C8",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "C9",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "C10",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "C11",
+     "status": "untested",
+     "d": 300,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "C12",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, vertical, far"
+    },
+    {
+     "dev": "C13",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Ring of 5 (pentagon)"
+    },
+    {
+     "dev": "C14",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "C15",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "D1",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "D2",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "D3",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, far"
+    },
+    {
+     "dev": "D4",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, far"
+    },
+    {
+     "dev": "D5",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "D6",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "D7",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "D8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "D9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, close (differs from row – check)"
+    },
+    {
+     "dev": "D10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "D11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "D12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, vertical, far"
+    },
+    {
+     "dev": "D13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Ring of 5 (pentagon)"
+    },
+    {
+     "dev": "D14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "D15",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "E1",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "E2",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "E3",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, far"
+    },
+    {
+     "dev": "E4",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, far"
+    },
+    {
+     "dev": "E5",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "E6",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "E7",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "E8",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "E9",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "E10",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "E11",
+     "status": "untested",
+     "d": 500,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "E12",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, vertical, far"
+    },
+    {
+     "dev": "E13",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pentagon + centre"
+    },
+    {
+     "dev": "E14",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "E15",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "H1",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "H2",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "H3",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Cross (plus), far"
+    },
+    {
+     "dev": "H4",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, medium"
+    },
+    {
+     "dev": "H5",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "H6",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "H7",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "H8",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "H9",
+     "status": "untested",
+     "d": 300,
+     "cfg": "3×3 square, close (differs from row – check)"
+    },
+    {
+     "dev": "H10",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "H11",
+     "status": "untested",
+     "d": 300,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "H12",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, vertical, medium"
+    },
+    {
+     "dev": "H13",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Ring of 10"
+    },
+    {
+     "dev": "H14",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Cross (plus), close"
+    },
+    {
+     "dev": "H15",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "I1",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "I2",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "I3",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Cross (plus), far"
+    },
+    {
+     "dev": "I4",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, medium"
+    },
+    {
+     "dev": "I5",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "I6",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "I7",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "I8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "I9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, close (differs from row – check)"
+    },
+    {
+     "dev": "I10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "I11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "I12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, vertical, medium"
+    },
+    {
+     "dev": "I13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Ring of 5 (pentagon)"
+    },
+    {
+     "dev": "I14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Cross (plus), close"
+    },
+    {
+     "dev": "I15",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "J1",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "J2",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "J3",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Cross (plus), far"
+    },
+    {
+     "dev": "J4",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, medium"
+    },
+    {
+     "dev": "J5",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "J6",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "J7",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "J8",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "J9",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "J10",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "J11",
+     "status": "untested",
+     "d": 500,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "J12",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square (differs from row – check)"
+    },
+    {
+     "dev": "J13",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Ring of 10"
+    },
+    {
+     "dev": "J14",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Cross (plus), close"
+    },
+    {
+     "dev": "J15",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "M1",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "M2",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, horizontal, far"
+    },
+    {
+     "dev": "M3",
+     "status": "untested",
+     "d": 300,
+     "cfg": "3×3 square, far"
+    },
+    {
+     "dev": "M4",
+     "status": "untested",
+     "d": 300,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "M5",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "M6",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "M7",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "M8",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "M9",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "M10",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "M11",
+     "status": "untested",
+     "d": 300,
+     "cfg": "4 clusters of 2×2"
+    },
+    {
+     "dev": "M12",
+     "status": "untested",
+     "d": 300,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "M13",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Ring of 10"
+    },
+    {
+     "dev": "M14",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "M15",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "N1",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "N2",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, horizontal, far"
+    },
+    {
+     "dev": "N3",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, far"
+    },
+    {
+     "dev": "N4",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "N5",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "N6",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "N7",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "N8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "N9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "N10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "N11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "4 clusters of 2×2"
+    },
+    {
+     "dev": "N12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "N13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Ring of 5 (pentagon)"
+    },
+    {
+     "dev": "N14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "N15",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "O1",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "O2",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, horizontal, far"
+    },
+    {
+     "dev": "O3",
+     "status": "untested",
+     "d": 500,
+     "cfg": "3×3 square, far"
+    },
+    {
+     "dev": "O4",
+     "status": "untested",
+     "d": 500,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "O5",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "O6",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "O7",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "O8",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "O9",
+     "status": "untested",
+     "d": 500,
+     "cfg": "No SEM image (row 9: vertical pair?)"
+    },
+    {
+     "dev": "O10",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "O11",
+     "status": "untested",
+     "d": 500,
+     "cfg": "4 clusters of 2×2"
+    },
+    {
+     "dev": "O12",
+     "status": "untested",
+     "d": 500,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "O13",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Ring of 10"
+    },
+    {
+     "dev": "O14",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "O15",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    }
+   ]
   },
   {
    "order": 7,
@@ -259,15 +2128,1058 @@
    ],
    "total": 132,
    "counts": {
-    "alive": 5,
     "untested": 118,
-    "short": 2,
-    "open": 1,
+    "alive": 5,
     "dead": 5,
+    "open": 1,
+    "short": 2,
     "measdead": 1
    },
    "drive": "https://sdrive.cnrs.fr/f/631214303",
-   "_id": "vb-en"
+   "_id": "vb-en",
+   "devices": [
+    {
+     "dev": "A1_J1",
+     "status": "untested",
+     "rmin": 421,
+     "tmr": 15.7,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "A2_J1",
+     "status": "untested",
+     "rmin": 6183,
+     "tmr": 77.7,
+     "cls": "in-plane",
+     "th": 34.1
+    },
+    {
+     "dev": "A2_J2",
+     "status": "untested",
+     "rmin": 5175,
+     "tmr": 77.3,
+     "cls": "in-plane",
+     "th": 76.1
+    },
+    {
+     "dev": "A3_J2",
+     "status": "untested",
+     "rmin": 1330,
+     "tmr": 26.6,
+     "cls": "in-plane",
+     "th": 53
+    },
+    {
+     "dev": "A4_J1",
+     "status": "untested",
+     "rmin": 1043,
+     "tmr": 11.6,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "A4_J2",
+     "status": "untested",
+     "rmin": 1621,
+     "tmr": 73.8,
+     "cls": "in-plane",
+     "th": 54.1
+    },
+    {
+     "dev": "A5_J1",
+     "status": "untested",
+     "rmin": 1348,
+     "tmr": 75.6,
+     "cls": "in-plane",
+     "th": 67.9,
+     "pri": 1
+    },
+    {
+     "dev": "A5_J2",
+     "status": "alive",
+     "rmin": 1774,
+     "tmr": 70.3,
+     "cls": "in-plane",
+     "th": 80.5,
+     "pri": 1,
+     "upd": "2026-11-12",
+     "bonded": 1
+    },
+    {
+     "dev": "A6_J1",
+     "status": "untested",
+     "rmin": 3513,
+     "tmr": 58.8,
+     "cls": "in-plane",
+     "th": 82.1
+    },
+    {
+     "dev": "A6_J2",
+     "status": "untested",
+     "rmin": 3288,
+     "tmr": 72.4,
+     "cls": "in-plane",
+     "th": 62.5
+    },
+    {
+     "dev": "B2_J1",
+     "status": "untested",
+     "rmin": 6156,
+     "tmr": 69.4,
+     "cls": "in-plane",
+     "th": 69.2
+    },
+    {
+     "dev": "B2_J2",
+     "status": "untested",
+     "rmin": 4711,
+     "tmr": 67.4,
+     "cls": "in-plane",
+     "th": 74.1
+    },
+    {
+     "dev": "B3_J1",
+     "status": "dead",
+     "rmin": 2724,
+     "tmr": 83.7,
+     "cls": "in-plane",
+     "th": 41.6,
+     "upd": "2026-11-10",
+     "bonded": 1
+    },
+    {
+     "dev": "B3_J2",
+     "status": "untested",
+     "rmin": 2402,
+     "tmr": 54.9,
+     "cls": "unstable"
+    },
+    {
+     "dev": "B4_J1",
+     "status": "dead",
+     "rmin": 1605,
+     "tmr": 73.5,
+     "cls": "in-plane",
+     "th": 73.1,
+     "upd": "2026-11-10",
+     "bonded": 1
+    },
+    {
+     "dev": "B4_J2",
+     "status": "untested",
+     "rmin": 1635,
+     "tmr": 70.1,
+     "cls": "in-plane",
+     "th": 57
+    },
+    {
+     "dev": "B5_J1",
+     "status": "untested",
+     "rmin": 960,
+     "tmr": 17.7,
+     "cls": "in-plane",
+     "th": 71.4
+    },
+    {
+     "dev": "B5_J2",
+     "status": "untested",
+     "rmin": 891,
+     "tmr": 17.3,
+     "cls": "in-plane",
+     "th": 69.4
+    },
+    {
+     "dev": "B6_J1",
+     "status": "untested",
+     "rmin": 1904,
+     "tmr": 16.2,
+     "cls": "in-plane",
+     "th": 77.6
+    },
+    {
+     "dev": "B6_J2",
+     "status": "untested",
+     "rmin": 513,
+     "tmr": 1,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "C1_J1",
+     "status": "open",
+     "rmin": 55520,
+     "tmr": 58.9,
+     "cls": "open",
+     "note": "Veeco wafer test: open",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C2_J1",
+     "status": "untested",
+     "rmin": 9760,
+     "tmr": 62.6,
+     "cls": "unstable"
+    },
+    {
+     "dev": "C2_J2",
+     "status": "untested",
+     "rmin": 5812,
+     "tmr": 70.1,
+     "cls": "in-plane",
+     "th": 73.8
+    },
+    {
+     "dev": "C3_J1",
+     "status": "untested",
+     "rmin": 2622,
+     "tmr": 65.9,
+     "cls": "unstable"
+    },
+    {
+     "dev": "C3_J2",
+     "status": "untested",
+     "rmin": 2791,
+     "tmr": 72.3,
+     "cls": "unstable"
+    },
+    {
+     "dev": "C4_J1",
+     "status": "untested",
+     "rmin": 884,
+     "tmr": 5,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "C4_J2",
+     "status": "untested",
+     "rmin": 1967,
+     "tmr": 62.9,
+     "cls": "in-plane",
+     "th": 74.3
+    },
+    {
+     "dev": "C5_J1",
+     "status": "untested",
+     "rmin": 1619,
+     "tmr": 79.2,
+     "cls": "in-plane",
+     "th": 55.5
+    },
+    {
+     "dev": "C5_J2",
+     "status": "untested",
+     "rmin": 964,
+     "tmr": 18.5,
+     "cls": "in-plane",
+     "th": 83.1
+    },
+    {
+     "dev": "C6_J1",
+     "status": "untested",
+     "rmin": 2053,
+     "tmr": 43.2,
+     "cls": "in-plane",
+     "th": 48.5
+    },
+    {
+     "dev": "C6_J2",
+     "status": "untested",
+     "rmin": 3697,
+     "tmr": 77.7,
+     "cls": "in-plane",
+     "th": 55
+    },
+    {
+     "dev": "D2_J1",
+     "status": "untested",
+     "rmin": 6777,
+     "tmr": 79,
+     "cls": "in-plane",
+     "th": 57.1
+    },
+    {
+     "dev": "D2_J2",
+     "status": "untested",
+     "rmin": 4864,
+     "tmr": 77,
+     "cls": "in-plane",
+     "th": 69.8
+    },
+    {
+     "dev": "D3_J1",
+     "status": "untested",
+     "rmin": 2923,
+     "tmr": 82.7,
+     "cls": "in-plane",
+     "th": 48.4
+    },
+    {
+     "dev": "D3_J2",
+     "status": "untested",
+     "rmin": 2740,
+     "tmr": 60.6,
+     "cls": "in-plane",
+     "th": 82.2
+    },
+    {
+     "dev": "D4_J1",
+     "status": "untested",
+     "rmin": 1664,
+     "tmr": 58.4,
+     "cls": "in-plane",
+     "th": 81.3
+    },
+    {
+     "dev": "D4_J2",
+     "status": "untested",
+     "rmin": 919,
+     "tmr": 14.7,
+     "cls": "in-plane",
+     "th": 85
+    },
+    {
+     "dev": "D5_J1",
+     "status": "untested",
+     "rmin": 1482,
+     "tmr": 78.5,
+     "cls": "in-plane",
+     "th": 66.1,
+     "pri": 1,
+     "bonded": 1
+    },
+    {
+     "dev": "D5_J2",
+     "status": "untested",
+     "rmin": 1395,
+     "tmr": 77.8,
+     "cls": "in-plane",
+     "th": 64,
+     "pri": 1
+    },
+    {
+     "dev": "D6_J1",
+     "status": "untested",
+     "rmin": 3011,
+     "tmr": 81.1,
+     "cls": "in-plane",
+     "th": 46.2
+    },
+    {
+     "dev": "D6_J2",
+     "status": "short",
+     "rmin": 165,
+     "tmr": 0.4,
+     "cls": "short",
+     "note": "Veeco wafer test: short",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "E1_J1",
+     "status": "untested",
+     "rmin": 3138,
+     "tmr": 0.4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E1_J2",
+     "status": "untested",
+     "rmin": 396,
+     "tmr": 1,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E1_J3",
+     "status": "untested",
+     "rmin": 382,
+     "tmr": 0.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E1_J4",
+     "status": "untested",
+     "rmin": 479,
+     "tmr": 6,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E2_J1",
+     "status": "untested",
+     "rmin": 366,
+     "tmr": 2.6,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E2_J2",
+     "status": "untested",
+     "rmin": 5956,
+     "tmr": 69.5,
+     "cls": "unstable"
+    },
+    {
+     "dev": "E2_J3",
+     "status": "untested",
+     "rmin": 4207,
+     "tmr": 33.9,
+     "cls": "in-plane",
+     "th": 80.3
+    },
+    {
+     "dev": "E2_J4",
+     "status": "untested",
+     "rmin": 407,
+     "tmr": 2.8,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E3_J1",
+     "status": "untested",
+     "rmin": 367,
+     "tmr": 2.8,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E3_J2",
+     "status": "untested",
+     "rmin": 450,
+     "tmr": 33.3,
+     "cls": "unstable"
+    },
+    {
+     "dev": "E3_J3",
+     "status": "untested",
+     "rmin": 317,
+     "tmr": 0.4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E3_J4",
+     "status": "untested",
+     "rmin": 337,
+     "tmr": 0.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E4_J1",
+     "status": "untested",
+     "rmin": 303,
+     "tmr": 0.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E4_J2",
+     "status": "untested",
+     "rmin": 371,
+     "tmr": 2.6,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E4_J3",
+     "status": "untested",
+     "rmin": 323,
+     "tmr": 5.6,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E4_J4",
+     "status": "untested",
+     "rmin": 951,
+     "tmr": 52.7,
+     "cls": "unstable"
+    },
+    {
+     "dev": "E5_J1",
+     "status": "untested",
+     "rmin": 337,
+     "tmr": 0.4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E5_J2",
+     "status": "untested",
+     "rmin": 346,
+     "tmr": 0.4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E5_J4",
+     "status": "untested",
+     "rmin": 1173,
+     "tmr": 27.3,
+     "cls": "unstable"
+    },
+    {
+     "dev": "E6_J1",
+     "status": "untested",
+     "rmin": 304,
+     "tmr": 2.7,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E6_J2",
+     "status": "untested",
+     "rmin": 317,
+     "tmr": 2.7,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E6_J3",
+     "status": "untested",
+     "rmin": 311,
+     "tmr": 2.7,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "E6_J4",
+     "status": "untested",
+     "rmin": 314,
+     "tmr": 0.4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F1_J2",
+     "status": "untested",
+     "rmin": 10440,
+     "tmr": 1.8,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F1_J3",
+     "status": "untested",
+     "rmin": 404,
+     "tmr": 0.8,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F1_J4",
+     "status": "untested",
+     "rmin": 309,
+     "tmr": 2.7,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F2_J1",
+     "status": "untested",
+     "rmin": 328,
+     "tmr": 2.8,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F2_J2",
+     "status": "untested",
+     "rmin": 328,
+     "tmr": 2.7,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F2_J3",
+     "status": "untested",
+     "rmin": 365,
+     "tmr": 0.5,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F2_J4",
+     "status": "untested",
+     "rmin": 448,
+     "tmr": 6.4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F3_J1",
+     "status": "untested",
+     "rmin": 363,
+     "tmr": 0.4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F3_J2",
+     "status": "untested",
+     "rmin": 362,
+     "tmr": 0.4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F3_J3",
+     "status": "untested",
+     "rmin": 343,
+     "tmr": 0.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F3_J4",
+     "status": "untested",
+     "rmin": 308,
+     "tmr": 2.7,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F4_J1",
+     "status": "untested",
+     "rmin": 334,
+     "tmr": 0.4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F4_J2",
+     "status": "untested",
+     "rmin": 331,
+     "tmr": 0.4,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F4_J3",
+     "status": "untested",
+     "rmin": 341,
+     "tmr": 0.6,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F4_J4",
+     "status": "untested",
+     "rmin": 330,
+     "tmr": 2.7,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F5_J1",
+     "status": "untested",
+     "rmin": 332,
+     "tmr": 0.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F5_J2",
+     "status": "untested",
+     "rmin": 314,
+     "tmr": 0.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F5_J3",
+     "status": "untested",
+     "rmin": 311,
+     "tmr": 0.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F5_J4",
+     "status": "untested",
+     "rmin": 311,
+     "tmr": 2.8,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F6_J1",
+     "status": "untested",
+     "rmin": 305,
+     "tmr": 0.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F6_J2",
+     "status": "untested",
+     "rmin": 300,
+     "tmr": 0.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "F6_J3",
+     "status": "short",
+     "rmin": 299,
+     "tmr": 0.3,
+     "cls": "short",
+     "note": "Veeco wafer test: short",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "F6_J4",
+     "status": "untested",
+     "rmin": 312,
+     "tmr": 0.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "G2_J2",
+     "status": "untested",
+     "rmin": 6727,
+     "tmr": 61.2,
+     "cls": "in-plane",
+     "th": 74.9
+    },
+    {
+     "dev": "G3_J2",
+     "status": "untested",
+     "rmin": 3030,
+     "tmr": 65.5,
+     "cls": "in-plane",
+     "th": 81
+    },
+    {
+     "dev": "G3_J3",
+     "status": "untested",
+     "rmin": 2691,
+     "tmr": 75.9,
+     "cls": "in-plane",
+     "th": 56.9,
+     "pri": 1
+    },
+    {
+     "dev": "G3_J4",
+     "status": "measdead",
+     "rmin": 2713,
+     "tmr": 82.5,
+     "cls": "in-plane",
+     "th": 47.7,
+     "note": "RF: angle sweep 11-04, power sweep 11-05, low power 11-06",
+     "upd": "2026-11-12",
+     "bonded": 1
+    },
+    {
+     "dev": "G4_J1",
+     "status": "untested",
+     "rmin": 497,
+     "tmr": 3.2,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "G4_J2",
+     "status": "untested",
+     "rmin": 1663,
+     "tmr": 80.3,
+     "cls": "in-plane",
+     "th": 54.6,
+     "pri": 1
+    },
+    {
+     "dev": "G4_J3",
+     "status": "untested",
+     "rmin": 1125,
+     "tmr": 50.6,
+     "cls": "in-plane",
+     "th": 62.2
+    },
+    {
+     "dev": "G4_J4",
+     "status": "alive",
+     "rmin": 1873,
+     "tmr": 83.4,
+     "cls": "in-plane",
+     "th": 63.5,
+     "pri": 1,
+     "upd": "2026-11-13",
+     "bonded": 1
+    },
+    {
+     "dev": "G5_J1",
+     "status": "untested",
+     "rmin": 489,
+     "tmr": 4.1,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "G5_J2",
+     "status": "untested",
+     "rmin": 1362,
+     "tmr": 72.8,
+     "cls": "in-plane",
+     "th": 70.7
+    },
+    {
+     "dev": "G5_J3",
+     "status": "untested",
+     "rmin": 1565,
+     "tmr": 80,
+     "cls": "in-plane",
+     "th": 64.2,
+     "pri": 1
+    },
+    {
+     "dev": "G5_J4",
+     "status": "untested",
+     "rmin": 1457,
+     "tmr": 80.2,
+     "cls": "in-plane",
+     "th": 55.4,
+     "pri": 1
+    },
+    {
+     "dev": "G6_J1",
+     "status": "dead",
+     "rmin": 2787,
+     "tmr": 86.7,
+     "cls": "in-plane",
+     "th": 46,
+     "upd": "2026-11-10",
+     "bonded": 1
+    },
+    {
+     "dev": "G6_J2",
+     "status": "untested",
+     "rmin": 527,
+     "tmr": 1.5,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "G6_J3",
+     "status": "untested",
+     "rmin": 2886,
+     "tmr": 78.5,
+     "cls": "in-plane",
+     "th": 74.1
+    },
+    {
+     "dev": "G6_J4",
+     "status": "untested",
+     "rmin": 3994,
+     "tmr": 68.4,
+     "cls": "in-plane",
+     "th": 77.1
+    },
+    {
+     "dev": "H3_J1",
+     "status": "alive",
+     "rmin": 2780,
+     "tmr": 83,
+     "cls": "in-plane",
+     "th": 53.5,
+     "pri": 1,
+     "upd": "2026-11-12",
+     "bonded": 1
+    },
+    {
+     "dev": "H3_J2",
+     "status": "untested",
+     "rmin": 3824,
+     "tmr": 81.7,
+     "cls": "in-plane",
+     "th": 50.4
+    },
+    {
+     "dev": "H3_J4",
+     "status": "untested",
+     "rmin": 3412,
+     "tmr": 53.9,
+     "cls": "in-plane",
+     "th": 87.2
+    },
+    {
+     "dev": "H4_J1",
+     "status": "untested",
+     "rmin": 1586,
+     "tmr": 81.7,
+     "cls": "in-plane",
+     "th": 64.6,
+     "pri": 1
+    },
+    {
+     "dev": "H4_J2",
+     "status": "untested",
+     "rmin": 1277,
+     "tmr": 56.5,
+     "cls": "unstable"
+    },
+    {
+     "dev": "H4_J3",
+     "status": "untested",
+     "rmin": 1517,
+     "tmr": 66.7,
+     "cls": "in-plane",
+     "th": 84.5
+    },
+    {
+     "dev": "H4_J4",
+     "status": "untested",
+     "rmin": 1502,
+     "tmr": 49.8,
+     "cls": "unstable"
+    },
+    {
+     "dev": "H5_J1",
+     "status": "untested",
+     "rmin": 1489,
+     "tmr": 83.3,
+     "cls": "in-plane",
+     "th": 61,
+     "pri": 1
+    },
+    {
+     "dev": "H5_J2",
+     "status": "alive",
+     "rmin": 1554,
+     "tmr": 85.2,
+     "cls": "in-plane",
+     "th": 52.7,
+     "pri": 1,
+     "upd": "2026-11-12",
+     "bonded": 1
+    },
+    {
+     "dev": "H5_J3",
+     "status": "untested",
+     "rmin": 1071,
+     "tmr": 39.1,
+     "cls": "in-plane",
+     "th": 65.5
+    },
+    {
+     "dev": "H5_J4",
+     "status": "untested",
+     "rmin": 711,
+     "tmr": 15.3,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "H6_J1",
+     "status": "dead",
+     "rmin": 3074,
+     "tmr": 86.1,
+     "cls": "in-plane",
+     "th": 39.7,
+     "upd": "2026-11-10",
+     "bonded": 1
+    },
+    {
+     "dev": "H6_J2",
+     "status": "untested",
+     "rmin": 3040,
+     "tmr": 54.8,
+     "cls": "in-plane",
+     "th": 87.6
+    },
+    {
+     "dev": "H6_J3",
+     "status": "untested",
+     "rmin": 3075,
+     "tmr": 82.6,
+     "cls": "in-plane",
+     "th": 58.2
+    },
+    {
+     "dev": "H6_J4",
+     "status": "untested",
+     "rmin": 5305,
+     "tmr": 70,
+     "cls": "in-plane",
+     "th": 75.4
+    },
+    {
+     "dev": "I3_J1",
+     "status": "untested",
+     "rmin": 696,
+     "tmr": 47,
+     "cls": "in-plane",
+     "th": 76.9
+    },
+    {
+     "dev": "I3_J2",
+     "status": "untested",
+     "rmin": 1054,
+     "tmr": 20.7,
+     "cls": "in-plane",
+     "th": 61.7
+    },
+    {
+     "dev": "I3_J3",
+     "status": "untested",
+     "rmin": 3635,
+     "tmr": 81.2,
+     "cls": "in-plane",
+     "th": 45
+    },
+    {
+     "dev": "I3_J4",
+     "status": "untested",
+     "rmin": 522,
+     "tmr": 2.2,
+     "cls": "low TMR"
+    },
+    {
+     "dev": "I4_J2",
+     "status": "untested",
+     "rmin": 1451,
+     "tmr": 79.6,
+     "cls": "in-plane",
+     "th": 64.8,
+     "pri": 1,
+     "note": "RF: 09-29"
+    },
+    {
+     "dev": "I4_J3",
+     "status": "alive",
+     "rmin": 1506,
+     "tmr": 84.1,
+     "cls": "in-plane",
+     "th": 61.4,
+     "pri": 1,
+     "upd": "2026-11-10",
+     "bonded": 1
+    },
+    {
+     "dev": "I4_J4",
+     "status": "untested",
+     "rmin": 788,
+     "tmr": 19.9,
+     "cls": "in-plane",
+     "th": 59.5
+    },
+    {
+     "dev": "I5_J1",
+     "status": "untested",
+     "rmin": 1276,
+     "tmr": 80.9,
+     "cls": "in-plane",
+     "th": 67,
+     "pri": 1
+    },
+    {
+     "dev": "I5_J2",
+     "status": "untested",
+     "rmin": 1397,
+     "tmr": 79,
+     "cls": "in-plane",
+     "th": 64,
+     "pri": 1
+    },
+    {
+     "dev": "I5_J3",
+     "status": "dead",
+     "rmin": 1365,
+     "tmr": 85.7,
+     "cls": "in-plane",
+     "th": 57.1,
+     "pri": 1,
+     "upd": "2026-11-10",
+     "bonded": 1
+    },
+    {
+     "dev": "I5_J4",
+     "status": "untested",
+     "rmin": 971,
+     "tmr": 17.5,
+     "cls": "in-plane",
+     "th": 80.2
+    },
+    {
+     "dev": "I6_J1",
+     "status": "untested",
+     "rmin": 1395,
+     "tmr": 30,
+     "cls": "in-plane",
+     "th": 68.6
+    },
+    {
+     "dev": "I6_J2",
+     "status": "untested",
+     "rmin": 5073,
+     "tmr": 45.6,
+     "cls": "unstable"
+    },
+    {
+     "dev": "I6_J3",
+     "status": "untested",
+     "rmin": 4575,
+     "tmr": 25.1,
+     "cls": "unstable"
+    }
+   ]
   },
   {
    "order": 1,
@@ -295,13 +3207,1957 @@
    "total": 234,
    "counts": {
     "dead": 138,
-    "suspect": 41,
     "measdead": 9,
+    "alive": 1,
     "untested": 45,
-    "alive": 1
+    "suspect": 41
    },
    "drive": "https://sdrive.cnrs.fr/f/631214288",
-   "_id": "et12571t-4"
+   "_id": "et12571t-4",
+   "devices": [
+    {
+     "dev": "A01",
+     "status": "dead",
+     "d": 300,
+     "rmin": 60,
+     "tmr": 154,
+     "note": "?",
+     "upd": "2026-11-13",
+     "bonded": 1
+    },
+    {
+     "dev": "A02",
+     "status": "dead",
+     "d": 300,
+     "rmin": 60,
+     "tmr": 147,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "A03",
+     "status": "measdead",
+     "d": 300,
+     "rmin": 58,
+     "tmr": 134,
+     "note": "? · pink on the paper map",
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "A04",
+     "status": "measdead",
+     "d": 300,
+     "rmin": 57,
+     "tmr": 154,
+     "upd": "2026-11-13",
+     "bonded": 1
+    },
+    {
+     "dev": "A05",
+     "status": "dead",
+     "d": 300,
+     "rmin": 54,
+     "tmr": 176,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "A06",
+     "status": "measdead",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 150,
+     "note": "✓ · pink on the paper map",
+     "upd": "2026-11-13",
+     "bonded": 1
+    },
+    {
+     "dev": "A07",
+     "status": "alive",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 152,
+     "upd": "2026-11-13",
+     "bonded": 1
+    },
+    {
+     "dev": "A08",
+     "status": "dead",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 150,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "A09",
+     "status": "untested",
+     "d": 300,
+     "rmin": 57,
+     "tmr": 133
+    },
+    {
+     "dev": "A10",
+     "status": "untested",
+     "d": 300,
+     "note": "no values on the paper map"
+    },
+    {
+     "dev": "A11",
+     "status": "dead",
+     "d": 300,
+     "rmin": 61,
+     "tmr": 151,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "A12",
+     "status": "dead",
+     "d": 300,
+     "rmin": 57,
+     "tmr": 141,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "A13",
+     "status": "untested",
+     "d": 300,
+     "rmin": 62,
+     "tmr": 144
+    },
+    {
+     "dev": "A14",
+     "status": "untested",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 152
+    },
+    {
+     "dev": "A15",
+     "status": "untested",
+     "d": 300,
+     "rmin": 60,
+     "tmr": 149
+    },
+    {
+     "dev": "A16",
+     "status": "untested",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 145
+    },
+    {
+     "dev": "A17",
+     "status": "untested",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 151
+    },
+    {
+     "dev": "A18",
+     "status": "dead",
+     "d": 300,
+     "rmin": 58,
+     "tmr": 150,
+     "note": "??",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "A19",
+     "status": "untested",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 152
+    },
+    {
+     "dev": "A20",
+     "status": "dead",
+     "d": 300,
+     "rmin": 60,
+     "tmr": 152,
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "A21",
+     "status": "dead",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 151,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "A22",
+     "status": "dead",
+     "d": 300,
+     "rmin": 62,
+     "tmr": 137,
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "A23",
+     "status": "dead",
+     "d": 300,
+     "note": "no values on the paper map",
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "A24",
+     "status": "measdead",
+     "d": 300,
+     "note": "?? · no values on the paper map",
+     "upd": "2026-11-13",
+     "bonded": 1
+    },
+    {
+     "dev": "A25",
+     "status": "measdead",
+     "d": 300,
+     "rmin": 55,
+     "tmr": 146,
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "A26",
+     "status": "measdead",
+     "d": 300,
+     "rmin": 55,
+     "tmr": 128,
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "A27",
+     "status": "measdead",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 145,
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "A28",
+     "status": "dead",
+     "d": 300,
+     "rmin": 60,
+     "tmr": 147,
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "A29",
+     "status": "dead",
+     "d": 300,
+     "rmin": 58,
+     "tmr": 150,
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "A30",
+     "status": "measdead",
+     "d": 300,
+     "rmin": 58,
+     "tmr": 154,
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "A31",
+     "status": "dead",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 147,
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "A32",
+     "status": "dead",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 149,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "A33",
+     "status": "untested",
+     "d": 300,
+     "note": "no values on the paper map"
+    },
+    {
+     "dev": "A34",
+     "status": "untested",
+     "d": 300,
+     "rmin": 57,
+     "tmr": 152
+    },
+    {
+     "dev": "A35",
+     "status": "untested",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 148
+    },
+    {
+     "dev": "A36",
+     "status": "untested",
+     "d": 300,
+     "rmin": 60,
+     "tmr": 150
+    },
+    {
+     "dev": "A37",
+     "status": "dead",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 154,
+     "upd": "2026-11-13",
+     "bonded": 1
+    },
+    {
+     "dev": "A38",
+     "status": "measdead",
+     "d": 300,
+     "rmin": 57,
+     "tmr": 146,
+     "upd": "2026-11-13",
+     "bonded": 1
+    },
+    {
+     "dev": "A39",
+     "status": "untested",
+     "d": 300,
+     "note": "no values on the paper map"
+    },
+    {
+     "dev": "A40",
+     "status": "untested",
+     "d": 300,
+     "rmin": 60,
+     "tmr": 140
+    },
+    {
+     "dev": "A41",
+     "status": "untested",
+     "d": 300,
+     "rmin": 54,
+     "tmr": 126
+    },
+    {
+     "dev": "A42",
+     "status": "untested",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 150
+    },
+    {
+     "dev": "A43",
+     "status": "untested",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 150
+    },
+    {
+     "dev": "A44",
+     "status": "untested",
+     "d": 300,
+     "rmin": 61,
+     "tmr": 151
+    },
+    {
+     "dev": "A45",
+     "status": "untested",
+     "d": 300,
+     "rmin": 60,
+     "tmr": 150
+    },
+    {
+     "dev": "A46",
+     "status": "untested",
+     "d": 300,
+     "rmin": 58,
+     "tmr": 143
+    },
+    {
+     "dev": "A47",
+     "status": "untested",
+     "d": 300,
+     "rmin": 61,
+     "tmr": 146
+    },
+    {
+     "dev": "A48",
+     "status": "untested",
+     "d": 300,
+     "rmin": 57,
+     "tmr": 149
+    },
+    {
+     "dev": "A49",
+     "status": "untested",
+     "d": 300,
+     "rmin": 58,
+     "tmr": 134
+    },
+    {
+     "dev": "A50",
+     "status": "untested",
+     "d": 300,
+     "rmin": 59,
+     "tmr": 150
+    },
+    {
+     "dev": "B01",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 150,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B02",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 148,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B03",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 143,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B04",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 148,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B05",
+     "status": "dead",
+     "d": 350,
+     "rmin": 44,
+     "tmr": 148,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B06",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 149,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B07",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 146,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B08",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 149,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B09",
+     "status": "dead",
+     "d": 350,
+     "rmin": 41,
+     "tmr": 134,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B10",
+     "status": "dead",
+     "d": 350,
+     "rmin": 41,
+     "tmr": 149,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B11",
+     "status": "dead",
+     "d": 350,
+     "note": "no values on the paper map · whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B12",
+     "status": "dead",
+     "d": 350,
+     "note": "no values on the paper map · whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B13",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 146,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B14",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 134,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B15",
+     "status": "dead",
+     "d": 350,
+     "rmin": 41,
+     "tmr": 136,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B16",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 147,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B17",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 141,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B18",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 147,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B19",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 144,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B20",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 148,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B21",
+     "status": "dead",
+     "d": 350,
+     "rmin": 40,
+     "tmr": 143,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B22",
+     "status": "dead",
+     "d": 350,
+     "rmin": 40,
+     "tmr": 127,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B23",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 147,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B24",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 145,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B25",
+     "status": "dead",
+     "d": 350,
+     "rmin": 44,
+     "tmr": 140,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B26",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 149,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B27",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 149,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B28",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 146,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B29",
+     "status": "dead",
+     "d": 350,
+     "rmin": 40,
+     "tmr": 127,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B30",
+     "status": "dead",
+     "d": 350,
+     "rmin": 41,
+     "tmr": 132,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B31",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 146,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B32",
+     "status": "dead",
+     "d": 350,
+     "rmin": 41,
+     "tmr": 148,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B33",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 145,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B34",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 146,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B35",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 147,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B36",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 148,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B37",
+     "status": "dead",
+     "d": 350,
+     "rmin": 41,
+     "tmr": 136,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B38",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 149,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B39",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 135,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B40",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 139,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B41",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 150,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B42",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 146,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B43",
+     "status": "dead",
+     "d": 350,
+     "rmin": 43,
+     "tmr": 150,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B44",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 146,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B45",
+     "status": "dead",
+     "d": 350,
+     "tmr": 148,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B46",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 141,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B47",
+     "status": "dead",
+     "d": 350,
+     "rmin": 41,
+     "tmr": 133,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B48",
+     "status": "dead",
+     "d": 350,
+     "rmin": 41,
+     "tmr": 149,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B49",
+     "status": "dead",
+     "d": 350,
+     "rmin": 41,
+     "tmr": 146,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "B50",
+     "status": "dead",
+     "d": 350,
+     "rmin": 42,
+     "tmr": 149,
+     "note": "whole 350 nm series crossed out",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C01",
+     "status": "dead",
+     "d": 400,
+     "rmin": 33,
+     "tmr": 144,
+     "upd": "2026-11-10",
+     "bonded": 1
+    },
+    {
+     "dev": "C02",
+     "status": "dead",
+     "d": 400,
+     "rmin": 33,
+     "tmr": 144,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C03",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 31,
+     "tmr": 147,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C04",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 33,
+     "tmr": 144,
+     "note": "pink on the paper map · no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C05",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 136,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C06",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 143,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C07",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 145,
+     "note": "pink on the paper map · no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C08",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 142,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C09",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 142,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C10",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 141,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C11",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 133,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C12",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 31,
+     "tmr": 142,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C13",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 31,
+     "tmr": 133,
+     "note": "pink on the paper map · no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C14",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 143,
+     "note": "pink on the paper map",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C15",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 145,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C16",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 145,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C17",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 33,
+     "tmr": 136,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C18",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 136,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C19",
+     "status": "dead",
+     "d": 400,
+     "rmin": 33,
+     "tmr": 144,
+     "note": "14 Ω (handwritten)",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C20",
+     "status": "dead",
+     "d": 400,
+     "rmin": 33,
+     "tmr": 144,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C21",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 139,
+     "note": "26 Ω (handwritten)",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C22",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 135,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C23",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 132,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C24",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 145,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C25",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 142,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C26",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 145,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C27",
+     "status": "dead",
+     "d": 400,
+     "rmin": 33,
+     "tmr": 138,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C28",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 140,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C29",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 144,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C30",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 146,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "C31",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 146,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C32",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 142,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C33",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 137,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C34",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 142,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C35",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 31,
+     "tmr": 137,
+     "note": "57 (handwritten) · no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C36",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 136,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C37",
+     "status": "dead",
+     "d": 400,
+     "note": "no values on the paper map",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C38",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 145,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C39",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 33,
+     "tmr": 136,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C40",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 140,
+     "note": "faint cross, to check",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C41",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 33,
+     "tmr": 147,
+     "note": "handwritten note, hard to read · circled on the paper map · no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C42",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 33,
+     "tmr": 143,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C43",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 33,
+     "tmr": 142,
+     "note": "circled on the paper map · no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C44",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 141,
+     "note": "no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C45",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 33,
+     "tmr": 142,
+     "note": "47 (handwritten) · no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C46",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 136,
+     "note": "17 (handwritten) · circled on the paper map · no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C47",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 136,
+     "note": "faint cross, to check",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C48",
+     "status": "suspect",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 145,
+     "note": "17 (handwritten) · no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C49",
+     "status": "dead",
+     "d": 400,
+     "rmin": 32,
+     "tmr": 136,
+     "note": "faint cross, to check",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "C50",
+     "status": "dead",
+     "d": 400,
+     "rmin": 33,
+     "tmr": 144,
+     "note": "circled on the paper map · no cross on the photo, but about half of column C is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D01",
+     "status": "dead",
+     "d": 500,
+     "rmin": 20,
+     "tmr": 130,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D02",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 138,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D03",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 135,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D04",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 135,
+     "note": "faint cross, to check",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D05",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 135,
+     "note": "circled on the paper map · no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D06",
+     "status": "dead",
+     "d": 500,
+     "note": "circled on the paper map · no values on the paper map · no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D07",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 136,
+     "note": "pink on the paper map · no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D08",
+     "status": "dead",
+     "d": 500,
+     "rmin": 11,
+     "tmr": 200,
+     "note": "21? (handwritten)",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D09",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 137,
+     "note": "circled on the paper map · no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "D10",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 132,
+     "note": "faint cross, to check",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D11",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 138,
+     "note": "not dead but damaged",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D12",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 134,
+     "note": "not dead but damaged",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D13",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 139,
+     "note": "circled on the paper map · no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "D14",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 135,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D15",
+     "status": "dead",
+     "d": 500,
+     "rmin": 20,
+     "tmr": 138,
+     "note": "circled on the paper map · no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "D16",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 20,
+     "tmr": 115,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D17",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 135,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D18",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 136,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D19",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 132,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D20",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 127,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D21",
+     "status": "dead",
+     "d": 500,
+     "rmin": 20,
+     "tmr": 120,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D22",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 128,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D23",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 132,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D24",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 138,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D25",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 130,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D26",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 127,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D27",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 138,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "D28",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 131,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D29",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 133,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-13"
+    },
+    {
+     "dev": "D30",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 130,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D31",
+     "status": "dead",
+     "d": 500,
+     "rmin": 13,
+     "tmr": 153,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D32",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 134,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D33",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 132,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D34",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 135,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D35",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 135,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D36",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 133,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D37",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 136,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D38",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 136,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D39",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 122,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D40",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 20,
+     "tmr": 137,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D41",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 138,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D42",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 133,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D43",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 128,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D44",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 127,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D45",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 134,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D46",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 123,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D47",
+     "status": "dead",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 131,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D48",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 137,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D49",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 137,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "D50",
+     "status": "suspect",
+     "d": 500,
+     "rmin": 21,
+     "tmr": 128,
+     "note": "no cross on the photo, but most of column D is dead → re-measure",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "P07",
+     "status": "dead",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 122,
+     "note": "? · pink on the paper map",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "P08",
+     "status": "dead",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 122,
+     "note": "? · pink on the paper map",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "P10",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 118
+    },
+    {
+     "dev": "P11",
+     "status": "dead",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 127,
+     "note": "handwritten note, hard to read · pink on the paper map",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "P13",
+     "status": "dead",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 127,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "P14",
+     "status": "dead",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 124,
+     "note": "? · pink on the paper map",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "P16",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 129
+    },
+    {
+     "dev": "P17",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 128
+    },
+    {
+     "dev": "Q28",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 126
+    },
+    {
+     "dev": "Q29",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 126
+    },
+    {
+     "dev": "Q31",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 129
+    },
+    {
+     "dev": "Q32",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 128
+    },
+    {
+     "dev": "Q34",
+     "status": "untested",
+     "d": 600,
+     "rmin": 16,
+     "tmr": 127
+    },
+    {
+     "dev": "Q35",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 129
+    },
+    {
+     "dev": "Q37",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 127
+    },
+    {
+     "dev": "Q38",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 126
+    },
+    {
+     "dev": "R07",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 130
+    },
+    {
+     "dev": "R08",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 127
+    },
+    {
+     "dev": "R10",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 127
+    },
+    {
+     "dev": "R11",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 128
+    },
+    {
+     "dev": "R13",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 122
+    },
+    {
+     "dev": "R14",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 127
+    },
+    {
+     "dev": "R16",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 129
+    },
+    {
+     "dev": "R17",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 118
+    },
+    {
+     "dev": "S28",
+     "status": "dead",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 129,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "S29",
+     "status": "dead",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 129,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "S31",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 124
+    },
+    {
+     "dev": "S32",
+     "status": "dead",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 125,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "S34",
+     "status": "untested",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 124
+    },
+    {
+     "dev": "S35",
+     "status": "dead",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 126,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "S37",
+     "status": "dead",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 128,
+     "note": "(not measured) ✓ · pink on the paper map",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "S38",
+     "status": "dead",
+     "d": 600,
+     "rmin": 15,
+     "tmr": 129,
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "S40",
+     "status": "dead",
+     "d": 600,
+     "note": "handwritten below the table",
+     "upd": "2026-11-10"
+    },
+    {
+     "dev": "S41",
+     "status": "dead",
+     "d": 600,
+     "note": "handwritten below the table · ✓ · pink on the paper map",
+     "upd": "2026-11-10"
+    }
+   ]
   },
   {
    "order": 6,
@@ -333,7 +5189,106 @@
     "untested": 2
    },
    "drive": "https://sdrive.cnrs.fr/f/631214297",
-   "_id": "stvo-inl"
+   "_id": "stvo-inl",
+   "devices": [
+    {
+     "dev": "C5",
+     "status": "measdead",
+     "d": 300,
+     "cfg": "Pair, horizontal, close",
+     "rmin": "220–460",
+     "note": "INL 05/2026 (Tristan): Destroyed – Looked super nice but did not survive lunchtime ; Jack : single-frequency auto-oscillation (likely synchronised)",
+     "upd": "2026-11-16"
+    },
+    {
+     "dev": "C6",
+     "status": "measdead",
+     "d": 300,
+     "cfg": "Triangle, close",
+     "rmin": "175–365",
+     "note": "INL 05/2026 (Tristan): Destroyed – Multistate in triangle – poster result",
+     "upd": "2026-11-16"
+    },
+    {
+     "dev": "H5",
+     "status": "measdead",
+     "d": 300,
+     "cfg": "Pair, horizontal, close",
+     "rmin": "250–530",
+     "note": "INL 05/2026 (Tristan): Destroyed – Arnold tongue – poster result",
+     "upd": "2026-11-16"
+    },
+    {
+     "dev": "H6",
+     "status": "measdead",
+     "d": 300,
+     "cfg": "Triangle, close",
+     "rmin": "160–240",
+     "note": "INL 05/2026 (Tristan): Destroyed",
+     "upd": "2026-11-16"
+    },
+    {
+     "dev": "H10",
+     "status": "measdead",
+     "d": 300,
+     "cfg": "Pair, diagonal",
+     "rmin": "160–240",
+     "note": "INL 05/2026 (Tristan): Destroyed",
+     "upd": "2026-11-16"
+    },
+    {
+     "dev": "H12",
+     "status": "suspect",
+     "d": 300,
+     "cfg": "Pair, vertical, medium",
+     "rmin": "110–140",
+     "note": "INL 05/2026 (Tristan): Low TMR – TMR considered too low, no spin diode performed",
+     "upd": "2026-11-16"
+    },
+    {
+     "dev": "H13",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Ring of 10",
+     "rmin": "35–60",
+     "note": "INL 05/2026 (Tristan): Possibly alive – Spin-diode signal too complex, measurement stopped ; should still be alive"
+    },
+    {
+     "dev": "H14",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Cross (plus), close",
+     "rmin": "90–160",
+     "note": "INL 05/2026 (Tristan): Possibly alive – No spin-diode measurement ; probably still alive"
+    },
+    {
+     "dev": "I5",
+     "status": "suspect",
+     "d": 400,
+     "cfg": "Pair, horizontal, close",
+     "rmin": "70–85",
+     "note": "INL 05/2026 (Tristan): Low TMR – Low TMR according to Tristan",
+     "upd": "2026-11-16"
+    },
+    {
+     "dev": "I6",
+     "status": "measdead",
+     "d": 400,
+     "cfg": "Triangle, close",
+     "rmin": "90–160",
+     "note": "INL 05/2026 (Tristan): Destroyed – Died at the first spin-diode measurement",
+     "upd": "2026-11-16"
+    },
+    {
+     "dev": "M5",
+     "status": "measdead",
+     "d": 300,
+     "cfg": "Pair, horizontal, close",
+     "rmin": "160–310",
+     "note": "INL 05/2026 (Tristan): Destroyed – Multisite in pair – poster result",
+     "upd": "2026-11-16"
+    }
+   ]
   },
   {
    "order": 5,
@@ -375,7 +5330,352 @@
     "untested": 49
    },
    "drive": "https://sdrive.cnrs.fr/f/631214297",
-   "_id": "stvo-s4"
+   "_id": "stvo-s4",
+   "devices": [
+    {
+     "dev": "A8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 150
+    },
+    {
+     "dev": "A9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 150
+    },
+    {
+     "dev": "A10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 150
+    },
+    {
+     "dev": "A11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 150
+    },
+    {
+     "dev": "A12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 150
+    },
+    {
+     "dev": "A13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 150
+    },
+    {
+     "dev": "A14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 150
+    },
+    {
+     "dev": "B8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 200
+    },
+    {
+     "dev": "B9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 200
+    },
+    {
+     "dev": "B10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 200
+    },
+    {
+     "dev": "B11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 200
+    },
+    {
+     "dev": "B12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 200
+    },
+    {
+     "dev": "B13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 200
+    },
+    {
+     "dev": "B14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 200
+    },
+    {
+     "dev": "C8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 300
+    },
+    {
+     "dev": "C9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 300
+    },
+    {
+     "dev": "C10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 300
+    },
+    {
+     "dev": "C11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 300
+    },
+    {
+     "dev": "C12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 300
+    },
+    {
+     "dev": "C13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 300
+    },
+    {
+     "dev": "C14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 300
+    },
+    {
+     "dev": "D8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 400
+    },
+    {
+     "dev": "D9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 400
+    },
+    {
+     "dev": "D10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 400
+    },
+    {
+     "dev": "D11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 400
+    },
+    {
+     "dev": "D12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 400
+    },
+    {
+     "dev": "D13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 400
+    },
+    {
+     "dev": "D14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 400
+    },
+    {
+     "dev": "E8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 500
+    },
+    {
+     "dev": "E9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 500
+    },
+    {
+     "dev": "E10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 500
+    },
+    {
+     "dev": "E11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 500
+    },
+    {
+     "dev": "E12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 500
+    },
+    {
+     "dev": "E13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 500
+    },
+    {
+     "dev": "E14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 500
+    },
+    {
+     "dev": "F8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 700
+    },
+    {
+     "dev": "F9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 700
+    },
+    {
+     "dev": "F10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 700
+    },
+    {
+     "dev": "F11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 700
+    },
+    {
+     "dev": "F12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 700
+    },
+    {
+     "dev": "F13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 700
+    },
+    {
+     "dev": "F14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 700
+    },
+    {
+     "dev": "G8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 2000
+    },
+    {
+     "dev": "G9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 2000
+    },
+    {
+     "dev": "G10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 2000
+    },
+    {
+     "dev": "G11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair",
+     "sp": 2000
+    },
+    {
+     "dev": "G12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 2000
+    },
+    {
+     "dev": "G13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 2000
+    },
+    {
+     "dev": "G14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle",
+     "sp": 2000
+    }
+   ]
   },
   {
    "order": 4,
@@ -417,7 +5717,819 @@
     "untested": 135
    },
    "drive": "https://sdrive.cnrs.fr/f/631214297",
-   "_id": "stvo-s3"
+   "_id": "stvo-s3",
+   "devices": [
+    {
+     "dev": "C1",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "C2",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "C3",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, far"
+    },
+    {
+     "dev": "C4",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, far"
+    },
+    {
+     "dev": "C5",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "C6",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "C7",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "C8",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "C9",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "C10",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "C11",
+     "status": "untested",
+     "d": 300,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "C12",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, vertical, far"
+    },
+    {
+     "dev": "C13",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Ring of 5 (pentagon)"
+    },
+    {
+     "dev": "C14",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "C15",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "D1",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "D2",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "D3",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, far"
+    },
+    {
+     "dev": "D4",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, far"
+    },
+    {
+     "dev": "D5",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "D6",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "D7",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "D8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "D9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, close (differs from row – check)"
+    },
+    {
+     "dev": "D10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "D11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "D12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, vertical, far"
+    },
+    {
+     "dev": "D13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Ring of 5 (pentagon)"
+    },
+    {
+     "dev": "D14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "D15",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "E1",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "E2",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "E3",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, far"
+    },
+    {
+     "dev": "E4",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, far"
+    },
+    {
+     "dev": "E5",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "E6",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "E7",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "E8",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "E9",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "E10",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "E11",
+     "status": "untested",
+     "d": 500,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "E12",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, vertical, far"
+    },
+    {
+     "dev": "E13",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pentagon + centre"
+    },
+    {
+     "dev": "E14",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "E15",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "H1",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "H2",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "H3",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Cross (plus), far"
+    },
+    {
+     "dev": "H4",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, medium"
+    },
+    {
+     "dev": "H5",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "H6",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "H7",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "H8",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "H9",
+     "status": "untested",
+     "d": 300,
+     "cfg": "3×3 square, close (differs from row – check)"
+    },
+    {
+     "dev": "H10",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "H11",
+     "status": "untested",
+     "d": 300,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "H12",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, vertical, medium"
+    },
+    {
+     "dev": "H13",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Ring of 10"
+    },
+    {
+     "dev": "H14",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Cross (plus), close"
+    },
+    {
+     "dev": "H15",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "I1",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "I2",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "I3",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Cross (plus), far"
+    },
+    {
+     "dev": "I4",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, medium"
+    },
+    {
+     "dev": "I5",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "I6",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "I7",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "I8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "I9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, close (differs from row – check)"
+    },
+    {
+     "dev": "I10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "I11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "I12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, vertical, medium"
+    },
+    {
+     "dev": "I13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Ring of 5 (pentagon)"
+    },
+    {
+     "dev": "I14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Cross (plus), close"
+    },
+    {
+     "dev": "I15",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "J1",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "J2",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "J3",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Cross (plus), far"
+    },
+    {
+     "dev": "J4",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, medium"
+    },
+    {
+     "dev": "J5",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "J6",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "J7",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "J8",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "J9",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "J10",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "J11",
+     "status": "untested",
+     "d": 500,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "J12",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square (differs from row – check)"
+    },
+    {
+     "dev": "J13",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Ring of 10"
+    },
+    {
+     "dev": "J14",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Cross (plus), close"
+    },
+    {
+     "dev": "J15",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "M1",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "M2",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, horizontal, far"
+    },
+    {
+     "dev": "M3",
+     "status": "untested",
+     "d": 300,
+     "cfg": "3×3 square, far"
+    },
+    {
+     "dev": "M4",
+     "status": "untested",
+     "d": 300,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "M5",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "M6",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "M7",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "M8",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "M9",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "M10",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "M11",
+     "status": "untested",
+     "d": 300,
+     "cfg": "4 clusters of 2×2"
+    },
+    {
+     "dev": "M12",
+     "status": "untested",
+     "d": 300,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "M13",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Ring of 10"
+    },
+    {
+     "dev": "M14",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "M15",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "N1",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "N2",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, horizontal, far"
+    },
+    {
+     "dev": "N3",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, far"
+    },
+    {
+     "dev": "N4",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "N5",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "N6",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "N7",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "N8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "N9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "N10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "N11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "4 clusters of 2×2"
+    },
+    {
+     "dev": "N12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "N13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Ring of 5 (pentagon)"
+    },
+    {
+     "dev": "N14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "N15",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "O1",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "O2",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, horizontal, far"
+    },
+    {
+     "dev": "O3",
+     "status": "untested",
+     "d": 500,
+     "cfg": "3×3 square, far"
+    },
+    {
+     "dev": "O4",
+     "status": "untested",
+     "d": 500,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "O5",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "O6",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "O7",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "O8",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "O9",
+     "status": "untested",
+     "d": 500,
+     "cfg": "No SEM image (row 9: vertical pair?)"
+    },
+    {
+     "dev": "O10",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "O11",
+     "status": "untested",
+     "d": 500,
+     "cfg": "4 clusters of 2×2"
+    },
+    {
+     "dev": "O12",
+     "status": "untested",
+     "d": 500,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "O13",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Ring of 10"
+    },
+    {
+     "dev": "O14",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "O15",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    }
+   ]
   },
   {
    "order": 2,
@@ -456,12 +6568,844 @@
    ],
    "total": 135,
    "counts": {
-    "alive": 3,
+    "untested": 125,
     "dead": 7,
-    "untested": 125
+    "alive": 3
    },
    "drive": "https://sdrive.cnrs.fr/f/631214297",
-   "_id": "stvo-s1"
+   "_id": "stvo-s1",
+   "devices": [
+    {
+     "dev": "C1",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "C2",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "C3",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, far"
+    },
+    {
+     "dev": "C4",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, far"
+    },
+    {
+     "dev": "C5",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "C6",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "C7",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "C8",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "C9",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "C10",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "C11",
+     "status": "untested",
+     "d": 300,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "C12",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, vertical, far"
+    },
+    {
+     "dev": "C13",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Ring of 5 (pentagon)"
+    },
+    {
+     "dev": "C14",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "C15",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "D1",
+     "status": "dead",
+     "d": 400,
+     "cfg": "Single",
+     "upd": "2026-11-17",
+     "bonded": 1
+    },
+    {
+     "dev": "D2",
+     "status": "dead",
+     "d": 400,
+     "cfg": "Single",
+     "upd": "2026-11-17",
+     "bonded": 1
+    },
+    {
+     "dev": "D3",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, far"
+    },
+    {
+     "dev": "D4",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, far"
+    },
+    {
+     "dev": "D5",
+     "status": "alive",
+     "d": 400,
+     "cfg": "Pair, horizontal, close",
+     "upd": "2026-11-17",
+     "bonded": 1
+    },
+    {
+     "dev": "D6",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "D7",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "D8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "D9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, close (differs from row – check)"
+    },
+    {
+     "dev": "D10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "D11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "D12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, vertical, far"
+    },
+    {
+     "dev": "D13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Ring of 5 (pentagon)"
+    },
+    {
+     "dev": "D14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "D15",
+     "status": "dead",
+     "d": 400,
+     "cfg": "Single",
+     "upd": "2026-11-17",
+     "bonded": 1
+    },
+    {
+     "dev": "E1",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "E2",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "E3",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, far"
+    },
+    {
+     "dev": "E4",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, far"
+    },
+    {
+     "dev": "E5",
+     "status": "alive",
+     "d": 500,
+     "cfg": "Pair, horizontal, close",
+     "upd": "2026-11-16",
+     "bonded": 1
+    },
+    {
+     "dev": "E6",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "E7",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "E8",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "E9",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "E10",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "E11",
+     "status": "untested",
+     "d": 500,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "E12",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, vertical, far"
+    },
+    {
+     "dev": "E13",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pentagon + centre"
+    },
+    {
+     "dev": "E14",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "E15",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "H1",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "H2",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "H3",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Cross (plus), far"
+    },
+    {
+     "dev": "H4",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, medium"
+    },
+    {
+     "dev": "H5",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "H6",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "H7",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "H8",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "H9",
+     "status": "untested",
+     "d": 300,
+     "cfg": "3×3 square, close (differs from row – check)"
+    },
+    {
+     "dev": "H10",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "H11",
+     "status": "untested",
+     "d": 300,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "H12",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, vertical, medium"
+    },
+    {
+     "dev": "H13",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Ring of 10"
+    },
+    {
+     "dev": "H14",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Cross (plus), close"
+    },
+    {
+     "dev": "H15",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "I1",
+     "status": "dead",
+     "d": 400,
+     "cfg": "Single",
+     "upd": "2026-11-17",
+     "bonded": 1
+    },
+    {
+     "dev": "I2",
+     "status": "dead",
+     "d": 400,
+     "cfg": "Single",
+     "upd": "2026-11-17",
+     "bonded": 1
+    },
+    {
+     "dev": "I3",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Cross (plus), far"
+    },
+    {
+     "dev": "I4",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, medium"
+    },
+    {
+     "dev": "I5",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "I6",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "I7",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "I8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "I9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, close (differs from row – check)"
+    },
+    {
+     "dev": "I10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "I11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "I12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, vertical, medium"
+    },
+    {
+     "dev": "I13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Ring of 5 (pentagon)"
+    },
+    {
+     "dev": "I14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Cross (plus), close"
+    },
+    {
+     "dev": "I15",
+     "status": "dead",
+     "d": 400,
+     "cfg": "Single",
+     "upd": "2026-11-17",
+     "bonded": 1
+    },
+    {
+     "dev": "J1",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "J2",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "J3",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Cross (plus), far"
+    },
+    {
+     "dev": "J4",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, medium"
+    },
+    {
+     "dev": "J5",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "J6",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "J7",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "J8",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "J9",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "J10",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "J11",
+     "status": "untested",
+     "d": 500,
+     "cfg": "5×5 square, close"
+    },
+    {
+     "dev": "J12",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square (differs from row – check)"
+    },
+    {
+     "dev": "J13",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Ring of 10"
+    },
+    {
+     "dev": "J14",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Cross (plus), close"
+    },
+    {
+     "dev": "J15",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "M1",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "M2",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, horizontal, far"
+    },
+    {
+     "dev": "M3",
+     "status": "untested",
+     "d": 300,
+     "cfg": "3×3 square, far"
+    },
+    {
+     "dev": "M4",
+     "status": "untested",
+     "d": 300,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "M5",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "M6",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "M7",
+     "status": "untested",
+     "d": 300,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "M8",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "M9",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "M10",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "M11",
+     "status": "untested",
+     "d": 300,
+     "cfg": "4 clusters of 2×2"
+    },
+    {
+     "dev": "M12",
+     "status": "untested",
+     "d": 300,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "M13",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Ring of 10"
+    },
+    {
+     "dev": "M14",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "M15",
+     "status": "untested",
+     "d": 300,
+     "cfg": "Single"
+    },
+    {
+     "dev": "N1",
+     "status": "dead",
+     "d": 400,
+     "cfg": "Single",
+     "upd": "2026-11-17",
+     "bonded": 1
+    },
+    {
+     "dev": "N2",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, horizontal, far"
+    },
+    {
+     "dev": "N3",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, far"
+    },
+    {
+     "dev": "N4",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "N5",
+     "status": "alive",
+     "d": 400,
+     "cfg": "Pair, horizontal, close",
+     "upd": "2026-11-16",
+     "bonded": 1
+    },
+    {
+     "dev": "N6",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "N7",
+     "status": "untested",
+     "d": 400,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "N8",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "N9",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, vertical"
+    },
+    {
+     "dev": "N10",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "N11",
+     "status": "untested",
+     "d": 400,
+     "cfg": "4 clusters of 2×2"
+    },
+    {
+     "dev": "N12",
+     "status": "untested",
+     "d": 400,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "N13",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Ring of 5 (pentagon)"
+    },
+    {
+     "dev": "N14",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "N15",
+     "status": "untested",
+     "d": 400,
+     "cfg": "Single"
+    },
+    {
+     "dev": "O1",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    },
+    {
+     "dev": "O2",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, horizontal, far"
+    },
+    {
+     "dev": "O3",
+     "status": "untested",
+     "d": 500,
+     "cfg": "3×3 square, far"
+    },
+    {
+     "dev": "O4",
+     "status": "untested",
+     "d": 500,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "O5",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, horizontal, close"
+    },
+    {
+     "dev": "O6",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "O7",
+     "status": "untested",
+     "d": 500,
+     "cfg": "2×2 square, close"
+    },
+    {
+     "dev": "O8",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Diamond (4)"
+    },
+    {
+     "dev": "O9",
+     "status": "untested",
+     "d": 500,
+     "cfg": "No SEM image (row 9: vertical pair?)"
+    },
+    {
+     "dev": "O10",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Pair, diagonal"
+    },
+    {
+     "dev": "O11",
+     "status": "untested",
+     "d": 500,
+     "cfg": "4 clusters of 2×2"
+    },
+    {
+     "dev": "O12",
+     "status": "untested",
+     "d": 500,
+     "cfg": "3×3 square, medium"
+    },
+    {
+     "dev": "O13",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Ring of 10"
+    },
+    {
+     "dev": "O14",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Triangle, close"
+    },
+    {
+     "dev": "O15",
+     "status": "untested",
+     "d": 500,
+     "cfg": "Single"
+    }
+   ]
   }
  ],
  "runs": [],
