@@ -17,7 +17,7 @@
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);margin:0}
 a{color:var(--navy)}
-.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1680px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 header{background:var(--surface);border-bottom:1px solid var(--line)}
 header .wrap{padding-block:22px 0;display:grid;gap:14px}
 .top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
@@ -35,7 +35,8 @@ nav.tabs::-webkit-scrollbar{display:none}
 .tab .n{font:500 12px var(--mono);color:var(--muted);margin-left:4px}
 main .wrap{padding-block:24px 48px;display:grid;gap:28px}
 h2{font:700 13px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
-.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr))}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr))}
+.pgrid{grid-template-columns:repeat(auto-fill,minmax(min(100%,640px),1fr))}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:10px;min-width:0;align-content:start}
 .card h3{font:700 19px/1.2 var(--display);margin:0}
 .card .sub{color:var(--muted);font-size:14px;margin-top:-4px}
@@ -140,7 +141,7 @@ function vOverview(){
   const P=[...S.projects].sort((a,b)=>(a.order||9)-(b.order||9));
   const last=[...S.runs].sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,4);
   const mt=[...S.meetings].sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,3);
-  return `<section><h2>Projects</h2>${P.length?`<div class="grid">${P.map(stageCard).join("")}</div>`:`<div class="empty">No projects yet.</div>`}</section>
+  return `<section><h2>Projects</h2>${P.length?`<div class="grid pgrid">${P.map(stageCard).join("")}</div>`:`<div class="empty">No projects yet.</div>`}</section>
   <section><h2>Latest measurements</h2><div class="log">${last.length?last.map(runRow).join(""):`<div class="empty">No measurements logged yet.</div>`}</div></section>
   <section><h2>Recent meetings</h2><div class="log">${mt.length?mt.map(meetRow).join(""):`<div class="empty">No meetings logged yet.</div>`}</div></section>`}
 function bar(c,t){const parts=STC.map(([k,,v])=>[k,c[k]||0,v]).filter(x=>x[1]);
