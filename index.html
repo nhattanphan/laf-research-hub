@@ -36,7 +36,8 @@ nav.tabs::-webkit-scrollbar{display:none}
 .tab:hover{background:rgba(255,255,255,.12);color:#fff}
 .tab[aria-current="page"]{background:var(--accent);color:#fff;box-shadow:0 2px 8px rgba(194,24,91,.35)}
 .tabbar .tab .n{color:inherit;opacity:.75}
-@media (max-width:560px){nav.tabs{gap:0;margin:0 -10px}.tab{font-size:13px;padding:8px 9px}.tabbar .tab .n{display:none}}
+.tab .sm{display:none}
+@media (max-width:560px){.tab .lg{display:none}.tab .sm{display:inline}nav.tabs{gap:0;margin:0 -10px}.tab{font-size:13px;padding:8px 9px}.tabbar .tab .n{display:none}}
 .tab .n{font:500 12px var(--mono);color:var(--muted);margin-left:4px}
 main .wrap{padding-block:24px 48px;display:grid;gap:28px}
 h2{font:700 13px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
@@ -119,8 +120,9 @@ form.add label{display:grid;gap:4px;font:600 12px var(--body);color:var(--muted)
   <nav class="tabs" aria-label="Sections">
       <a class="tab" href="#overview" data-v="overview">Projects</a>
       <a class="tab" href="#samples" data-v="samples">Samples<span class="n" id="nS"></span></a>
-      <a class="tab" href="#measurements" data-v="measurements">Measurements<span class="n" id="nR"></span></a>
+      <a class="tab" href="#measurements" data-v="measurements"><span class="lg">Measurements</span><span class="sm">Data</span><span class="n" id="nR"></span></a>
       <a class="tab" href="#meetings" data-v="meetings">Meetings<span class="n" id="nM"></span></a>
+      <a class="tab" href="#talks" data-v="talks">Talks<span class="n" id="nT"></span></a>
       <a class="tab" href="#files" data-v="files">Files</a>
     </nav>
 </div></div>
@@ -130,22 +132,22 @@ form.add label{display:grid;gap:4px;font:600 12px var(--body);color:var(--muted)
 <script>
 const PJ={ep:"EP encirclement",stvo:"STVO array",sd:"Spin-diode",floq:"Floquet"};
 const STC=[["alive","Alive","--ok"],["untested","Untested","--idle"],["suspect","Suspect","--warn"],["dead","Dead","--bad"],["measdead","Died in measurement","--bad2"],["short","Short","--vio"],["open","Open","--vio"]];
-const S={projects:[],samples:[],runs:[],meetings:[],config:{},ready:{},canWrite:false,canAdmin:false,pf:"all",q:"",sf:"all"};
+const S={projects:[],samples:[],runs:[],meetings:[],talks:[],config:{},ready:{},canWrite:false,canAdmin:false,pf:"all",q:"",sf:"all"};
 let db=null;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const link=(u,t)=>u&&/^https?:\/\//.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`:"";
 function toast(t){const e=document.createElement("div");e.className="toast";e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),2200)}
-function view(){const v=(location.hash||"#overview").slice(1);return ["overview","samples","measurements","meetings","files"].includes(v)?v:"overview"}
+function view(){const v=(location.hash||"#overview").slice(1);return ["overview","samples","measurements","meetings","talks","files"].includes(v)?v:"overview"}
 function drive(k){return (S.config&&S.config[k])||""}
 
 function render(){
   const v=view();document.querySelectorAll(".tab").forEach(t=>{if(t.dataset.v===v)t.setAttribute("aria-current","page");else t.removeAttribute("aria-current")});
-  $("#nS").textContent=S.samples.length||"";$("#nR").textContent=S.runs.length||"";$("#nM").textContent=S.meetings.length||"";
+  $("#nS").textContent=S.samples.length||"";$("#nR").textContent=S.runs.length||"";$("#nM").textContent=S.meetings.length||"";$("#nT").textContent=S.talks.length||"";
   const up=document.getElementById("upd");if(up&&S.updated)up.textContent=" Last updated "+S.updated+".";const r=$("#driveRoot");if(drive("root")){r.href=drive("root");r.hidden=false}else r.hidden=true;
   const el=$("#view");
   if(!db){el.innerHTML=`<div class="empty">Loading…</div>`;return}
-  el.innerHTML=({overview:vOverview,samples:vSamples,measurements:vRuns,meetings:vMeetings,files:vFiles})[v]();
+  el.innerHTML=({overview:vOverview,samples:vSamples,measurements:vRuns,meetings:vMeetings,talks:vTalks,files:vFiles})[v]();
   bind(v);
 }
 function stageCard(p){
@@ -228,8 +230,25 @@ function vMeetings(){
    <label class="wide">Decisions<textarea id="mDec"></textarea></label>
    <label class="wide">Actions<textarea id="mAct"></textarea></label>
    <div class="wide"><button class="btn primary" type="submit">Add meeting</button></div></form></section>`:""}`}
+const TK={oral:["Oral talk","--navy"],invited:["Invited talk","--accent"],poster:["Poster","--vio"],seminar:["Seminar","--ok"]};
+function talkCard(t){const [y,mo]=String(t.date).split("-");const k=TK[t.kind]||[t.kind,"--muted"];
+  return `<article class="mt"><div class="md"><b>${esc(MON[(+mo||1)-1])}</b><span>${esc(y)}</span></div>
+  <div class="mb"><div class="row"><span class="mtag" style="--c:var(${k[1]})">${esc(k[0])}</span>${t.project?`<span class="pj">${esc(PJ[t.project]||t.project)}</span>`:""}</div>
+  <div class="mtt">${esc(t.title)}</div><div class="note">${esc(t.conf)}${t.place?" · "+esc(t.place):""}${t.dates?" · "+esc(t.dates):""}</div>
+  ${t.note?`<div class="meta">${esc(t.note)}</div>`:""}
+  <div class="row">${t.url?link(t.url,"Conference site ↗"):""}</div></div>
+  ${t.files?`<a class="btn mslides" href="${esc(t.files)}" target="_blank" rel="noopener">${t.kind==="poster"?"Poster":"Slides"} ↗</a>`:""}</article>`}
+function vTalks(){
+  const all=[...S.talks].sort((a,b)=>String(b.date).localeCompare(String(a.date))||String(a.kind).localeCompare(String(b.kind)));
+  const tf=S.tf||"all";const cnt=k=>all.filter(t=>t.kind===k).length;
+  const L=all.filter(t=>tf==="all"||t.kind===tf);const by={};L.forEach(t=>{const y=String(t.date).slice(0,4);(by[y]=by[y]||[]).push(t)});
+  const chip=(v,l,n)=>`<button type="button" class="chip" data-tf="${v}" aria-pressed="${tf===v}">${esc(l)} <span class="cn">${n}</span></button>`;
+  return `<section class="mhead"><div class="mstats"><div><b>${all.length}</b><span>contributions</span></div><div><b>${new Set(all.map(t=>t.conf)).size}</b><span>conferences</span></div></div>
+   <div class="filters">${chip("all","All",all.length)}${Object.keys(TK).filter(k=>cnt(k)).map(k=>chip(k,TK[k][0],cnt(k))).join("")}</div></section>
+  ${L.length?Object.keys(by).sort().reverse().map(y=>`<section><h2>${y} <span class="cn">${by[y].length}</span></h2><div class="mlist">${by[y].map(talkCard).join("")}</div></section>`).join(""):`<div class="empty">No talks or posters yet.</div>`}
+  <p class="note">Slides and posters live in ${link(drive("conf"),"sDrive › 06_Conferences ↗")||"sDrive › 06_Conferences"}; one folder per conference, named YYYY-MM_Conference_City.</p>`}
 function vFiles(){
-  const F=[["root","LAF_Research_Hub","Everything below"],["samples","01 · Samples","SEM images, die maps, wafer data"],["meas","02 · Measurements","Raw .nc files and quick-look plots, one folder per project"],["ep","EP encirclement","Gain maps, encirclement loops"],["stvo","STVO array","S1–S4 measurements"],["sd","Spin-diode","VB01-23 RF maps, R–H, power sweeps"],["floq","Floquet","Drive sweeps"],["meet","03 · Meetings","Slides and minutes, by date"],["papers","04 · Papers","Drafts and figures"],["prb","PRB · Multi-turn EP","Figures and draft"],["code","05 · Code","Pointer to the Git repositories"]];
+  const F=[["root","LAF_Research_Hub","Everything below"],["samples","01 · Samples","SEM images, die maps, wafer data"],["meas","02 · Measurements","Raw .nc files and quick-look plots, one folder per project"],["ep","EP encirclement","Gain maps, encirclement loops"],["stvo","STVO array","S1–S4 measurements"],["sd","Spin-diode","VB01-23 RF maps, R–H, power sweeps"],["floq","Floquet","Drive sweeps"],["meet","03 · Meetings","Slides and minutes, by date"],["papers","04 · Papers","Drafts and figures"],["prb","PRB · Multi-turn EP","Figures and draft"],["code","05 · Code","Pointer to the Git repositories"],["conf","06 · Conferences","Talk slides and posters, one folder per conference"]];
   const OL=S.projects.filter(p=>p.overleaf);
   return `${OL.length?`<section><h2>Paper writing</h2><div class="files">${OL.map(p=>`<a href="${esc(p.overleaf)}" target="_blank" rel="noopener"><b>Overleaf · ${esc(p.name)} ↗</b><span>${esc(p.title)}</span></a>`).join("")}</div></section>`:""}<section><h2>sDrive (CNRS login)</h2><div class="files">${F.filter(([k])=>drive(k)).map(([k,n,d])=>`<a href="${esc(drive(k))}" target="_blank" rel="noopener"><b>${esc(n)} ↗</b><span>${esc(d)}</span></a>`).join("")}</div>
   <p class="note">Naming: measurement folders as <span class="mono">YYYY-MM-DD_sample_device_type</span> (e.g. <span class="mono">2026-11-20_S1_N5_RF</span>), each with the raw .nc file, a config.json of instrument settings and a quick-look .png.</p></section>`}
@@ -237,6 +256,7 @@ function vFiles(){
 function bind(v){
   document.querySelectorAll("[data-pf]").forEach(b=>b.onclick=()=>{S.pf=b.dataset.pf;render()});
   document.querySelectorAll("[data-sf]").forEach(b=>b.onclick=()=>{S.sf=b.dataset.sf;render()});
+  document.querySelectorAll("[data-tf]").forEach(b=>b.onclick=()=>{S.tf=b.dataset.tf;render()});
   document.querySelectorAll("[data-mf]").forEach(b=>b.onclick=()=>{S.mf=b.dataset.mf;render()});
   document.querySelectorAll("[data-my]").forEach(b=>b.onclick=()=>{S.my=b.dataset.my;render()});
   {const q=$("#mq");if(q)q.oninput=()=>{S.mq=q.value;const p=q.selectionStart;render();const n=$("#mq");n.focus();try{n.setSelectionRange(p,p)}catch(e){}}}
@@ -257,7 +277,7 @@ function armDel(b,c,id){if(b.dataset.armed){db.collection(c).doc(id).delete().th
 
 window.addEventListener("hashchange",render);
 render();
-fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{db=true;Object.assign(S,{projects:d.projects,samples:d.samples,runs:d.runs,meetings:d.meetings,config:d.config,updated:d.updated});render()}).catch(e=>{$("#view").innerHTML='<div class="empty">Could not load data.json.</div>'});
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{db=true;Object.assign(S,{projects:d.projects,samples:d.samples,runs:d.runs,meetings:d.meetings,talks:d.talks||[],config:d.config,updated:d.updated});render()}).catch(e=>{$("#view").innerHTML='<div class="empty">Could not load data.json.</div>'});
 </script>
 <footer class="wrap" style="padding-block:0 32px;color:var(--muted);font-size:13px">Data files live on CNRS sDrive (links need a CNRS login with access to the shared folder). This page is an index, updated by Tan.<span id="upd"></span></footer>
 </body></html>

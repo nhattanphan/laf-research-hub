@@ -11,7 +11,8 @@
   "meet": "https://sdrive.cnrs.fr/f/631214346",
   "papers": "https://sdrive.cnrs.fr/f/631214356",
   "prb": "https://sdrive.cnrs.fr/f/631214366",
-  "code": "https://sdrive.cnrs.fr/f/631214374"
+  "code": "https://sdrive.cnrs.fr/f/631214374",
+  "conf": "https://sdrive.cnrs.fr/f/631332427"
  },
  "projects": [
   {
@@ -526,6 +527,44 @@
    "date": "2025-03-27",
    "title": "Group meeting",
    "slides": "https://sdrive.cnrs.fr/f/631296534"
+  }
+ ],
+ "talks": [
+  {
+   "_id": "intermag26-oral",
+   "date": "2026-04-13",
+   "dates": "13–17 Apr 2026",
+   "conf": "INTERMAG 2026 (IEEE International Magnetics Conference)",
+   "place": "Manchester, UK",
+   "kind": "oral",
+   "title": "Exceptional point encirclement in coupled spin-torque vortex oscillators",
+   "project": "ep",
+   "files": "https://sdrive.cnrs.fr/f/631332434",
+   "url": "https://ieeemagnetics.org/node/3727"
+  },
+  {
+   "_id": "icpmat26-oral",
+   "date": "2026-07-23",
+   "dates": "23–25 Jul 2026",
+   "conf": "ICPMAT–ICAMT 2026",
+   "place": "HUST, Hanoi, Vietnam",
+   "kind": "oral",
+   "title": "True random number generation with spin-torque nano-oscillators",
+   "files": "https://sdrive.cnrs.fr/f/631332435",
+   "url": "https://icpmat-icamt.hust.edu.vn/",
+   "note": "PhD work (PRA 2024)"
+  },
+  {
+   "_id": "icpmat26-poster",
+   "date": "2026-07-23",
+   "dates": "23–25 Jul 2026",
+   "conf": "ICPMAT–ICAMT 2026",
+   "place": "HUST, Hanoi, Vietnam",
+   "kind": "poster",
+   "title": "Exceptional point encirclement in coupled spin-torque vortex oscillators",
+   "project": "ep",
+   "files": "https://sdrive.cnrs.fr/f/631332435",
+   "url": "https://icpmat-icamt.hust.edu.vn/"
   }
  ]
 }
