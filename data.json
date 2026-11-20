@@ -29,11 +29,6 @@
     "Devices have a field line on top",
     "Ursula is interested in broadband rectification"
    ],
-   "next": [
-    "Spin-diode signal vs RF power: separate the resonant and the magnetic contributions",
-    "Quick R–H and H = 0 spectra on the priority devices of dies EN and DM",
-    "Consider re-injecting the STNO output into the device to raise V_rect"
-   ],
    "drive": "https://sdrive.cnrs.fr/f/631214329",
    "samples": [
     "vb-en",
@@ -54,11 +49,6 @@
     "STVO A is the fixed oscillator (biased in C-state)",
     "Gain dependence: four gains in the C-state configuration plus one C-state loop at lower gain; field 435 mT"
    ],
-   "next": [
-    "Measure the C-state EP loops (2CW and CW+CCW around one EP)",
-    "Replace mock figures with real data on Overleaf",
-    "Send the draft to Vincent and Romain"
-   ],
    "drive": "https://sdrive.cnrs.fr/f/631214315",
    "paper": "https://sdrive.cnrs.fr/f/631214366",
    "samples": [
@@ -78,9 +68,6 @@
     "Related to the EP encirclement work",
     "Phase-controlled rectangular loop trajectories"
    ],
-   "next": [
-    "Compare crossing and anticrossing regimes under the same drive"
-   ],
    "drive": "https://sdrive.cnrs.fr/f/631214341",
    "samples": [
     "et12571t-4"
@@ -98,11 +85,6 @@
     "S1: no Py, common contact · S2, S3: 10 nm Py cap · S4: no Py, separate contacts",
     "None of S1–S4 has been measured before; Tristan's INL results are on another die",
     "Measurement workbook STVO_array_Tristan_die_map.xlsx is kept in the sDrive “Spin Diode” folder"
-   ],
-   "next": [
-    "Start with the close pairs on S1 (per Vincent)",
-    "First device: N5 on S1, wire-bonded 16/11/2026",
-    "Limit current and protect against ESD: many INL devices died during spin-diode measurements"
    ],
    "drive": "https://sdrive.cnrs.fr/f/631214325",
    "samples": [
